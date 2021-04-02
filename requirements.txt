@@ -1,0 +1,5 @@
+torch==1.7.1
+IPython
+pandas
+ir_datasets
+textattack
