@@ -14,10 +14,10 @@ class SynonymActions():
         logging.info("Replacing words with synonyms using texttattack.")
         transformation_list = [
             WordSwapEmbedding(),
-            # WordSwapHowNet(),
-            # WordSwapWordNet(),
-            # WordSwapMaskedLM(method="bert-attack"),
-            # WordSwapMaskedLM(method="bae")
+            WordSwapHowNet(),
+            WordSwapWordNet(),
+            WordSwapMaskedLM(method="bert-attack"),
+            WordSwapMaskedLM(method="bae")
         ]
         logging.info("Methods used: {}.".format(str([t.__class__.__name__ for t in transformation_list])))
         i=0

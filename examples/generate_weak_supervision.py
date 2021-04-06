@@ -1,5 +1,6 @@
 from disentangled_information_needs.transformations.synonym import SynonymActions
 from disentangled_information_needs.transformations.paraphrase import ParaphraseActions
+from IPython import embed
 
 import pandas as pd
 import ir_datasets
@@ -42,11 +43,13 @@ def main():
     transformed_queries_syn = sa.adversarial_synonym_replacement(sample=args.sample)
 
     pa = ParaphraseActions(queries)
-    transformed_queries_para = pa.seq2seq_paraphrase(sample=args.sample)
+    transformed_queries_paraphrase_models = pa.seq2seq_paraphrase(sample=args.sample)
+    transformed_queries_back_translation = pa.back_translation_paraphrase(sample=args.sample)
     
-    transformed_queries = transformed_queries_syn + transformed_queries_para
+    transformed_queries = transformed_queries_syn + transformed_queries_paraphrase_models + transformed_queries_back_translation
     transformed_queries = pd.DataFrame(transformed_queries, columns = ["original_query", "variation", "method"])
-    transformed_queries.to_csv("{}/{}_weak_supervised_variations.csv".format(args.output_dir, args.task.split("/")[0]), index=False)
+    transformed_queries.to_csv("{}/{}_weakly_supervised_variations_sample_{}.csv".format(args.output_dir, 
+        args.task.split("/")[0], args.sample), index=False)
 
 if __name__ == "__main__":
     main()
