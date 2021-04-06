@@ -3,3 +3,4 @@ IPython
 pandas
 ir_datasets
 textattack
+protobuf
