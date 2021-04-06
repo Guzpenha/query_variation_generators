@@ -27,7 +27,7 @@ def main():
                         help="the folder to output weak supervision")
     parser.add_argument("--sample", default=None, type=int, required=True,
                         help="Number of queries to sample (if None all queries are used)")
-    args = parser.parse_args()    
+    args = parser.parse_args()
 
     # queries = pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/uqv100-backstories.tsv", sep="\t")
     # queries = queries["TRECTopicQuery"]
