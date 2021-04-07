@@ -76,7 +76,7 @@ class NaturalityActions():
         return query_variations
 
     def naturality_by_summarization(self, sample=None):
-        logging.info("Removing stop words and after that remove remaining words randomly.")
+        logging.info("Applying pre-trained summarization models from hugginface.")
         i=0
         query_variations = []
         for query in tqdm(self.queries):                        
