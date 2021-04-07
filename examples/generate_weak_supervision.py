@@ -1,5 +1,6 @@
 from disentangled_information_needs.transformations.synonym import SynonymActions
 from disentangled_information_needs.transformations.paraphrase import ParaphraseActions
+from disentangled_information_needs.transformations.naturality import NaturalityActions
 from IPython import embed
 
 import pandas as pd
@@ -46,9 +47,20 @@ def main():
     transformed_queries_paraphrase_models = pa.seq2seq_paraphrase(sample=args.sample)
     transformed_queries_back_translation = pa.back_translation_paraphrase(sample=args.sample)
     
-    transformed_queries = transformed_queries_syn + transformed_queries_paraphrase_models + transformed_queries_back_translation
+    na = NaturalityActions(queries)
+    transformed_queries_stop_word_removal = na.remove_stop_words(sample=args.sample)
+    transformed_queries_stop_word_and_stratified_removal = na.remove_stop_words_and_stratify_by_len(sample=args.sample)
+    transformed_queries_summarizer = na.naturality_by_summarization(sample=args.sample)
+
+    transformed_queries = transformed_queries_syn + \
+      transformed_queries_paraphrase_models + \
+      transformed_queries_back_translation +  \
+      transformed_queries_stop_word_removal +  \
+      transformed_queries_stop_word_and_stratified_removal + \
+      transformed_queries_summarizer
+
     transformed_queries = pd.DataFrame(transformed_queries, columns = ["original_query", "variation", "method"])
-    transformed_queries.to_csv("{}/{}_weakly_supervised_variations_sample_{}.csv".format(args.output_dir, 
+    transformed_queries.sort_values(by=["original_query"]).to_csv("{}/{}_weakly_supervised_variations_sample_{}.csv".format(args.output_dir, 
         args.task.split("/")[0], args.sample), index=False)
 
 if __name__ == "__main__":

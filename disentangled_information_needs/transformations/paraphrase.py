@@ -12,9 +12,9 @@ class ParaphraseActions():
             #Fine-tuned on QQP https://towardsdatascience.com/paraphrase-any-question-with-t5-text-to-text-transfer-transformer-pretrained-model-and-cbb9e35f1555
             ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=0)), 
             #Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
-            ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
+            ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=0)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
-            ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=1))
+            ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=0))
         ]
 
         self.pivot_languages = [
@@ -23,6 +23,7 @@ class ParaphraseActions():
             'de'
         ]
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        logging.info("device used for translation models: {}".format(self.device))
         self.translation_model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_418M")
         self.translation_tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_418M")
         self.translation_model.to(self.device)

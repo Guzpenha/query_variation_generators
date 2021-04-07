@@ -13,8 +13,8 @@ class SynonymActions():
             Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1),
             Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
             Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapMaskedLM(method="bert-attack"), transformations_per_example=1),
-            Augmenter(transformation=WordSwapMaskedLM(method="bae"), transformations_per_example=1)
+            Augmenter(transformation=WordSwapMaskedLM(method="bert-attack", max_candidates=5, max_length=125), transformations_per_example=1),
+            Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=5, max_length=125), transformations_per_example=1)
         ]
 
     def adversarial_synonym_replacement(self, sample=None):
