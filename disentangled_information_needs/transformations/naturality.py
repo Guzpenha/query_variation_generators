@@ -16,9 +16,9 @@ class NaturalityActions():
     def __init__(self, queries):
         self.queries = queries
         self.summarization_pipelines = [            
-            ('sshleifer/distilbart-cnn-12-6', pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")),
-            ('t5-large', pipeline("summarization", model="t5-large"))
-            ]
+            ('t5-large', pipeline("summarization", model="t5-large", device=1)),
+            ('google/pegasus-large', pipeline("summarization", model="google/pegasus-large", device=1)),
+            ('facebook/bart-large-cnn', pipeline("summarization", model="facebook/bart-large-cnn", device=1))]
 
     def remove_words(self, query, pct_to_remove=0.2):
         query_splitted = query.split()
@@ -78,25 +78,33 @@ class NaturalityActions():
     def naturality_by_summarization(self, sample=None):
         logging.info("Applying pre-trained summarization models from hugginface.")
         i=0
+        batch_size=16
         query_variations = []
-        for query in tqdm(self.queries):                        
+        for i in tqdm(range(0, len(self.queries), batch_size)):
+            queries = self.queries[i:i+batch_size]
+            queries_input = ["summarize : {}? </s>".format(query) for query in queries]
             for pipeline_name, summarizer in self.summarization_pipelines:
-                summary = summarizer(query, min_length=3, max_length=10)
-                query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format(pipeline_name), "naturality"])
-            i+=1
+                summaries = summarizer(queries_input, min_length=3, max_length=8)
+                for j, summary in enumerate(summaries):
+                    query_variations.append([queries[j], summary['summary_text'], "summarization_with_{}".format(pipeline_name), "naturality"])
+            i+=batch_size
             if sample and i > sample:
-                break
+                break        
         return query_variations
 
     def naturality_by_trec_desc_to_title(self, model_path, sample=None):
         logging.info("Applying pre-trained summarization model fine-tuned for trec desc to title.")
         summarizer = pipeline("summarization", model="{}/t5-base_from_description_to_title/".format(model_path), tokenizer="t5-base")
         i=0
+        batch_size=16
         query_variations = []
-        for query in tqdm(self.queries):            
-            summary = summarizer(query, min_length=3, max_length=10)
-            query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format('t5-base_from_description_to_title'), "naturality"])
-            i+=1
+        for i in tqdm(range(0, len(self.queries), batch_size)):
+            queries = self.queries[i:i+batch_size]
+            queries_input = ["summarize : {}? </s>".format(query) for query in queries]
+            summaries = summarizer(queries_input, min_length=3, max_length=8)
+            for j, summary in enumerate(summaries):
+                query_variations.append([queries[j], summary['summary_text'], "summarization_with_{}".format('t5-base_from_description_to_title'), "naturality"])
+            i+=batch_size
             if sample and i > sample:
-                break
+                break        
         return query_variations

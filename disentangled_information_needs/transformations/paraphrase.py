@@ -32,16 +32,19 @@ class ParaphraseActions():
         logging.info("Paraphrasing using pre-trained (and fine-tuned for paraphrasing) transformer seq2seq models .")
         logging.info("Pre-trained models used: {}.".format(str([p[0] for p in self.paraphrase_pipelines])))
         i=0
-        query_variations = []
-        for query in tqdm(self.queries):
+        batch_size=16
+        query_variations = []        
+        for i in tqdm(range(0, len(self.queries), batch_size)):
+            queries = self.queries[i:i+batch_size]
+            queries_input = ["paraphrase : {}? </s>".format(query) for query in queries]
             for pipeline_name, text2text in self.paraphrase_pipelines:
-                paraphrase = text2text("paraphrase : {}? </s>".format(query), num_beams=4, max_length = 20)
-                query_variations.append([query, paraphrase[0]['generated_text'], pipeline_name, "paraphrase"])
-            i+=1
+                paraphrases = text2text(queries_input, num_beams=4, max_length = 20)
+                for j, paraphrase in enumerate(paraphrases):
+                    query_variations.append([queries[j], paraphrase['generated_text'], pipeline_name, "paraphrase"])
+            i+=batch_size
             if sample and i > sample:
                 break
         return query_variations
-
 
     def back_translation(self, query, pivot_language='es'):
         # translate English to pivot language

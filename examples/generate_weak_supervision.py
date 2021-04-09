@@ -42,24 +42,25 @@ def main():
     dataset = ir_datasets.load(args.task)
     queries = [t[1] for t in dataset.queries_iter()]
 
-    oa = OrderingActions(queries)
-    transformed_queries_shuffled_order = oa.shuffle_word_order(sample=args.sample)
-
-    ma = MispellingActions(queries)
-    transformed_queries_mispelling = ma.mispelling_chars(sample=args.sample)
-
     na = NaturalityActions(queries)
     transformed_queries_trec_desc_to_title = na.naturality_by_trec_desc_to_title(model_path=args.output_dir, sample=args.sample)
     transformed_queries_stop_word_removal = na.remove_stop_words(sample=args.sample)
     transformed_queries_stop_word_and_stratified_removal = na.remove_stop_words_and_stratify_by_len(sample=args.sample)
     transformed_queries_summarizer = na.naturality_by_summarization(sample=args.sample)
 
-    sa = SynonymActions(queries)
-    transformed_queries_syn = sa.adversarial_synonym_replacement(sample=args.sample)
-
     pa = ParaphraseActions(queries)
     transformed_queries_paraphrase_models = pa.seq2seq_paraphrase(sample=args.sample)    
     transformed_queries_back_translation = pa.back_translation_paraphrase(sample=args.sample)
+
+    sa = SynonymActions(queries)
+    transformed_queries_syn = sa.adversarial_synonym_replacement(sample=args.sample)
+
+    oa = OrderingActions(queries)
+    transformed_queries_shuffled_order = oa.shuffle_word_order(sample=args.sample)
+
+    ma = MispellingActions(queries)
+    transformed_queries_mispelling = ma.mispelling_chars(sample=args.sample)
+
 
     transformed_queries =  transformed_queries_mispelling +\
       transformed_queries_shuffled_order  +\
@@ -72,7 +73,7 @@ def main():
       transformed_queries_trec_desc_to_title
 
     transformed_queries = pd.DataFrame(transformed_queries, columns = ["original_query", "variation", "method", "transformation_type"])
-    transformed_queries.sort_values(by=["original_query", "method"]).to_csv("{}/{}_weakly_supervised_variations_sample_{}.csv".format(args.output_dir, 
+    transformed_queries.sort_values(by=["original_query", "transformation_type", "method"]).to_csv("{}/{}_weakly_supervised_variations_sample_{}.csv".format(args.output_dir, 
         args.task.split("/")[0], args.sample), index=False)
 
 if __name__ == "__main__":
