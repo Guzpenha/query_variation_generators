@@ -1,6 +1,8 @@
 from disentangled_information_needs.transformations.synonym import SynonymActions
 from disentangled_information_needs.transformations.paraphrase import ParaphraseActions
 from disentangled_information_needs.transformations.naturality import NaturalityActions
+from disentangled_information_needs.transformations.mispelling import MispellingActions
+from disentangled_information_needs.transformations.ordering import OrderingActions
 from IPython import embed
 
 import pandas as pd
@@ -40,6 +42,12 @@ def main():
     dataset = ir_datasets.load(args.task)
     queries = [t[1] for t in dataset.queries_iter()]
 
+    oa = OrderingActions(queries)
+    transformed_queries_shuffled_order = oa.shuffle_word_order(sample=args.sample)
+
+    ma = MispellingActions(queries)
+    transformed_queries_mispelling = ma.mispelling_chars(sample=args.sample)
+
     na = NaturalityActions(queries)
     transformed_queries_trec_desc_to_title = na.naturality_by_trec_desc_to_title(model_path=args.output_dir, sample=args.sample)
     transformed_queries_stop_word_removal = na.remove_stop_words(sample=args.sample)
@@ -53,7 +61,9 @@ def main():
     transformed_queries_paraphrase_models = pa.seq2seq_paraphrase(sample=args.sample)    
     transformed_queries_back_translation = pa.back_translation_paraphrase(sample=args.sample)
 
-    transformed_queries = transformed_queries_syn + \
+    transformed_queries =  transformed_queries_mispelling +\
+      transformed_queries_shuffled_order  +\
+      transformed_queries_syn + \
       transformed_queries_paraphrase_models + \
       transformed_queries_back_translation +  \
       transformed_queries_stop_word_removal +  \

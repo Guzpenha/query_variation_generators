@@ -81,7 +81,7 @@ class NaturalityActions():
         query_variations = []
         for query in tqdm(self.queries):                        
             for pipeline_name, summarizer in self.summarization_pipelines:
-                summary = summarizer(query, min_length=3, max_length=max(6, int(len(query.split()) *0.5)))
+                summary = summarizer(query, min_length=3, max_length=10)
                 query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format(pipeline_name), "naturality"])
             i+=1
             if sample and i > sample:
@@ -94,7 +94,7 @@ class NaturalityActions():
         i=0
         query_variations = []
         for query in tqdm(self.queries):            
-            summary = summarizer(query, min_length=3, max_length=max(6, int(len(query.split()) *0.5)))
+            summary = summarizer(query, min_length=3, max_length=10)
             query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format('t5-base_from_description_to_title'), "naturality"])
             i+=1
             if sample and i > sample:
