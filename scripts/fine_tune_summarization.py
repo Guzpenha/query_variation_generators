@@ -4,36 +4,38 @@ from datasets import load_metric, load_dataset
 
 from IPython import embed
 import pandas as pd
-import nltk
 import numpy as np
+import nltk
 
 #Adapted from https://github.com/huggingface/notebooks/blob/master/examples/summarization.ipynb
 
 def main():
     dataset = load_dataset('csv', data_files="../data/trec_desc_to_title.csv")
-    model_checkpoint = "t5-small" #["t5-small", "t5-base", "t5-larg", "t5-3b", "t5-11b"]    
+    model_checkpoint = "t5-base" #["t5-small", "t5-base", "t5-large", "t5-3b", "t5-11b"]    
     tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 
     max_input_length = 128
     max_target_length = 64
 
+    col_from = "description"
+    col_to = "title"
+
     def preprocess_function(examples):
         prefix = "summarize: "
-        inputs = [prefix + doc for doc in examples["description"]]        
+        inputs = [prefix + doc for doc in examples[col_from]]        
         model_inputs = tokenizer(inputs, max_length=max_input_length, truncation=True)
 
         # Setup the tokenizer for targets
         with tokenizer.as_target_tokenizer():
-            labels = tokenizer([t for t in examples["title"]], max_length=max_target_length, truncation=True)
+            labels = tokenizer([t for t in examples[col_to]], max_length=max_target_length, truncation=True)
 
         model_inputs["labels"] = labels["input_ids"]
         return model_inputs
     
     tokenized_datasets = dataset.map(preprocess_function, batched=True)
 
-
     model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint)
-    batch_size = 16
+    batch_size = 32
     args = Seq2SeqTrainingArguments(
         "summarization-for-trec-desc",
         # evaluation_strategy = "epoch",
@@ -42,8 +44,8 @@ def main():
         per_device_eval_batch_size=batch_size,
         weight_decay=0.01,
         save_total_limit=3,
-        num_train_epochs=1,
-        predict_with_generate=True,
+        num_train_epochs=2,
+        predict_with_generate=True
         # fp16=True,
     )
     
@@ -79,6 +81,7 @@ def main():
         compute_metrics=compute_metrics
     )
     trainer.train()
+    model.save_pretrained("../data/{}_from_{}_to_{}".format(model_checkpoint, col_from, col_to))
 
 if __name__ == "__main__":
     main()

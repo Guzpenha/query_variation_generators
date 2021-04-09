@@ -16,9 +16,9 @@ class NaturalityActions():
     def __init__(self, queries):
         self.queries = queries
         self.summarization_pipelines = [            
-            ('distilbart-cnn-12-6', pipeline("summarization", model="distilbart-cnn-12-6")),
+            ('sshleifer/distilbart-cnn-12-6', pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")),
             ('t5-large', pipeline("summarization", model="t5-large"))
-            ]        
+            ]
 
     def remove_words(self, query, pct_to_remove=0.2):
         query_splitted = query.split()
@@ -39,7 +39,7 @@ class NaturalityActions():
         query_variations = []
         for query in tqdm(self.queries):            
             q_variation = self.remove_words(query)
-            query_variations.append([query, q_variation, "naturality_by_removing_random_words"])
+            query_variations.append([query, q_variation, "naturality_by_removing_random_words", "naturality"])
             i+=1
             if sample and i > sample:
                 break
@@ -52,7 +52,7 @@ class NaturalityActions():
         query_variations = []
         for query in tqdm(self.queries):            
             q_variation = " ".join([w for w in query.lower().split() if w not in stopwords])
-            query_variations.append([query, q_variation, "naturality_by_removing_stop_words"])
+            query_variations.append([query, q_variation, "naturality_by_removing_stop_words", "naturality"])
             i+=1
             if sample and i > sample:
                 break
@@ -69,7 +69,7 @@ class NaturalityActions():
                 q_variation = self.remove_words(" ".join(q_no_stop_words), random.randint(0, 65)/100)
             else:
                 q_variation = " ".join(q_no_stop_words)
-            query_variations.append([query, q_variation, "naturality_by_removing_stop_words_and_remaining_stratified"])
+            query_variations.append([query, q_variation, "naturality_by_removing_stop_words_and_remaining_stratified", "naturality"])
             i+=1
             if sample and i > sample:
                 break
@@ -82,7 +82,20 @@ class NaturalityActions():
         for query in tqdm(self.queries):                        
             for pipeline_name, summarizer in self.summarization_pipelines:
                 summary = summarizer(query, min_length=3, max_length=max(6, int(len(query.split()) *0.5)))
-                query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format(pipeline_name)])
+                query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format(pipeline_name), "naturality"])
+            i+=1
+            if sample and i > sample:
+                break
+        return query_variations
+
+    def naturality_by_trec_desc_to_title(self, model_path, sample=None):
+        logging.info("Applying pre-trained summarization model fine-tuned for trec desc to title.")
+        summarizer = pipeline("summarization", model="{}/t5-base_from_description_to_title/".format(model_path), tokenizer="t5-base")
+        i=0
+        query_variations = []
+        for query in tqdm(self.queries):            
+            summary = summarizer(query, min_length=3, max_length=max(6, int(len(query.split()) *0.5)))
+            query_variations.append([query, summary[0]['summary_text'], "summarization_with_{}".format('t5-base_from_description_to_title'), "naturality"])
             i+=1
             if sample and i > sample:
                 break

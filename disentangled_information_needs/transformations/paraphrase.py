@@ -36,7 +36,7 @@ class ParaphraseActions():
         for query in tqdm(self.queries):
             for pipeline_name, text2text in self.paraphrase_pipelines:
                 paraphrase = text2text("paraphrase : {}? </s>".format(query), num_beams=4, max_length = 20)
-                query_variations.append([query, paraphrase[0]['generated_text'], pipeline_name])
+                query_variations.append([query, paraphrase[0]['generated_text'], pipeline_name, "paraphrase"])
             i+=1
             if sample and i > sample:
                 break
@@ -68,7 +68,7 @@ class ParaphraseActions():
         for query in tqdm(self.queries):
             for pivot_language in self.pivot_languages:
                 paraphrase = self.back_translation(query, pivot_language=pivot_language)
-                query_variations.append([query, paraphrase, 'back_translation_pivot_language_{}'.format(pivot_language)])
+                query_variations.append([query, paraphrase, 'back_translation_pivot_language_{}'.format(pivot_language), "paraphrase"])
             i+=1
             if sample and i > sample:
                 break

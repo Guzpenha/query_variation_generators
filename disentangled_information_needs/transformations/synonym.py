@@ -13,8 +13,8 @@ class SynonymActions():
             Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1),
             Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
             Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapMaskedLM(method="bert-attack", max_candidates=5, max_length=125), transformations_per_example=1),
-            Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=5, max_length=125), transformations_per_example=1)
+            # Augmenter(transformation=WordSwapMaskedLM(method="bert-attack", max_candidates=5, max_length=125), transformations_per_example=1),
+            # Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=5, max_length=125), transformations_per_example=1)
         ]
 
     def adversarial_synonym_replacement(self, sample=None):
@@ -26,7 +26,7 @@ class SynonymActions():
             for augmenter in self.augmenters:
                 augmented = augmenter.augment(query)
                 for q_variation in augmented:
-                    query_variations.append([query, q_variation, augmenter.transformation.__class__.__name__])
+                    query_variations.append([query, q_variation, augmenter.transformation.__class__.__name__, "synonym"])
             i+=1
             if sample and i > sample:
                 break
