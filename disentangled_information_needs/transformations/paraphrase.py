@@ -6,15 +6,16 @@ import logging
 import torch
 
 class ParaphraseActions():
-    def __init__(self, queries):
+    def __init__(self, queries, q_ids):
         self.queries = queries
+        self.q_ids = q_ids
         self.paraphrase_pipelines = [
             #Fine-tuned on QQP https://towardsdatascience.com/paraphrase-any-question-with-t5-text-to-text-transfer-transformer-pretrained-model-and-cbb9e35f1555
-            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=0)), 
+            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=1)), 
             #Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
-            ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=0)),
+            ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
-            ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=0))
+            ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=1))
         ]
 
         self.pivot_languages = [
@@ -22,7 +23,7 @@ class ParaphraseActions():
             'fr',
             'de'
         ]
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
         logging.info("device used for translation models: {}".format(self.device))
         self.translation_model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_418M")
         self.translation_tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_418M")
@@ -36,11 +37,12 @@ class ParaphraseActions():
         query_variations = []        
         for i in tqdm(range(0, len(self.queries), batch_size)):
             queries = self.queries[i:i+batch_size]
+            q_ids_bactch = self.q_ids[i:i+batch_size]
             queries_input = ["paraphrase : {}? </s>".format(query) for query in queries]
             for pipeline_name, text2text in self.paraphrase_pipelines:
                 paraphrases = text2text(queries_input, num_beams=4, max_length = 20)
                 for j, paraphrase in enumerate(paraphrases):
-                    query_variations.append([queries[j], paraphrase['generated_text'], pipeline_name, "paraphrase"])
+                    query_variations.append([q_ids_bactch[j], queries[j], paraphrase['generated_text'], pipeline_name, "paraphrase"])
             i+=batch_size
             if sample and i > sample:
                 break
@@ -71,7 +73,7 @@ class ParaphraseActions():
         for query in tqdm(self.queries):
             for pivot_language in self.pivot_languages:
                 paraphrase = self.back_translation(query, pivot_language=pivot_language)
-                query_variations.append([query, paraphrase, 'back_translation_pivot_language_{}'.format(pivot_language), "paraphrase"])
+                query_variations.append([self.q_ids[i], query, paraphrase, 'back_translation_pivot_language_{}'.format(pivot_language), "paraphrase"])
             i+=1
             if sample and i > sample:
                 break

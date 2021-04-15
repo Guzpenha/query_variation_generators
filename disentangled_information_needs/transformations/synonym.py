@@ -7,8 +7,9 @@ import pandas as pd
 import logging 
 
 class SynonymActions():
-    def __init__(self, queries):
+    def __init__(self, queries, q_ids):
         self.queries = queries
+        self.q_ids = q_ids
         self.augmenters = [
             Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1),
             Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
@@ -26,7 +27,7 @@ class SynonymActions():
             for augmenter in self.augmenters:
                 augmented = augmenter.augment(query)
                 for q_variation in augmented:
-                    query_variations.append([query, q_variation, augmenter.transformation.__class__.__name__, "synonym"])
+                    query_variations.append([self.q_ids[i], query, q_variation, augmenter.transformation.__class__.__name__, "synonym"])
             i+=1
             if sample and i > sample:
                 break
