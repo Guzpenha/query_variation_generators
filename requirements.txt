@@ -4,3 +4,4 @@ pandas
 ir_datasets
 textattack
 protobuf
+python-terrier

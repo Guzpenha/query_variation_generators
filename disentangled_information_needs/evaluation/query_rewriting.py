@@ -33,12 +33,12 @@ def main():
     args = parser.parse_args()
 
     query_variations = pd.read_csv(args.variations_file)
-    query_variations["original_query"] = query_variations.apply(lambda r: r['original_query'].lower()[0:-1], axis=1)
-    query_variations["variation"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower()), axis=1)
-    query_variations["query"] = query_variations["original_query"]
+    query_variations["query"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['original_query'].lower()), axis=1)
+    query_variations["variation"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower()), axis=1)    
+    query_variations['qid'] = query_variations['q_id']
 
     dataset = pt.datasets.get_dataset(args.task)
-    index_path = '{}/{}-index'.format(args.output_dir, args.task.split("/")[0].split(":")[1])
+    index_path = '{}/{}-index'.format(args.output_dir, args.task.replace('/', '-'))
     if not os.path.isdir(index_path):
         indexer = pt.index.IterDictIndexer(index_path)
         indexref = indexer.index(dataset.get_corpus_iter(), fields=('doc_id', 'text'))
@@ -47,12 +47,10 @@ def main():
     tf_idf = pt.BatchRetrieve(index, wmodel="TF_IDF")
     bm_25 = pt.BatchRetrieve(index, wmodel="BM25")
 
-    df_with_variations = query_variations.merge(dataset.get_topics('text'), on=['query'])    
-
     df_results = []
     df = pt.Experiment(
             [tf_idf,bm_25],
-            df_with_variations[['query','qid']].drop_duplicates(),
+            query_variations[['query','qid']].drop_duplicates(),
             dataset.get_qrels(),
             ['map','ndcg'])
     df['query'] = 'original_queries'
@@ -61,7 +59,7 @@ def main():
 
     for method in query_variations['method'].unique():
         print(method)
-        query_variation = df_with_variations[df_with_variations['method'] == method]
+        query_variation = query_variations[query_variations['method'] == method]
         query_variation['query'] = query_variation['variation']
         df = pt.Experiment(
             [tf_idf,bm_25],
