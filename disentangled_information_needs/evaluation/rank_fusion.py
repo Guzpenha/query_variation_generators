@@ -1,13 +1,16 @@
 from IPython import embed
+from pyterrier.utils import Utils
+from trectools import TrecRun, TrecEval, TrecQrel, fusion
+
 import pyterrier as pt
 if not pt.started():
   pt.init()
 
-import re
 import pandas as pd
 import ir_datasets
 import argparse
 import logging
+import re
 import os
 
 def main():
@@ -45,33 +48,37 @@ def main():
         indexref = indexer.index(dataset.get_corpus_iter(), fields=('doc_id', 'text'))
     index = pt.IndexFactory.of(index_path+"/data.properties")
 
-    tf_idf = pt.BatchRetrieve(index, wmodel="TF_IDF")
     bm_25 = pt.BatchRetrieve(index, wmodel="BM25")
-
-    df_results = []
+        
     df = pt.Experiment(
-            [tf_idf,bm_25],
+            [bm_25],
             query_variations[['query','qid']].drop_duplicates(),
             dataset.get_qrels(),
-            ['map','ndcg'])
-    df['query'] = 'original_queries'
+            ['map'])
     print(df)
-    df_results.append(df)    
 
+    runs = []
     for method in query_variations['method'].unique():
-        print(method)
         query_variation = query_variations[query_variations['method'] == method]
         query_variation['query'] = query_variation['variation']
-        df = pt.Experiment(
-            [tf_idf,bm_25],
-            query_variation[['qid', 'query']],
-            dataset.get_qrels(),
-            ['map','ndcg'])
-        df['query'] = 'variation_{}'.format(method)
-        print(df)
-        df_results.append(df)
-    df_results_all = pd.concat(df_results)    
-    df_results_all.to_csv("{}/query_rewriting_{}.csv".format(args.output_dir, args.task.replace("/",'-')), index=False)
+
+        res = bm_25.transform(query_variations[['query','qid']].drop_duplicates())        
+        res["system"] = "bm25_{}".format(method)
+        res["query"] = res['qid']
+        res['docid'] = res['docno']
+        res.sort_values(["query","score"], inplace=True, ascending=[True,False])
+        trec_run = TrecRun()
+        trec_run.run_data = res
+        runs.append(trec_run)
+    
+    fused_run = fusion.reciprocal_rank_fusion(runs)
+    fused_df = fused_run.run_data
+    fused_df['qid'] = fused_df['query']
+    fused_df['docno'] = fused_df['docid']
+    eval_map = Utils.evaluate(fused_df, dataset.get_qrels(), metrics=['map'])['map']
+
+    final_df = pd.concat([df, pd.DataFrame([["rank_fusion_all", eval_map]], columns = ['name', 'map'])])
+    final_df.to_csv("{}/query_fusion_{}.csv".format(args.output_dir, args.task.replace("/",'-')), index=False)
 
 if __name__ == "__main__":
     main()
