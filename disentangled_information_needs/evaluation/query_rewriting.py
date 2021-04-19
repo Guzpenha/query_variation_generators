@@ -1,7 +1,7 @@
 from IPython import embed
 import pyterrier as pt
 if not pt.started():
-  pt.init()
+  pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
 
 import re
 import pandas as pd
@@ -45,33 +45,30 @@ def main():
         indexref = indexer.index(dataset.get_corpus_iter(), fields=('doc_id', 'text'))
     index = pt.IndexFactory.of(index_path+"/data.properties")
 
-    tf_idf = pt.BatchRetrieve(index, wmodel="TF_IDF")
     bm_25 = pt.BatchRetrieve(index, wmodel="BM25")
+    rm3_pipe = bm_25 >> pt.rewrite.RM3(index) >> bm_25
+    kl_pipe =  bm_25 >> pt.rewrite.KLQueryExpansion(index) >> bm_25
 
-    df_results = []
-    df = pt.Experiment(
-            [tf_idf,bm_25],
-            query_variations[['query','qid']].drop_duplicates(),
-            dataset.get_qrels(),
-            ['map','ndcg'])
-    df['query'] = 'original_queries'
-    print(df)
-    df_results.append(df)    
-
+    variation_methods = []
+    bm25_res = []
     for method in query_variations['method'].unique():
         print(method)
         query_variation = query_variations[query_variations['method'] == method]
         query_variation['query'] = query_variation['variation']
-        df = pt.Experiment(
-            [tf_idf,bm_25],
-            query_variation[['qid', 'query']],
+
+        bm25_res.append(bm_25.transform(query_variation[['qid', 'query']]))
+        variation_methods.append("BM25+QueriesFrom{}".format(method))
+
+    metrics = ['recip_rank', 'map', 'recall_1000']
+    df_results = []
+    df = pt.Experiment(
+            [bm_25, rm3_pipe, kl_pipe] + bm25_res,
+            query_variations[['query','qid']].drop_duplicates(),
             dataset.get_qrels(),
-            ['map','ndcg'])
-        df['query'] = 'variation_{}'.format(method)
-        print(df)
-        df_results.append(df)
-    df_results_all = pd.concat(df_results)    
-    df_results_all.to_csv("{}/query_rewriting_{}.csv".format(args.output_dir, args.task.replace("/",'-')), index=False)
+            metrics,
+            baseline=0,
+            names = ["BM25", "BM25+RM3", "BM25+QE"]+variation_methods)
+    df.to_csv("{}/query_rewriting_{}.csv".format(args.output_dir, args.task.replace("/",'-')), index=False)
 
 if __name__ == "__main__":
     main()

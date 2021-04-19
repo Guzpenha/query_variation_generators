@@ -5,3 +5,4 @@ ir_datasets
 textattack
 protobuf
 python-terrier
+trectools
