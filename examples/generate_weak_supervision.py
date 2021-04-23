@@ -50,7 +50,7 @@ def main():
     na = NaturalityActions(queries, q_ids)
     transformed_queries_trec_desc_to_title = na.naturality_by_trec_desc_to_title(model_path=args.output_dir, sample=args.sample)
     transformed_queries_stop_word_removal = na.remove_stop_words(sample=args.sample)
-    transformed_queries_stop_word_and_stratified_removal = na.remove_stop_words_and_stratify_by_len(sample=args.sample)
+    # transformed_queries_stop_word_and_stratified_removal = na.remove_stop_words_and_stratify_by_len(sample=args.sample)
     transformed_queries_summarizer = na.naturality_by_summarization(sample=args.sample)
 
     sa = SynonymActions(queries, q_ids)
@@ -69,7 +69,6 @@ def main():
       transformed_queries_paraphrase_models + \
       transformed_queries_back_translation +  \
       transformed_queries_stop_word_removal +  \
-      transformed_queries_stop_word_and_stratified_removal + \
       transformed_queries_summarizer + \
       transformed_queries_trec_desc_to_title
 

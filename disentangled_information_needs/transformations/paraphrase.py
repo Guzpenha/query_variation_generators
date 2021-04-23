@@ -11,16 +11,16 @@ class ParaphraseActions():
         self.q_ids = q_ids
         self.paraphrase_pipelines = [
             #Fine-tuned on QQP https://towardsdatascience.com/paraphrase-any-question-with-t5-text-to-text-transfer-transformer-pretrained-model-and-cbb9e35f1555
-            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=1)), 
-            #Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
-            ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
+            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=1))
+            # Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
+            # ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
-            ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=1))
+            # ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=1))
         ]
 
         self.pivot_languages = [
-            'es', 
-            'fr',
+            # 'es', 
+            # 'fr',
             'de'
         ]
         self.device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
@@ -40,7 +40,7 @@ class ParaphraseActions():
             q_ids_bactch = self.q_ids[i:i+batch_size]
             queries_input = ["paraphrase : {}? </s>".format(query) for query in queries]
             for pipeline_name, text2text in self.paraphrase_pipelines:
-                paraphrases = text2text(queries_input, num_beams=4, max_length = 20)
+                paraphrases = text2text(queries_input, num_beams=4, max_length = 40)
                 for j, paraphrase in enumerate(paraphrases):
                     query_variations.append([q_ids_bactch[j], queries[j], paraphrase['generated_text'], pipeline_name, "paraphrase"])
             i+=batch_size

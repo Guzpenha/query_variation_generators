@@ -18,8 +18,9 @@ class NaturalityActions():
         self.q_ids = q_ids
         self.summarization_pipelines = [            
             ('t5-large', pipeline("summarization", model="t5-large", device=0)),
-            ('google/pegasus-large', pipeline("summarization", model="google/pegasus-large", device=0)),
-            ('facebook/bart-large-cnn', pipeline("summarization", model="facebook/bart-large-cnn", device=0))]
+            # ('google/pegasus-large', pipeline("summarization", model="google/pegasus-large", device=0)),
+            # ('facebook/bart-large-cnn', pipeline("summarization", model="facebook/bart-large-cnn", device=0))
+            ]
 
     def remove_words(self, query, pct_to_remove=0.2):
         query_splitted = query.split()

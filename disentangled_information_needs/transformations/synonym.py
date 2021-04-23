@@ -12,7 +12,7 @@ class SynonymActions():
         self.q_ids = q_ids
         self.augmenters = [
             Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
+            # Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
             Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1),
             Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=1, max_length=125), transformations_per_example=1)
         ]
