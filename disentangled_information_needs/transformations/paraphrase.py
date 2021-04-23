@@ -5,13 +5,15 @@ from tqdm import tqdm
 import logging
 import torch
 
+CUDA_DEVICE = 0
+
 class ParaphraseActions():
     def __init__(self, queries, q_ids):
         self.queries = queries
         self.q_ids = q_ids
         self.paraphrase_pipelines = [
             #Fine-tuned on QQP https://towardsdatascience.com/paraphrase-any-question-with-t5-text-to-text-transfer-transformer-pretrained-model-and-cbb9e35f1555
-            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=1))
+            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=CUDA_DEVICE))
             # Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
             # ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
@@ -23,7 +25,7 @@ class ParaphraseActions():
             # 'fr',
             'de'
         ]
-        self.device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device('cuda:{}'.format(CUDA_DEVICE) if torch.cuda.is_available() else 'cpu')
         logging.info("device used for translation models: {}".format(self.device))
         self.translation_model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_418M")
         self.translation_tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_418M")

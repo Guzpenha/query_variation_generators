@@ -12,12 +12,14 @@ import random
 
 random.seed(42)
 
+CUDA_DEVICE = 0
+
 class NaturalityActions():
     def __init__(self, queries, q_ids):
         self.queries = queries
         self.q_ids = q_ids
         self.summarization_pipelines = [            
-            ('t5-large', pipeline("summarization", model="t5-large", device=0)),
+            ('t5-large', pipeline("summarization", model="t5-large", device=CUDA_DEVICE)),
             # ('google/pegasus-large', pipeline("summarization", model="google/pegasus-large", device=0)),
             # ('facebook/bart-large-cnn', pipeline("summarization", model="facebook/bart-large-cnn", device=0))
             ]
@@ -100,7 +102,7 @@ class NaturalityActions():
 
     def naturality_by_trec_desc_to_title(self, model_path, sample=None):
         logging.info("Applying pre-trained summarization model fine-tuned for trec desc to title.")
-        summarizer = pipeline("summarization", model="{}/t5-base_from_description_to_title/".format(model_path), tokenizer="t5-base", device=0)
+        summarizer = pipeline("summarization", model="{}/t5-base_from_description_to_title/".format(model_path), tokenizer="t5-base", device=CUDA_DEVICE)
         i=0
         batch_size=16
         query_variations = []
