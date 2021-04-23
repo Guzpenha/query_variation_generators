@@ -11,8 +11,7 @@ class MispellingActions():
         self.queries = queries
         self.q_ids = q_ids
         self.augmenters = [
-            Augmenter(transformation=WordSwapNeighboringCharacterSwap(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapQWERTY(), transformations_per_example=1),
+            Augmenter(transformation=WordSwapNeighboringCharacterSwap(), transformations_per_example=1),        
             Augmenter(transformation=WordSwapRandomCharacterSubstitution(), transformations_per_example=1)
         ]
 
