@@ -6,3 +6,4 @@ textattack
 protobuf
 python-terrier
 trectools
+git+https://github.com/Georgetown-IR-Lab/OpenNIR

@@ -93,7 +93,11 @@ def main():
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="")
     parser.add_argument("--retrieval_model_name", default="BM25", type=str, required=False, 
-                        help="[BM25, ANCE]")
+                        help="[BM25, BM25+BERT, BM25+KNRM]")
+    parser.add_argument("--cutoff_threshold", default=100, type=int, required=False)
+    parser.add_argument("--train_dataset", default="irds:antique/train", type=str, required=False, 
+                        help="train dataset for [BM25+BERT, BM25+KNRM].")
+    parser.add_argument("--max_iter", default=400, type=int, required=False)
     # parser.add_argument("--ance_checkpoint", default="", type=str, required=False, 
     #                     help="ance_checkpoint from https://github.com/microsoft/ANCE/#results")                      
     args = parser.parse_args()
@@ -112,8 +116,43 @@ def main():
     index = pt.IndexFactory.of(index_path+"/data.properties")
     
     if args.retrieval_model_name == "BM25":
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25")
-        
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+    elif args.retrieval_model_name == "BM25+BERT":
+        train_ds = pt.datasets.get_dataset(args.train_dataset)
+        model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
+        if not os.path.isfile(model_path):
+            logging.info("Fitting BERT.")
+            vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2})
+            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+            retrieval_model.fit(
+                train_ds.get_topics(),
+                train_ds.get_qrels(),
+                dataset.get_topics(),
+                dataset.get_qrels())
+            vbert.to_checkpoint(model_path)
+        else:
+            logging.info("Loading trained BERT.")
+            vbert = onir_pt.reranker.from_checkpoint(model_path)
+            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+
+    elif args.retrieval_model_name == "BM25+KNRM":
+        train_ds = pt.datasets.get_dataset(args.train_dataset)
+        model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
+        if not os.path.isfile(model_path):
+            logging.info("Fitting KNRM.")
+            knrm = onir_pt.reranker('knrm', 'wordvec_hash', config={'max_train_it':args.max_iter})
+            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+            retrieval_model.fit(
+                train_ds.get_topics(),
+                train_ds.get_qrels(),
+                dataset.get_topics(),
+                dataset.get_qrels())
+            knrm.to_checkpoint(model_path)
+        else:
+            logging.info("Loading trained KNRM.")
+            knrm = onir_pt.reranker.from_checkpoint(model_path)
+            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+
     # elif args.retrieval_model_name == "ANCE":
     #     index_path_ance = '{}/{}-index-ance'.format(args.output_dir, args.task.replace('/', '-'))
     #     if not os.path.isdir(index_path_ance):
@@ -121,7 +160,7 @@ def main():
     #         indexer.index(dataset.get_corpus_iter())
     #     retrieval_model = pyterrier_ance.ANCERetrieval(args.ance_checkpoint, index_path_ance, num_results=10000)
 
-    metrics = ['recip_rank', 'map', 'recall_1000']
+    metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']
     runs_by_type = {}
     all_runs = []
 
@@ -154,7 +193,7 @@ def main():
         runs_by_type[method_type].append(trec_run)
         all_runs.append(trec_run)
 
-    logging.info("Applying rank fusion")    
+    logging.info("Applying rank fusion")
     fuse_methods = [
         ("CombSum", combos),
         ("RRF", fusion.reciprocal_rank_fusion)
