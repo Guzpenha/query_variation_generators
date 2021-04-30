@@ -17,6 +17,19 @@ import onir_pt
 import wget
 import zipfile
 
+def pair_iter(dataset):
+    ds = dataset.irds_ref()
+    doc_lookup = ds.docs_store()
+    query_lookup = {q.query_id: q for q in ds.queries_iter()}
+    while True:
+        for docpair in ds.docpairs_iter():            
+            text_a = doc_lookup.get(docpair.doc_id_a).text
+            text_b = doc_lookup.get(docpair.doc_id_b).text
+            text_query = query_lookup[docpair.query_id].text
+            yield onir_pt.TrainPair(docpair.query_id, text_query,
+                                    docpair.doc_id_a, text_a,
+                                    docpair.doc_id_b, text_b)
+
 def main():
     logging_level = logging.INFO
     logging_fmt = "%(asctime)s [%(levelname)s] %(message)s"
@@ -61,40 +74,48 @@ def main():
     if args.retrieval_model_name == "BM25":
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
     elif args.retrieval_model_name == "BM25+BERT":
-        train_ds = pt.datasets.get_dataset(args.train_dataset)
+        train_ds = pt.get_dataset(args.train_dataset)
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
         if not os.path.isfile(model_path):
             logging.info("Fitting BERT.")
-            vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2})
-            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
-            retrieval_model.fit(
-                train_ds.get_topics(),
-                train_ds.get_qrels(),
-                dataset.get_topics(),
-                dataset.get_qrels())
+            vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2,  'pre_validate': False})
+            if 'msmarco' in args.task:
+                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text')
+                validation_run = bm25(dataset.get_topics())
+                vbert.fit(va_run=validation_run, va_qrels=dataset.get_qrels(),tr_pairs=pair_iter(train_ds))
+            else:
+                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+                retrieval_model.fit(
+                    train_ds.get_topics(),
+                    train_ds.get_qrels(),
+                    dataset.get_topics(),
+                    dataset.get_qrels())
             vbert.to_checkpoint(model_path)
-        else:
-            logging.info("Loading trained BERT.")
-            vbert = onir_pt.reranker.from_checkpoint(model_path)
-            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+        logging.info("Loading trained BERT.")
+        vbert = onir_pt.reranker.from_checkpoint(model_path)
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
 
     elif args.retrieval_model_name == "BM25+KNRM":
-        train_ds = pt.datasets.get_dataset(args.train_dataset)
+        train_ds = pt.get_dataset(args.train_dataset)
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
         if not os.path.isfile(model_path):
             logging.info("Fitting KNRM.")
-            knrm = onir_pt.reranker('knrm', 'wordvec_hash', config={'max_train_it':args.max_iter})
-            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
-            retrieval_model.fit(
-                train_ds.get_topics(),
-                train_ds.get_qrels(),
-                dataset.get_topics(),
-                dataset.get_qrels())
+            knrm = onir_pt.reranker('knrm', 'wordvec_hash', config={'max_train_it':args.max_iter, 'pre_validate': False})
+            if 'msmarco' in args.task:
+                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text')
+                validation_run = bm25(dataset.get_topics())
+                knrm.fit(va_run=validation_run, va_qrels=dataset.get_qrels(),tr_pairs=pair_iter(train_ds))
+            else:
+                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+                retrieval_model.fit(
+                    train_ds.get_topics(),
+                    train_ds.get_qrels(),
+                    dataset.get_topics(),
+                    dataset.get_qrels())
             knrm.to_checkpoint(model_path)
-        else:
-            logging.info("Loading trained KNRM.")
-            knrm = onir_pt.reranker.from_checkpoint(model_path)
-            retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+        logging.info("Loading trained KNRM.")
+        knrm = onir_pt.reranker.from_checkpoint(model_path)
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
     elif args.retrieval_model_name == "BM25+T5":
         logging.info("Loading trained T5.")
         monoT5 = MonoT5ReRanker()

@@ -13,7 +13,7 @@ class ParaphraseActions():
         self.q_ids = q_ids
         self.paraphrase_pipelines = [
             #Fine-tuned on QQP https://towardsdatascience.com/paraphrase-any-question-with-t5-text-to-text-transfer-transformer-pretrained-model-and-cbb9e35f1555
-            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=CUDA_DEVICE))
+            ('ramsrigouthamg/t5_paraphraser', pipeline("text2text-generation", model = "ramsrigouthamg/t5_paraphraser", device=CUDA_DEVICE)),
             # Fine-tuned on GooglePAWS https://github.com/Vamsi995/Paraphrase-Generator
             # ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
