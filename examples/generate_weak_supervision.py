@@ -43,7 +43,7 @@ def main():
     queries = [t[1].lower() for t in dataset.queries_iter()]
     q_ids = [t[0] for t in dataset.queries_iter()]
 
-    pa = ParaphraseActions(queries, q_ids)
+    pa = ParaphraseActions(queries, q_ids, args.output_dir)
     transformed_queries_paraphrase_models = pa.seq2seq_paraphrase(sample=args.sample)
     transformed_queries_back_translation = pa.back_translation_paraphrase(sample=args.sample)
     

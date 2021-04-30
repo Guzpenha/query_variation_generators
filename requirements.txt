@@ -7,3 +7,5 @@ protobuf
 python-terrier
 trectools
 git+https://github.com/Georgetown-IR-Lab/OpenNIR
+git+https://github.com/terrierteam/pyterrier_doc2query.git
+git+https://github.com/terrierteam/pyterrier_t5

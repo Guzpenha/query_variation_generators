@@ -1,8 +1,9 @@
 from IPython import embed
 from pyterrier.utils import Utils
 from trectools import TrecRun, TrecEval, TrecQrel, fusion
+from pyterrier_t5 import MonoT5ReRanker
 
-# import pyterrier_ance
+import pyterrier_doc2query
 import pyterrier as pt
 if not pt.started():
   pt.init()
@@ -16,7 +17,8 @@ import os
 import sys
 import numpy as np
 import onir_pt
-
+import wget
+import zipfile
 
 def combos(trec_runs, strategy="sum", max_docs=1000):
     """
@@ -152,6 +154,24 @@ def main():
             logging.info("Loading trained KNRM.")
             knrm = onir_pt.reranker.from_checkpoint(model_path)
             retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+    elif args.retrieval_model_name == "BM25+T5":
+        logging.info("Loading trained T5.")
+        monoT5 = MonoT5ReRanker()
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> monoT5
+    elif args.retrieval_model_name == "BM25+docT5query":        
+        index_path_docT5query = index_path+"-docT5query"
+        if not os.path.isdir(index_path_docT5query):
+            if not os.path.exists("{}/t5-base.zip".format(args.output_dir)):
+                wget.download("https://git.uwaterloo.ca/jimmylin/doc2query-data/raw/master/T5-passage/t5-base.zip", out="{}".format(args.output_dir))
+                with zipfile.ZipFile('{}/t5-base.zip'.format(args.output_dir), 'r') as zip_ref:
+                    zip_ref.extractall(args.output_dir)
+            doc2query = pyterrier_doc2query.Doc2Query("{}/model.ckpt-1004000".format(args.output_dir), out_attr="text")
+            indexer = doc2query >> pt.index.IterDictIndexer(index_path_docT5query)
+            logging.info("Indexing with doc2query documents.")
+            indexref = indexer.index(dataset.get_corpus_iter())
+        logging.info("Loading doc2query index")
+        index = pt.IndexFactory.of(index_path_docT5query+"/data.properties")
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold
 
     # elif args.retrieval_model_name == "ANCE":
     #     index_path_ance = '{}/{}-index-ance'.format(args.output_dir, args.task.replace('/', '-'))

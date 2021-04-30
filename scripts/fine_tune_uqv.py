@@ -10,18 +10,18 @@ import nltk
 #Adapted from https://github.com/huggingface/notebooks/blob/master/examples/summarization.ipynb
 
 def main():
-    dataset = load_dataset('csv', data_files="../data/trec_desc_to_title.csv")
+    dataset = load_dataset('csv', data_files="../data/uqv100_pairs.csv")
     model_checkpoint = "t5-base" #["t5-small", "t5-base", "t5-large", "t5-3b", "t5-11b"]    
     tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 
     max_input_length = 128
     max_target_length = 64
 
-    col_from = "description"
-    col_to = "title"
+    col_from = "query_x"
+    col_to = "query_y"
 
     def preprocess_function(examples):
-        prefix = "summarize: "
+        prefix = "paraphrase: "
         inputs = [prefix + doc for doc in examples[col_from]]        
         model_inputs = tokenizer(inputs, max_length=max_input_length, truncation=True)
 
@@ -37,14 +37,14 @@ def main():
     model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint)
     batch_size = 32
     args = Seq2SeqTrainingArguments(
-        "summarization-for-trec-desc",
+        "paraphrase-fine-tuned-uqv",
         # evaluation_strategy = "epoch",
         learning_rate=2e-5,
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
         weight_decay=0.01,
         save_total_limit=3,
-        num_train_epochs=20,
+        num_train_epochs=5,
         predict_with_generate=True
         # fp16=True,
     )
@@ -80,8 +80,9 @@ def main():
         tokenizer=tokenizer,
         compute_metrics=compute_metrics
     )
+    print("Fine-tuning T5.")
     trainer.train()
-    model.save_pretrained("../data/{}_from_{}_to_{}".format(model_checkpoint, col_from, col_to))
+    model.save_pretrained("../data/{}_uqv_variation_paraphraser".format(model_checkpoint))
 
 if __name__ == "__main__":
     main()

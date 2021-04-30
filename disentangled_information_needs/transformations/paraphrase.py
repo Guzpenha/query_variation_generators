@@ -8,7 +8,7 @@ import torch
 CUDA_DEVICE = 0
 
 class ParaphraseActions():
-    def __init__(self, queries, q_ids):
+    def __init__(self, queries, q_ids, uqv_model_path):
         self.queries = queries
         self.q_ids = q_ids
         self.paraphrase_pipelines = [
@@ -18,6 +18,7 @@ class ParaphraseActions():
             # ('Vamsi/T5_Paraphrase_Paws', pipeline("text2text-generation", model = "Vamsi/T5_Paraphrase_Paws", device=1)),
             #Fine-tuned on both https://github.com/ceshine/finetuning-t5/tree/master/paraphrase
             # ('ceshine/t5-paraphrase-quora-paws', pipeline("text2text-generation", model = 'ceshine/t5-paraphrase-quora-paws', device=1))
+            ('t5_uqv_paraphraser', pipeline("text2text-generation", model="{}/t5-base_uqv_variation_paraphraser/".format(uqv_model_path), tokenizer="t5-base", device=CUDA_DEVICE))
         ]
 
         self.pivot_languages = [

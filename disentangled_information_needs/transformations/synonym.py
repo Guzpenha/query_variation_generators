@@ -1,20 +1,32 @@
 from textattack.augmentation import Augmenter
 from textattack.transformations import *
+from textattack.constraints.semantics import WordEmbeddingDistance
+from textattack.constraints.semantics.sentence_encoders import UniversalSentenceEncoder
+
 from IPython import embed
 from tqdm import tqdm
 
 import pandas as pd
 import logging 
 
+EMBEDDING_CONSTRAINT =[ WordEmbeddingDistance(min_cos_sim=0.8)]
+LM_CONSTRAINT = [UniversalSentenceEncoder(
+            threshold=0.7,
+            metric="cosine",
+            compare_against_original=True,
+            window_size=15,
+            skip_text_shorter_than_window=True,
+        )]
+
 class SynonymActions():
     def __init__(self, queries, q_ids):
         self.queries = queries
         self.q_ids = q_ids
         self.augmenters = [
-            Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1),
+            Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1, constraints=EMBEDDING_CONSTRAINT),
             # Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=1, max_length=125), transformations_per_example=1)
+            Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1, constraints=LM_CONSTRAINT),
+            Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=1, max_length=125), transformations_per_example=1, constraints=LM_CONSTRAINT)
         ]
 
     def adversarial_synonym_replacement(self, sample=None):

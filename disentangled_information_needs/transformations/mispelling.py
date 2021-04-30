@@ -1,18 +1,24 @@
 from textattack.augmentation import Augmenter
 from textattack.transformations import *
+from textattack.constraints.pre_transformation import (
+    StopwordModification,
+)
 from IPython import embed
 from tqdm import tqdm
 
 import pandas as pd
 import logging 
 
+
+CONSTRAINTS = [StopwordModification()]
+
 class MispellingActions():
     def __init__(self, queries, q_ids):
         self.queries = queries
         self.q_ids = q_ids
         self.augmenters = [
-            Augmenter(transformation=WordSwapNeighboringCharacterSwap(), transformations_per_example=1),        
-            Augmenter(transformation=WordSwapRandomCharacterSubstitution(), transformations_per_example=1)
+            Augmenter(transformation=WordSwapNeighboringCharacterSwap(), transformations_per_example=1, constraints=CONSTRAINTS),
+            Augmenter(transformation=WordSwapRandomCharacterSubstitution(), transformations_per_example=1, constraints=CONSTRAINTS)
         ]
 
     def mispelling_chars(self, sample=None):
