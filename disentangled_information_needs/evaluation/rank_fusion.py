@@ -138,11 +138,11 @@ def main():
             logging.info("Fitting BERT.")
             vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2,  'pre_validate': False})
             if 'msmarco' in args.task:
-                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text')
+                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(dataset, 'text')
                 validation_run = bm25(dataset.get_topics())
                 vbert.fit(va_run=validation_run, va_qrels=dataset.get_qrels(),tr_pairs=pair_iter(train_ds))
             else:
-                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text') >> vbert
                 retrieval_model.fit(
                     train_ds.get_topics(),
                     train_ds.get_qrels(),
@@ -160,11 +160,11 @@ def main():
             logging.info("Fitting KNRM.")
             knrm = onir_pt.reranker('knrm', 'wordvec_hash', config={'max_train_it':args.max_iter, 'pre_validate': False})
             if 'msmarco' in args.task:
-                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text')
+                bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(dataset, 'text')
                 validation_run = bm25(dataset.get_topics())
                 knrm.fit(va_run=validation_run, va_qrels=dataset.get_qrels(),tr_pairs=pair_iter(train_ds))
             else:
-                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+                retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(train_ds, 'text') >> knrm
                 retrieval_model.fit(
                     train_ds.get_topics(),
                     train_ds.get_qrels(),
@@ -192,6 +192,10 @@ def main():
         logging.info("Loading doc2query index")
         index = pt.IndexFactory.of(index_path_docT5query+"/data.properties")
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold
+    elif 'https' in args.retrieval_model_name:
+        reranker = onir_pt.reranker.from_checkpoint(args.retrieval_model_name)
+        args.retrieval_model_name = args.retrieval_model_name.split("/")[-1]
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
 
     # elif args.retrieval_model_name == "ANCE":
     #     index_path_ance = '{}/{}-index-ance'.format(args.output_dir, args.task.replace('/', '-'))
