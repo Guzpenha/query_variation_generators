@@ -10,7 +10,7 @@ import nltk
 #Adapted from https://github.com/huggingface/notebooks/blob/master/examples/summarization.ipynb
 
 def main():
-    dataset = load_dataset('csv', data_files="../data/uqv100_pairs.csv")
+    dataset = load_dataset('csv', data_files="../data/uqv100_pairs_sample_5k.csv")
     model_checkpoint = "t5-base" #["t5-small", "t5-base", "t5-large", "t5-3b", "t5-11b"]    
     tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 

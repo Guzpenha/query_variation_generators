@@ -1,9 +1,9 @@
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 REPO_DIR=/ssd/gustavo/disentangled_information_needs
 source ${REPO_DIR}/env/bin/activate
 
 OUT_DIR=${REPO_DIR}/data/
-MAX_ITER=200
+MAX_ITER=400
 
 python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:antique/train/split200-valid' \
         --output_dir $OUT_DIR/ \
@@ -23,6 +23,21 @@ python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py 
         --train_dataset "irds:antique/train" \
         --max_iter $MAX_ITER
 
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:antique/train/split200-valid' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/antique-train-split200-valid_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "BM25+T5"
+
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:antique/train/split200-valid' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/antique-train-split200-valid_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz"
+
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:antique/train/split200-valid' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/antique-train-split200-valid_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz"
+
 python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
         --output_dir $OUT_DIR/ \
         --variations_file $OUT_DIR/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv
@@ -30,7 +45,7 @@ python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py 
 python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
         --output_dir $OUT_DIR/ \
         --variations_file $OUT_DIR/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv \
-        -retrieval_model_name "BM25+BERT" \
+        --retrieval_model_name "BM25+BERT" \
         --train_dataset "irds:msmarco-passage/train" \
         --max_iter $MAX_ITER
 
@@ -40,3 +55,18 @@ python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py 
         --retrieval_model_name "BM25+KNRM" \
         --train_dataset "irds:msmarco-passage/train" \
         --max_iter $MAX_ITER
+
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "BM25+T5"
+
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz"
+
+python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz"

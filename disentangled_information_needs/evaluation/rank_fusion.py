@@ -193,7 +193,10 @@ def main():
         index = pt.IndexFactory.of(index_path_docT5query+"/data.properties")
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold
     elif 'https' in args.retrieval_model_name:
-        reranker = onir_pt.reranker.from_checkpoint(args.retrieval_model_name)
+        config = {}
+        if 'epic' in args.retrieval_model_name:
+            config = {'batch_size': 4}
+        reranker = onir_pt.reranker.from_checkpoint(args.retrieval_model_name, config=config)
         args.retrieval_model_name = args.retrieval_model_name.split("/")[-1]
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
 

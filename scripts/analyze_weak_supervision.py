@@ -47,6 +47,7 @@ def main():
         df['query_equal_variation'] = df.apply(lambda r: r['original_query'] == r['variation'], axis=1)
 
         logging.info("Exact matches: {} out of {}.".format(df[df['query_equal_variation']].shape[0], df.shape[0]))
+        print(df.groupby(["method"]).count()['q_id'])
         print(df[df['query_equal_variation']].groupby(["method", "query_equal_variation"]).count()['q_id'])
         
         df["variation_len_change"] = df.apply(lambda r: (len(r['variation'].split(" "))-len(r['original_query'].split(" "))), axis=1)
