@@ -1,7 +1,6 @@
 from IPython import embed
 from pyterrier_t5 import MonoT5ReRanker
 
-import pyterrier_doc2query
 import pyterrier as pt
 if not pt.started():
   pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
@@ -73,6 +72,9 @@ def main():
 
     if args.retrieval_model_name == "BM25":
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+    elif args.retrieval_model_name == "BM25+RM3":
+        bm_25 = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+        retrieval_model = bm_25 >> pt.rewrite.RM3(index) >> bm_25
     elif args.retrieval_model_name == "BM25+BERT":
         train_ds = pt.get_dataset(args.train_dataset)
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
@@ -140,8 +142,7 @@ def main():
             config = {'batch_size': 4}
         reranker = onir_pt.reranker.from_checkpoint(args.retrieval_model_name, config=config)
         args.retrieval_model_name = args.retrieval_model_name.split("/")[-1]
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
-    # rm3_pipe = bm_25 >> pt.rewrite.RM3(index) >> bm_25
+        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker    
     # kl_pipe =  bm_25 >> pt.rewrite.KLQueryExpansion(index) >> bm_25
 
     variation_methods = []
@@ -168,7 +169,7 @@ def main():
 
     logging.info("Running remaining experiments and calculating metrics.")
     metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']
-    df_results = []
+    
     df = pt.Experiment(
             # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
             [retrieval_model] + res_per_variation,
@@ -178,6 +179,23 @@ def main():
             baseline=0,
             names = [args.retrieval_model_name]+variation_methods)
     df.to_csv("{}/query_rewriting_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
+
+    df_per_q = pt.Experiment(
+            # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
+            [retrieval_model] + res_per_variation,
+            query_variations[['query','qid']].drop_duplicates(),
+            dataset.get_qrels(),
+            metrics,
+            perquery = True,
+            names = [args.retrieval_model_name]+variation_methods)
+
+    query_variations['name'] = query_variations.apply(lambda r, n=args.retrieval_model_name: n+"+QueriesFrom"+r['method'], axis=1)
+    query_variations['qid'] = query_variations['q_id'].astype(str)
+    only_valid = df_per_q.merge(query_variations[query_variations['valid']][['qid', 'name', 'valid']], on=['qid', 'name'])
+    only_valid_with_baseline = only_valid.merge(df_per_q[df_per_q['name']==args.retrieval_model_name], on=['qid', 'measure'])
+    only_valid_with_baseline["decrease"] = only_valid_with_baseline['value_x'] - only_valid_with_baseline['value_y']
+    only_valid_with_baseline["decrease_percentage"] = only_valid_with_baseline['decrease']/only_valid_with_baseline['value_y']
+    only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
 
 if __name__ == "__main__":
     main()

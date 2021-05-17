@@ -29,7 +29,7 @@ def main():
     path = "/home/guzpenha/personal/disentangled_information_needs/data/results/"
     # task = "msmarco-passage-trec-dl"
     task='antique'
-    metric = 'map'
+    metric = 'ndcg_cut_10'
 
     _, _, filenames = next(walk(path))
     dfs = []
@@ -50,12 +50,13 @@ def main():
     df_all = functools.reduce(lambda df1, df2: df1.join(df2), dfs)    
     # embed()
     df_all = df_all[["{}_BM25".format(metric), "p_BM25", #"{}_BM25+docT5query".format(metric), "p_BM25+docT5query",
+                "{}_BM25+RM3".format(metric), "p_BM25+RM3",
                 "{}_BM25+KNRM".format(metric), "p_BM25+KNRM",
                 "{}_msmarco.convknrm.seed42.tar.gz".format(metric), "p_msmarco.convknrm.seed42.tar.gz",
                 "{}_msmarco.epic.seed42.tar.gz".format(metric), "p_msmarco.epic.seed42.tar.gz",
                 "{}_BM25+BERT".format(metric), "p_BM25+BERT",
                  "{}_BM25+T5".format(metric), "p_BM25+T5"]]    
-    df_all.T.round(4).to_csv("{}fusion_table_{}.csv".format(path, task), sep='\t')    
+    df_all.round(4).to_csv("{}fusion_table_{}.csv".format(path, task), sep='\t')    
 
 if __name__ == "__main__":
     main()

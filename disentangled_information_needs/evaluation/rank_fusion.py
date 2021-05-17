@@ -3,10 +3,9 @@ from pyterrier.utils import Utils
 from trectools import TrecRun, TrecEval, TrecQrel, fusion
 from pyterrier_t5 import MonoT5ReRanker
 
-import pyterrier_doc2query
 import pyterrier as pt
 if not pt.started():
-  pt.init()
+  pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
 
 import pandas as pd
 import ir_datasets
@@ -120,7 +119,9 @@ def main():
     query_variations["query"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['original_query'].lower()), axis=1)
     query_variations["variation"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower()), axis=1)
     query_variations["variation"] = query_variations.apply(lambda r: r['query'] if r['variation'].strip() == "" else r['variation'], axis=1)
-    query_variations['qid'] = query_variations['q_id'].astype(str)
+    query_variations["method"] = query_variations.apply(lambda r: 'paraphrase' if r['method'] == "synonym" else r['method'], axis=1)
+    # query_variations["variation"] = query_variations.apply(lambda r: r['query'] if not r['valid'] else r['variation'], axis=1)
+    query_variations['qid'] = query_variations['q_id'].astype(str)    
 
     dataset = pt.datasets.get_dataset(args.task)
     index_path = '{}/{}-index'.format(args.output_dir, args.task.replace('/', '-'))
@@ -131,6 +132,9 @@ def main():
     
     if args.retrieval_model_name == "BM25":
         retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+    elif args.retrieval_model_name == "BM25+RM3":
+        bm_25 = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+        retrieval_model = bm_25 >> pt.rewrite.RM3(index) >> bm_25
     elif args.retrieval_model_name == "BM25+BERT":
         train_ds = pt.get_dataset(args.train_dataset)
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
@@ -238,6 +242,7 @@ def main():
         if method_type not in runs_by_type:
             runs_by_type[method_type] = []
         runs_by_type[method_type].append(trec_run)
+        # if method_type != 'mispelling' and method_type != 'ordering':
         all_runs.append(trec_run)
 
     logging.info("Applying rank fusion")
@@ -249,7 +254,8 @@ def main():
     final_df_all = []
     for fusion_name, f in fuse_methods:
         logging.info("Fusing with {}".format(fusion_name))        
-        fused_run = f(all_runs + [trec_run_standard_queries])
+        # fused_run = f(all_runs + [trec_run_standard_queries])
+        fused_run = f(all_runs)
         if fusion_name == "RRF":
             fused_df_all = fused_run.run_data
         elif fusion_name == "CombSum":
@@ -259,9 +265,10 @@ def main():
         fused_df_all = fused_df_all[["qid", "docid", "docno", "score", "rank"]]    
 
         fused_by_cat = []
-        for cat in runs_by_type.keys():
+        for cat in [c for c in runs_by_type.keys() if c != 'ordering']:
             logging.info("Applying rank fusion for cat {}".format(cat))
-            fused_run = f(runs_by_type[cat] + [trec_run_standard_queries])
+            # fused_run = f(runs_by_type[cat] + [trec_run_standard_queries])
+            fused_run = f(runs_by_type[cat])
             if fusion_name == "CombSum":
                 fused_df = fused_run
             else:
@@ -278,7 +285,7 @@ def main():
                 metrics,
                 baseline=0,
                 names=["{}".format(args.retrieval_model_name), 
-                "{}+{}_ALL".format(args.retrieval_model_name, fusion_name)] + ["{}+{}_{}".format(args.retrieval_model_name, fusion_name, cat) for cat in runs_by_type.keys()])
+                "{}+{}_ALL".format(args.retrieval_model_name, fusion_name)] + ["{}+{}_{}".format(args.retrieval_model_name, fusion_name, cat) for cat in runs_by_type.keys() if cat != 'ordering'])
         final_df_all.append(final_df)
     final_df_all = pd.concat(final_df_all).drop_duplicates()
     final_df_all.to_csv("{}/query_fusion_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)

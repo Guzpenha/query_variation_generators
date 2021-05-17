@@ -18,31 +18,35 @@ def main():
         logging.basicConfig(level=logging_level, format=logging_fmt)
 
     dfs = [
-        ('antique', pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/antique-train-split200-valid_weakly_supervised_variations_sample_None.csv")),
-        ('msmarco', pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv"))
+        ('antique', pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/results/antique-train-split200-valid_weakly_supervised_variations_sample_None.csv")),
+        ('msmarco', pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/results/msmarco-passage-trec-dl-2019-judged_weakly_supervised_variations_sample_None.csv"))
     ]
 
     for task, df in dfs:
         logging.info(task)
         logging.info("queries: {}".format(len(df['q_id'].unique())))
 
-        df["original_query"] = df.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['original_query'].lower().strip()), axis=1)
-        df["variation"] = df.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower().strip()), axis=1)
-        
-        df['is_valid'] = " "
-        df['follows_subgroup'] = " "
-        df.loc[df['transformation_type'] == 'mispelling', 'is_valid'] = "yes"
-        df.loc[df['transformation_type'] == 'ordering', 'is_valid'] = "yes"
-        df.loc[df['method'] == 'naturality_by_removing_stop_words', 'is_valid'] = "yes"
-        df.loc[df['transformation_type'] == 'mispelling', 'follows_subgroup'] = "yes"
-        df.loc[df['transformation_type'] == 'ordering', 'follows_subgroup'] = "yes"
-        df.loc[df['method'] == 'naturality_by_removing_stop_words', 'follows_subgroup'] = "yes"
+        df["original_query"] = df.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['original_query'].lower().strip()).strip(), axis=1)
+        df["variation"] = df.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower().strip()).strip(), axis=1)        
+        df = df[df["method"]!="WordSwapMaskedLM"]
 
-        df.loc[df['original_query'] == df['variation'], 'is_valid'] = "no"
-        df.loc[df['original_query'] == df['variation'], 'follows_subgroup'] = "no"
-        df[["q_id", "method", "transformation_type", "original_query", "variation", "is_valid", "follows_subgroup"]].\
+        df.loc[df['transformation_type'] == 'mispelling', 'valid'] = "TRUE"
+        df.loc[df['transformation_type'] == 'ordering', 'valid'] = "TRUE"
+        df.loc[df['method'] == 'naturality_by_removing_stop_words', 'valid'] = "TRUE"
+        df.loc[df['transformation_type'] == 'mispelling', 'follow_category'] = "TRUE"
+        df.loc[df['transformation_type'] == 'ordering', 'follow_category'] = "TRUE"
+        df.loc[df['method'] == 'naturality_by_removing_stop_words', 'follow_category'] = "TRUE"
+
+        df.loc[df['original_query'] == df['variation'], 'valid'] = "FALSE"
+        df.loc[df['original_query'] == df['variation'], 'follow_category'] = "FALSE"
+        df["dataset"] = task
+        df[["dataset", "q_id", "method", "transformation_type", "original_query", "variation", "valid", "follow_category"]][df["valid"].isnull()].\
             sort_values(by=["transformation_type", "method"]).\
-            to_csv("query_variations_{}.csv".format(task), sep='\t', index=False)
+            to_csv("../data/results/query_variations_{}_to_label.csv".format(task), sep='\t', index=False)
+
+        df[["dataset", "q_id", "method", "transformation_type", "original_query", "variation", "valid", "follow_category"]][~df["valid"].isnull()].\
+            sort_values(by=["transformation_type", "method"]).\
+            to_csv("../data/results/query_variations_{}_labeled_auto.csv".format(task), sep='\t', index=False)
 
         df['query_equal_variation'] = df.apply(lambda r: r['original_query'] == r['variation'], axis=1)
 

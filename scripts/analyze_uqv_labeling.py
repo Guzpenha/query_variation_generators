@@ -30,8 +30,7 @@ def main():
     common_ids = functools.reduce(lambda df1, df2: df1.join(df2, rsuffix='_r', how='inner'), dfs)
     common_ids.columns = ['Generalization/Specialization_0', 'Aspect Change_0', 'Paraphrasing_0', 'Naturality_0', 'Word ordering_0'] + \
                          ['Generalization/Specialization_1', 'Aspect Change_1', 'Paraphrasing_1', 'Naturality_1', 'Word ordering_1'] + \
-                         ['Generalization/Specialization_2', 'Aspect Change_2', 'Paraphrasing_2', 'Naturality_2', 'Word ordering_2']    
-
+                         ['Generalization/Specialization_2', 'Aspect Change_2', 'Paraphrasing_2', 'Naturality_2', 'Word ordering_2']        
     all_f = []
     for column in ['Generalization/Specialization', 'Aspect Change', 'Paraphrasing', 'Naturality', 'Word ordering']:
         m = []

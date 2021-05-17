@@ -28,8 +28,8 @@ class SynonymActions():
         self.augmenters = [
             Augmenter(transformation=WordSwapEmbedding(), transformations_per_example=1, constraints=EMBEDDING_CONSTRAINT),
             # Augmenter(transformation=WordSwapHowNet(), transformations_per_example=1),
-            Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1, constraints=LM_CONSTRAINT),
-            Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=15, max_length=125), transformations_per_example=1, constraints=LM_CONSTRAINT)
+            Augmenter(transformation=WordSwapWordNet(), transformations_per_example=1, constraints=LM_CONSTRAINT) #,
+            # Augmenter(transformation=WordSwapMaskedLM(method="bae", max_candidates=15, max_length=125), transformations_per_example=1, constraints=LM_CONSTRAINT)
         ]
 
     def adversarial_synonym_replacement(self, sample=None):

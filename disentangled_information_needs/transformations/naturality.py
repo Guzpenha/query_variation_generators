@@ -18,8 +18,8 @@ class NaturalityActions():
     def __init__(self, queries, q_ids):
         self.queries = queries
         self.q_ids = q_ids
-        self.summarization_pipelines = [            
-            ('t5-large', pipeline("summarization", model="t5-large", device=CUDA_DEVICE)),
+        self.summarization_pipelines = [
+            ('t5-base', pipeline("summarization", model="t5-base", device=CUDA_DEVICE)),
             # ('google/pegasus-large', pipeline("summarization", model="google/pegasus-large", device=0)),
             # ('facebook/bart-large-cnn', pipeline("summarization", model="facebook/bart-large-cnn", device=0))
             ]

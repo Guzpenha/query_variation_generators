@@ -18,7 +18,8 @@ class MispellingActions():
         self.q_ids = q_ids
         self.augmenters = [
             Augmenter(transformation=WordSwapNeighboringCharacterSwap(), transformations_per_example=1, constraints=CONSTRAINTS),
-            Augmenter(transformation=WordSwapRandomCharacterSubstitution(), transformations_per_example=1, constraints=CONSTRAINTS)
+            Augmenter(transformation=WordSwapRandomCharacterSubstitution(), transformations_per_example=1, constraints=CONSTRAINTS),
+            Augmenter(transformation=WordSwapQWERTY(), transformations_per_example=1, constraints=CONSTRAINTS),
         ]
 
     def mispelling_chars(self, sample=None):
@@ -28,7 +29,10 @@ class MispellingActions():
         query_variations = []
         for query in tqdm(self.queries):
             for augmenter in self.augmenters:
-                augmented = augmenter.augment(query)
+                try:
+                    augmented = augmenter.augment(query)
+                except: #empty error for QWERTY.
+                    augmented = [query]
                 for q_variation in augmented:
                     query_variations.append([self.q_ids[i], query, q_variation, augmenter.transformation.__class__.__name__, "mispelling"])
             i+=1
