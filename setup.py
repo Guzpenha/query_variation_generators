@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="disentangled_information_needs",
     version="0.0.1",
-    author="Gustavo Penha",
-    author_email="guzpenha10@gmail.com",
+    author="",
+    author_email="",
     description="A library for query understanding using disentanglement learning.",
     long_description=long_description,
     long_description_content_type="text/markdown",
