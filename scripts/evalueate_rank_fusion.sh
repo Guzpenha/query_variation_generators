@@ -48,40 +48,40 @@ python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --ta
         --variations_file $OUT_DIR/$VARIATIONS_FILE_ANTIQUE \
         --retrieval_model_name "https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz"
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "BM25+RM3"
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "BM25+RM3"
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "BM25+BERT" \
-#         --train_dataset "irds:msmarco-passage/train" \
-#         --max_iter $MAX_ITER
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "BM25+BERT" \
+        --train_dataset "irds:msmarco-passage/train" \
+        --max_iter $MAX_ITER
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "BM25+KNRM" \
-#         --train_dataset "irds:msmarco-passage/train" \
-#         --max_iter $MAX_ITER
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "BM25+KNRM" \
+        --train_dataset "irds:msmarco-passage/train" \
+        --max_iter $MAX_ITER
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "BM25+T5"
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "BM25+T5"
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz"
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz"
 
-# python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
-#         --output_dir $OUT_DIR/ \
-#         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
-#         --retrieval_model_name "https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz"
+python ${REPO_DIR}/disentangled_information_needs/evaluation/rank_fusion.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
+        --output_dir $OUT_DIR/ \
+        --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
+        --retrieval_model_name "https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz"
