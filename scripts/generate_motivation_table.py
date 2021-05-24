@@ -44,26 +44,29 @@ def main():
     # args = parser.parse_args()
     path = "/home/guzpenha/personal/disentangled_information_needs/data/results/"
     task = "msmarco-passage-trec-dl"
-    
-    metric = 'ndcg_cut_10'
-
-    _, _, filenames = next(walk(path))
-    dfs = []
-    df_count = []
-    for f in filenames:
-        if 'query_rewriting' in f and 'per_query' in f and 'BERT' in f and task in f:
-           df = pd.read_csv(path+f)                      
-           df_count = df[df['measure']==metric].groupby(["name_x"])['qid'].count().reset_index()
-        #    df_count["name_x"] = df_count.apply(lambda r: "QueriesFrom"+r['name_x'].split("QueriesFrom")[-1], axis=1)
-           df_count.columns = ['name_x', 'count_queries']
-           df['decrease_percentage'] = df['decrease_percentage'] * 100        
-           df["name_x"] = df.apply(lambda r: r['name_x'].split("QueriesFrom")[-1], axis=1)
+            
+    df = pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/results/query_rewriting_irds:msmarco-passage-trec-dl-2019-judged_model_BM25+BERT_per_query.csv")
+    df['decrease_percentage'] = df['decrease_percentage'] * 100        
+    df["name_x"] = df.apply(lambda r: r['name_x'].split("QueriesFrom")[-1], axis=1)
     
     df_variations = pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/manual_annotations/variations_trec2019_labeled.csv")    
     df_both = df.merge(df_variations[['q_id', 'method', 'original_query', 'variation']], left_on=["qid","name_x"], right_on=["q_id", "method"])
     df_both = df_both[df_both['measure']=='ndcg_cut_10']
     df_both[df_both['valid']].sort_values(["name_x", "decrease"]).to_csv("{}motivation_table_{}.csv".format(path, task), sep='\t', index=False)
+
+    
     embed()
+    
+    task = "antique"
+    df = pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/results/query_rewriting_irds:antique-train-split200-valid_model_BM25+BERT_per_query.csv")
+    df['decrease_percentage'] = df['decrease_percentage'] * 100        
+    df["name_x"] = df.apply(lambda r: r['name_x'].split("QueriesFrom")[-1], axis=1)
+    
+    df_variations = pd.read_csv("/home/guzpenha/personal/disentangled_information_needs/data/manual_annotations/variations_antique_labeled.csv")    
+    df_both = df.merge(df_variations[['q_id', 'method', 'original_query', 'variation']], left_on=["qid","name_x"], right_on=["q_id", "method"])
+    df_both = df_both[df_both['measure']=='ndcg_cut_10']
+    df_both[df_both['valid']].sort_values(["name_x", "decrease"]).to_csv("{}motivation_table_{}.csv".format(path, task), sep='\t', index=False)
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,457 @@
+dataset,q_id,method,transformation_type,original_query,variation,valid,follow_category
+trec-dl-2019,1037798,summarization_with_t5-base,naturality,who is robert gray,robert gray is,TRUE,TRUE
+trec-dl-2019,1063750,summarization_with_t5-base,naturality,why did the us volunterilay enter ww1,why did the us volunteri,FALSE,TRUE
+trec-dl-2019,1103812,summarization_with_t5-base,naturality,who formed the commonwealth of independent states,the commonwealth of independent,FALSE,FALSE
+trec-dl-2019,1106007,summarization_with_t5-base,naturality,define visceral,visceral,TRUE,TRUE
+trec-dl-2019,1110199,summarization_with_t5-base,naturality,what is wifi vs bluetooth,wifi vs bluetooth  what,TRUE,TRUE
+trec-dl-2019,1112341,summarization_with_t5-base,naturality,what is the daily life of thai people,thai people live,TRUE,TRUE
+trec-dl-2019,1113437,summarization_with_t5-base,naturality,what is physical description of spruce,spruce is a,TRUE,TRUE
+trec-dl-2019,1114646,summarization_with_t5-base,naturality,what is famvir prescribed for,famvir is a,TRUE,TRUE
+trec-dl-2019,1114819,summarization_with_t5-base,naturality,what is durable medical equipment consist of,durable medical equipment consist of,TRUE,TRUE
+trec-dl-2019,1115776,summarization_with_t5-base,naturality,what is an aml surveillance analyst,aml surveillance analyst  what is,TRUE,FALSE
+trec-dl-2019,1117099,summarization_with_t5-base,naturality,what is a active margin,what is a active,FALSE,FALSE
+trec-dl-2019,1121402,summarization_with_t5-base,naturality,what can contour plowing reduce,contour plowing  what can contour,FALSE,FALSE
+trec-dl-2019,1121709,summarization_with_t5-base,naturality,what are the three percenters,what are the three percent,FALSE,FALSE
+trec-dl-2019,1124210,summarization_with_t5-base,naturality,tracheids are part of,tracheids are,TRUE,TRUE
+trec-dl-2019,1129237,summarization_with_t5-base,naturality,hydrogen is a liquid below what temperature,hydrogen is a liquid below what,FALSE,FALSE
+trec-dl-2019,1133167,summarization_with_t5-base,naturality,how is the weather in jamaica,the weather in jamaica is,TRUE,TRUE
+trec-dl-2019,131843,summarization_with_t5-base,naturality,definition of a sigmet,sigmet  what is,TRUE,FALSE
+trec-dl-2019,146187,summarization_with_t5-base,naturality,difference between a mcdouble and a double cheeseburger,mcdouble and double cheese,TRUE,TRUE
+trec-dl-2019,148538,summarization_with_t5-base,naturality,difference between rn and bsn,rn and bs,FALSE,TRUE
+trec-dl-2019,156493,summarization_with_t5-base,naturality,do goldfish grow,goldfish grow,TRUE,TRUE
+trec-dl-2019,168216,summarization_with_t5-base,naturality,does legionella pneumophila cause pneumonia,legionella pneumophila,FALSE,TRUE
+trec-dl-2019,207786,summarization_with_t5-base,naturality,how are some sharks warm blooded,how are some sharks warm blood,TRUE,FALSE
+trec-dl-2019,264014,summarization_with_t5-base,naturality,how long is life cycle of flea,flea life cycle  how long,TRUE,FALSE
+trec-dl-2019,359349,summarization_with_t5-base,naturality,how to find the midsegment of a trapezoid,how to find the midse,FALSE,FALSE
+trec-dl-2019,405717,summarization_with_t5-base,naturality,is cdg airport in main paris,cdg airport in main,FALSE,FALSE
+trec-dl-2019,451602,summarization_with_t5-base,naturality,medicare s definition of mechanical ventilation,medicare s definition of mechanical,FALSE,FALSE
+trec-dl-2019,47923,summarization_with_t5-base,naturality,axon terminals or synaptic knob definition,axon terminals or,FALSE,FALSE
+trec-dl-2019,527433,summarization_with_t5-base,naturality,types of dysarthria from cerebral palsy,types of dysarthri,FALSE,FALSE
+trec-dl-2019,573724,summarization_with_t5-base,naturality,what are the social determinants of health,social determinants of health,TRUE,TRUE
+trec-dl-2019,833860,summarization_with_t5-base,naturality,what is the most popular food in switzerland,the most popular food in s,FALSE,FALSE
+trec-dl-2019,855410,summarization_with_t5-base,naturality,what is theraderm used for,theraderm is a,TRUE,TRUE
+trec-dl-2019,87181,summarization_with_t5-base,naturality,causes of left ventricular hypertrophy,links ventricular hypertrophy,FALSE,FALSE
+trec-dl-2019,915593,summarization_with_t5-base,naturality,what types of food can you cook sous vide,what types of food can you cook,FALSE,FALSE
+trec-dl-2019,962179,summarization_with_t5-base,naturality,when was the salvation army founded,the salvation army was founded in 18,FALSE,FALSE
+trec-dl-2019,1037798,summarization_with_t5-base_from_description_to_title,naturality,who is robert gray,robert gray,TRUE,TRUE
+trec-dl-2019,1063750,summarization_with_t5-base_from_description_to_title,naturality,why did the us volunterilay enter ww1,volunterilay ww,FALSE,FALSE
+trec-dl-2019,1103812,summarization_with_t5-base_from_description_to_title,naturality,who formed the commonwealth of independent states,commonwealth of independent states,TRUE,TRUE
+trec-dl-2019,1106007,summarization_with_t5-base_from_description_to_title,naturality,define visceral,visceral,TRUE,TRUE
+trec-dl-2019,1110199,summarization_with_t5-base_from_description_to_title,naturality,what is wifi vs bluetooth,wifi vs bluetooth,TRUE,TRUE
+trec-dl-2019,1112341,summarization_with_t5-base_from_description_to_title,naturality,what is the daily life of thai people,thai life,TRUE,TRUE
+trec-dl-2019,1113437,summarization_with_t5-base_from_description_to_title,naturality,what is physical description of spruce,spruce physical description,TRUE,TRUE
+trec-dl-2019,1114646,summarization_with_t5-base_from_description_to_title,naturality,what is famvir prescribed for,famvir,TRUE,TRUE
+trec-dl-2019,1114819,summarization_with_t5-base_from_description_to_title,naturality,what is durable medical equipment consist of,durable medical equipment,TRUE,TRUE
+trec-dl-2019,1115776,summarization_with_t5-base_from_description_to_title,naturality,what is an aml surveillance analyst,aml surveillance analyst,TRUE,TRUE
+trec-dl-2019,1117099,summarization_with_t5-base_from_description_to_title,naturality,what is a active margin,active margin,TRUE,TRUE
+trec-dl-2019,1121402,summarization_with_t5-base_from_description_to_title,naturality,what can contour plowing reduce,contour plowing,TRUE,TRUE
+trec-dl-2019,1121709,summarization_with_t5-base_from_description_to_title,naturality,what are the three percenters,three percenters,TRUE,TRUE
+trec-dl-2019,1124210,summarization_with_t5-base_from_description_to_title,naturality,tracheids are part of,tracheoids,TRUE,TRUE
+trec-dl-2019,1129237,summarization_with_t5-base_from_description_to_title,naturality,hydrogen is a liquid below what temperature,hydrogen liquid below what temperature,TRUE,TRUE
+trec-dl-2019,1133167,summarization_with_t5-base_from_description_to_title,naturality,how is the weather in jamaica,jamaica weather,TRUE,TRUE
+trec-dl-2019,130510,summarization_with_t5-base_from_description_to_title,naturality,definition declaratory judgment,declaratory judgment,TRUE,TRUE
+trec-dl-2019,131843,summarization_with_t5-base_from_description_to_title,naturality,definition of a sigmet,sigmet,TRUE,TRUE
+trec-dl-2019,146187,summarization_with_t5-base_from_description_to_title,naturality,difference between a mcdouble and a double cheeseburger,mcdouble cheeseburger,TRUE,TRUE
+trec-dl-2019,148538,summarization_with_t5-base_from_description_to_title,naturality,difference between rn and bsn,difference between rn and,FALSE,FALSE
+trec-dl-2019,156493,summarization_with_t5-base_from_description_to_title,naturality,do goldfish grow,goldfish,TRUE,TRUE
+trec-dl-2019,168216,summarization_with_t5-base_from_description_to_title,naturality,does legionella pneumophila cause pneumonia,legionella pneumophila,FALSE,FALSE
+trec-dl-2019,182539,summarization_with_t5-base_from_description_to_title,naturality,example of monotonic function,monotonic function,TRUE,TRUE
+trec-dl-2019,183378,summarization_with_t5-base_from_description_to_title,naturality,exons definition biology,exons biology,TRUE,TRUE
+trec-dl-2019,19335,summarization_with_t5-base_from_description_to_title,naturality,anthropological definition of environment,environment anthropology,TRUE,TRUE
+trec-dl-2019,207786,summarization_with_t5-base_from_description_to_title,naturality,how are some sharks warm blooded,sharks warm blooded,TRUE,TRUE
+trec-dl-2019,264014,summarization_with_t5-base_from_description_to_title,naturality,how long is life cycle of flea,flea life cycle,TRUE,TRUE
+trec-dl-2019,359349,summarization_with_t5-base_from_description_to_title,naturality,how to find the midsegment of a trapezoid,trapezoidal midseg,TRUE,TRUE
+trec-dl-2019,405717,summarization_with_t5-base_from_description_to_title,naturality,is cdg airport in main paris,paris cdg airport,TRUE,TRUE
+trec-dl-2019,443396,summarization_with_t5-base_from_description_to_title,naturality,lps laws definition,lps laws,TRUE,TRUE
+trec-dl-2019,451602,summarization_with_t5-base_from_description_to_title,naturality,medicare s definition of mechanical ventilation,medicare mechanical ventilation,TRUE,TRUE
+trec-dl-2019,47923,summarization_with_t5-base_from_description_to_title,naturality,axon terminals or synaptic knob definition,axon terminals or,FALSE,FALSE
+trec-dl-2019,489204,summarization_with_t5-base_from_description_to_title,naturality,right pelvic pain causes,pelvic pain,FALSE,FALSE
+trec-dl-2019,527433,summarization_with_t5-base_from_description_to_title,naturality,types of dysarthria from cerebral palsy,cerebral palsy dysarthr,TRUE,TRUE
+trec-dl-2019,573724,summarization_with_t5-base_from_description_to_title,naturality,what are the social determinants of health,social determinants of health,TRUE,TRUE
+trec-dl-2019,833860,summarization_with_t5-base_from_description_to_title,naturality,what is the most popular food in switzerland,food in switzerland,TRUE,TRUE
+trec-dl-2019,855410,summarization_with_t5-base_from_description_to_title,naturality,what is theraderm used for,theraderm,TRUE,TRUE
+trec-dl-2019,87181,summarization_with_t5-base_from_description_to_title,naturality,causes of left ventricular hypertrophy,left ventricular hypertrophy,FALSE,FALSE
+trec-dl-2019,87452,summarization_with_t5-base_from_description_to_title,naturality,causes of military suicide,military suicide,TRUE,TRUE
+trec-dl-2019,915593,summarization_with_t5-base_from_description_to_title,naturality,what types of food can you cook sous vide,sous vide food,TRUE,TRUE
+trec-dl-2019,962179,summarization_with_t5-base_from_description_to_title,naturality,when was the salvation army founded,salvation army,TRUE,TRUE
+trec-dl-2019,1037798,back_translation_pivot_language_de,paraphrase,who is robert gray,who is robert grey,FALSE,FALSE
+trec-dl-2019,104861,back_translation_pivot_language_de,paraphrase,cost of interior concrete flooring,cost of internal concrete,FALSE,FALSE
+trec-dl-2019,1063750,back_translation_pivot_language_de,paraphrase,why did the us volunterilay enter ww1,why the u s  volunterilay entered ww1,TRUE,TRUE
+trec-dl-2019,1103812,back_translation_pivot_language_de,paraphrase,who formed the commonwealth of independent states,the common wealth of independent states,FALSE,FALSE
+trec-dl-2019,1106007,back_translation_pivot_language_de,paraphrase,define visceral,do you define visceral,TRUE,TRUE
+trec-dl-2019,1112341,back_translation_pivot_language_de,paraphrase,what is the daily life of thai people,what is the daily life of the thai people,TRUE,TRUE
+trec-dl-2019,1113437,back_translation_pivot_language_de,paraphrase,what is physical description of spruce,what is the physical description of spruce,TRUE,TRUE
+trec-dl-2019,1114819,back_translation_pivot_language_de,paraphrase,what is durable medical equipment consist of,what is sustainable medical equipment,TRUE,TRUE
+trec-dl-2019,1115776,back_translation_pivot_language_de,paraphrase,what is an aml surveillance analyst,what is an aml monitoring analyst,TRUE,TRUE
+trec-dl-2019,1117099,back_translation_pivot_language_de,paraphrase,what is a active margin,what is an active margin,TRUE,TRUE
+trec-dl-2019,1121402,back_translation_pivot_language_de,paraphrase,what can contour plowing reduce,what can reduce contour plowing,FALSE,FALSE
+trec-dl-2019,1121709,back_translation_pivot_language_de,paraphrase,what are the three percenters,what are the three percent,TRUE,TRUE
+trec-dl-2019,1129237,back_translation_pivot_language_de,paraphrase,hydrogen is a liquid below what temperature,hydrogen is a fluid under which temperature,TRUE,TRUE
+trec-dl-2019,130510,back_translation_pivot_language_de,paraphrase,definition declaratory judgment,definition of declaring judgment,FALSE,FALSE
+trec-dl-2019,156493,back_translation_pivot_language_de,paraphrase,do goldfish grow,gold fish grows,TRUE,TRUE
+trec-dl-2019,168216,back_translation_pivot_language_de,paraphrase,does legionella pneumophila cause pneumonia,legionella pneumophila causes pneumonia,TRUE,TRUE
+trec-dl-2019,182539,back_translation_pivot_language_de,paraphrase,example of monotonic function,examples of monotonous function,FALSE,FALSE
+trec-dl-2019,183378,back_translation_pivot_language_de,paraphrase,exons definition biology,exon definition biology,TRUE,TRUE
+trec-dl-2019,19335,back_translation_pivot_language_de,paraphrase,anthropological definition of environment,anthropological definition of the environment,TRUE,TRUE
+trec-dl-2019,207786,back_translation_pivot_language_de,paraphrase,how are some sharks warm blooded,how are some sharks hot blood,TRUE,TRUE
+trec-dl-2019,264014,back_translation_pivot_language_de,paraphrase,how long is life cycle of flea,how long is the life cycle of the flies,TRUE,TRUE
+trec-dl-2019,359349,back_translation_pivot_language_de,paraphrase,how to find the midsegment of a trapezoid,how to find the middle segment of a trapezoid,TRUE,TRUE
+trec-dl-2019,405717,back_translation_pivot_language_de,paraphrase,is cdg airport in main paris,is cdg airport in the headquarters of paris,TRUE,TRUE
+trec-dl-2019,443396,back_translation_pivot_language_de,paraphrase,lps laws definition,lps law definition,TRUE,TRUE
+trec-dl-2019,451602,back_translation_pivot_language_de,paraphrase,medicare s definition of mechanical ventilation,doctors define mechanical ventilation,TRUE,TRUE
+trec-dl-2019,47923,back_translation_pivot_language_de,paraphrase,axon terminals or synaptic knob definition,axon terminals or synaptic nod definition,FALSE,FALSE
+trec-dl-2019,489204,back_translation_pivot_language_de,paraphrase,right pelvic pain causes,causes right pain,FALSE,FALSE
+trec-dl-2019,527433,back_translation_pivot_language_de,paraphrase,types of dysarthria from cerebral palsy,types of dysarthria from brain palsy,TRUE,TRUE
+trec-dl-2019,573724,back_translation_pivot_language_de,paraphrase,what are the social determinants of health,what are the social factors of health,TRUE,TRUE
+trec-dl-2019,855410,back_translation_pivot_language_de,paraphrase,what is theraderm used for,what is theraderm used,TRUE,FALSE
+trec-dl-2019,87181,back_translation_pivot_language_de,paraphrase,causes of left ventricular hypertrophy,causes of ventricular hypertrophy,FALSE,FALSE
+trec-dl-2019,915593,back_translation_pivot_language_de,paraphrase,what types of food can you cook sous vide,what types of food you can cook under vide,FALSE,FALSE
+trec-dl-2019,962179,back_translation_pivot_language_de,paraphrase,when was the salvation army founded,when the rescue army was established,TRUE,TRUE
+trec-dl-2019,104861,ramsrigouthamg/t5_paraphraser,paraphrase,cost of interior concrete flooring,what is the cost of interior concrete flooring,TRUE,FALSE
+trec-dl-2019,1063750,ramsrigouthamg/t5_paraphraser,paraphrase,why did the us volunterilay enter ww1,why did the us enter ww1,TRUE,TRUE
+trec-dl-2019,1106007,ramsrigouthamg/t5_paraphraser,paraphrase,define visceral,what is visceral,TRUE,TRUE
+trec-dl-2019,1110199,ramsrigouthamg/t5_paraphraser,paraphrase,what is wifi vs bluetooth,what is the difference between wifi and bluetooth,TRUE,TRUE
+trec-dl-2019,1113437,ramsrigouthamg/t5_paraphraser,paraphrase,what is physical description of spruce,what is the physical description of spruce,TRUE,TRUE
+trec-dl-2019,1114819,ramsrigouthamg/t5_paraphraser,paraphrase,what is durable medical equipment consist of,what is durable medical equipment,TRUE,TRUE
+trec-dl-2019,1117099,ramsrigouthamg/t5_paraphraser,paraphrase,what is a active margin,what is active margin,TRUE,FALSE
+trec-dl-2019,1124210,ramsrigouthamg/t5_paraphraser,paraphrase,tracheids are part of,are tracheids a part of,TRUE,FALSE
+trec-dl-2019,1129237,ramsrigouthamg/t5_paraphraser,paraphrase,hydrogen is a liquid below what temperature,is hydrogen a liquid below what temperature,TRUE,FALSE
+trec-dl-2019,130510,ramsrigouthamg/t5_paraphraser,paraphrase,definition declaratory judgment,what is declaratory judgment,TRUE,TRUE
+trec-dl-2019,131843,ramsrigouthamg/t5_paraphraser,paraphrase,definition of a sigmet,what is a sigmet,TRUE,TRUE
+trec-dl-2019,146187,ramsrigouthamg/t5_paraphraser,paraphrase,difference between a mcdouble and a double cheeseburger,what is the difference between a double cheeseburger and a mcdouble,TRUE,FALSE
+trec-dl-2019,148538,ramsrigouthamg/t5_paraphraser,paraphrase,difference between rn and bsn,what is the difference between rn and bsn,TRUE,FALSE
+trec-dl-2019,156493,ramsrigouthamg/t5_paraphraser,paraphrase,do goldfish grow,how do goldfish grow,TRUE,TRUE
+trec-dl-2019,182539,ramsrigouthamg/t5_paraphraser,paraphrase,example of monotonic function,what is a monotonic function,FALSE,FALSE
+trec-dl-2019,183378,ramsrigouthamg/t5_paraphraser,paraphrase,exons definition biology,what is the exons definition of biology,TRUE,TRUE
+trec-dl-2019,19335,ramsrigouthamg/t5_paraphraser,paraphrase,anthropological definition of environment,what is the anthropological definition of environment,TRUE,TRUE
+trec-dl-2019,207786,ramsrigouthamg/t5_paraphraser,paraphrase,how are some sharks warm blooded,how do sharks get warm blooded,TRUE,TRUE
+trec-dl-2019,264014,ramsrigouthamg/t5_paraphraser,paraphrase,how long is life cycle of flea,how long is the life cycle of fleas,TRUE,TRUE
+trec-dl-2019,359349,ramsrigouthamg/t5_paraphraser,paraphrase,how to find the midsegment of a trapezoid,how do you find the midsegment of a trapezoid,TRUE,TRUE
+trec-dl-2019,443396,ramsrigouthamg/t5_paraphraser,paraphrase,lps laws definition,what is the definition of lps law,TRUE,TRUE
+trec-dl-2019,451602,ramsrigouthamg/t5_paraphraser,paraphrase,medicare s definition of mechanical ventilation,what is the medicare definition of mechanical ventilation,TRUE,TRUE
+trec-dl-2019,47923,ramsrigouthamg/t5_paraphraser,paraphrase,axon terminals or synaptic knob definition,what is the difference between axon terminals and synaptic knobs,FALSE,FALSE
+trec-dl-2019,489204,ramsrigouthamg/t5_paraphraser,paraphrase,right pelvic pain causes,what causes pelvic pain,TRUE,TRUE
+trec-dl-2019,490595,ramsrigouthamg/t5_paraphraser,paraphrase,rsa definition key,what is rsa definition key,TRUE,TRUE
+trec-dl-2019,527433,ramsrigouthamg/t5_paraphraser,paraphrase,types of dysarthria from cerebral palsy,what are the types of dysarthria from cerebral palsy,TRUE,TRUE
+trec-dl-2019,573724,ramsrigouthamg/t5_paraphraser,paraphrase,what are the social determinants of health,what are social determinants of health,FALSE,FALSE
+trec-dl-2019,87181,ramsrigouthamg/t5_paraphraser,paraphrase,causes of left ventricular hypertrophy,what causes left ventricular hypertrophy,TRUE,TRUE
+trec-dl-2019,87452,ramsrigouthamg/t5_paraphraser,paraphrase,causes of military suicide,what are the causes of military suicide,TRUE,TRUE
+trec-dl-2019,1037798,t5_uqv_paraphraser,paraphrase,who is robert gray,robert gray,TRUE,FALSE
+trec-dl-2019,1117099,t5_uqv_paraphraser,paraphrase,what is a active margin,what is an active margin,TRUE,TRUE
+trec-dl-2019,130510,t5_uqv_paraphraser,paraphrase,definition declaratory judgment,definition of declaratory judgment,TRUE,TRUE
+trec-dl-2019,131843,t5_uqv_paraphraser,paraphrase,definition of a sigmet,sigmet definition,TRUE,TRUE
+trec-dl-2019,146187,t5_uqv_paraphraser,paraphrase,difference between a mcdouble and a double cheeseburger,what is the difference between a mcdouble and a double cheeseburger,TRUE,FALSE
+trec-dl-2019,148538,t5_uqv_paraphraser,paraphrase,difference between rn and bsn,what is the difference between rn and bsn,TRUE,TRUE
+trec-dl-2019,156493,t5_uqv_paraphraser,paraphrase,do goldfish grow,how does goldfish grow,TRUE,TRUE
+trec-dl-2019,183378,t5_uqv_paraphraser,paraphrase,exons definition biology,exons biology,TRUE,TRUE
+trec-dl-2019,264014,t5_uqv_paraphraser,paraphrase,how long is life cycle of flea,how long is the life cycle of fleas,TRUE,TRUE
+trec-dl-2019,405717,t5_uqv_paraphraser,paraphrase,is cdg airport in main paris,cdg airport in main paris,TRUE,FALSE
+trec-dl-2019,451602,t5_uqv_paraphraser,paraphrase,medicare s definition of mechanical ventilation,what is the definition of mechanical ventilation,FALSE,FALSE
+trec-dl-2019,489204,t5_uqv_paraphraser,paraphrase,right pelvic pain causes,what are the causes of pelvic pain,TRUE,TRUE
+trec-dl-2019,527433,t5_uqv_paraphraser,paraphrase,types of dysarthria from cerebral palsy,what are the symptoms of dysarthria from cerebral palsy,FALSE,FALSE
+trec-dl-2019,1037798,WordSwapEmbedding,synonym,who is robert gray,who is roberto gray,FALSE,FALSE
+trec-dl-2019,104861,WordSwapEmbedding,synonym,cost of interior concrete flooring,expenses of interior concrete flooring,TRUE,TRUE
+trec-dl-2019,1063750,WordSwapEmbedding,synonym,why did the us volunterilay enter ww1,why did the us volunterilay penetrate ww1,TRUE,TRUE
+trec-dl-2019,1103812,WordSwapEmbedding,synonym,who formed the commonwealth of independent states,who formed the commonwealth of independence states,FALSE,FALSE
+trec-dl-2019,1106007,WordSwapEmbedding,synonym,define visceral,determining visceral,TRUE,TRUE
+trec-dl-2019,1110199,WordSwapEmbedding,synonym,what is wifi vs bluetooth,what is wifi versus bluetooth,TRUE,TRUE
+trec-dl-2019,1112341,WordSwapEmbedding,synonym,what is the daily life of thai people,what is the daily lives of thai people,TRUE,TRUE
+trec-dl-2019,1113437,WordSwapEmbedding,synonym,what is physical description of spruce,what is physique description of spruce,TRUE,TRUE
+trec-dl-2019,1114646,WordSwapEmbedding,synonym,what is famvir prescribed for,what is famvir prescribing for,TRUE,TRUE
+trec-dl-2019,1114819,WordSwapEmbedding,synonym,what is durable medical equipment consist of,what is durable medicinal equipment consist of,TRUE,TRUE
+trec-dl-2019,1115776,WordSwapEmbedding,synonym,what is an aml surveillance analyst,what is an aml oversight analyst,FALSE,FALSE
+trec-dl-2019,1117099,WordSwapEmbedding,synonym,what is a active margin,what is a active marge,FALSE,FALSE
+trec-dl-2019,1121402,WordSwapEmbedding,synonym,what can contour plowing reduce,what can contour plowing lowered,TRUE,TRUE
+trec-dl-2019,1121709,WordSwapEmbedding,synonym,what are the three percenters,what are the tres percenters,FALSE,FALSE
+trec-dl-2019,1124210,WordSwapEmbedding,synonym,tracheids are part of,tracheids are parties of,FALSE,FALSE
+trec-dl-2019,1129237,WordSwapEmbedding,synonym,hydrogen is a liquid below what temperature,hydrogen is a liquids below what temperature,TRUE,TRUE
+trec-dl-2019,1133167,WordSwapEmbedding,synonym,how is the weather in jamaica,how is the weatherman in jamaica,FALSE,FALSE
+trec-dl-2019,130510,WordSwapEmbedding,synonym,definition declaratory judgment,definition declaratory judgments,TRUE,TRUE
+trec-dl-2019,131843,WordSwapEmbedding,synonym,definition of a sigmet,define of a sigmet,TRUE,TRUE
+trec-dl-2019,146187,WordSwapEmbedding,synonym,difference between a mcdouble and a double cheeseburger,difference between a mcdouble and a dual cheeseburger,FALSE,FALSE
+trec-dl-2019,148538,WordSwapEmbedding,synonym,difference between rn and bsn,disparity between rn and bsn,TRUE,TRUE
+trec-dl-2019,156493,WordSwapEmbedding,synonym,do goldfish grow,do goldfish augmentation,TRUE,TRUE
+trec-dl-2019,168216,WordSwapEmbedding,synonym,does legionella pneumophila cause pneumonia,does legionella pneumophila reason pneumonia,FALSE,FALSE
+trec-dl-2019,182539,WordSwapEmbedding,synonym,example of monotonic function,case of monotonic function,TRUE,TRUE
+trec-dl-2019,183378,WordSwapEmbedding,synonym,exons definition biology,exons define biology,TRUE,TRUE
+trec-dl-2019,19335,WordSwapEmbedding,synonym,anthropological definition of environment,anthropologist definition of environment,TRUE,TRUE
+trec-dl-2019,207786,WordSwapEmbedding,synonym,how are some sharks warm blooded,how are some sharks hearty blooded,FALSE,FALSE
+trec-dl-2019,264014,WordSwapEmbedding,synonym,how long is life cycle of flea,how long is life cycle of microchip,FALSE,FALSE
+trec-dl-2019,359349,WordSwapEmbedding,synonym,how to find the midsegment of a trapezoid,how to finds the midsegment of a trapezoid,TRUE,TRUE
+trec-dl-2019,405717,WordSwapEmbedding,synonym,is cdg airport in main paris,is cdg airport in principal paris,TRUE,TRUE
+trec-dl-2019,443396,WordSwapEmbedding,synonym,lps laws definition,lps lois definition,FALSE,FALSE
+trec-dl-2019,451602,WordSwapEmbedding,synonym,medicare s definition of mechanical ventilation,medicare s define of mechanical ventilation,TRUE,TRUE
+trec-dl-2019,47923,WordSwapEmbedding,synonym,axon terminals or synaptic knob definition,axon terminus or synaptic knob definition,TRUE,TRUE
+trec-dl-2019,489204,WordSwapEmbedding,synonym,right pelvic pain causes,right pelvic heartbreak causes,FALSE,FALSE
+trec-dl-2019,490595,WordSwapEmbedding,synonym,rsa definition key,rsa definition keys,TRUE,FALSE
+trec-dl-2019,527433,WordSwapEmbedding,synonym,types of dysarthria from cerebral palsy,sorts of dysarthria from cerebral palsy,TRUE,TRUE
+trec-dl-2019,573724,WordSwapEmbedding,synonym,what are the social determinants of health,what are the social determinants of sanitary,FALSE,FALSE
+trec-dl-2019,833860,WordSwapEmbedding,synonym,what is the most popular food in switzerland,what is the most popular catering in switzerland,TRUE,TRUE
+trec-dl-2019,855410,WordSwapEmbedding,synonym,what is theraderm used for,what is theraderm use for,TRUE,TRUE
+trec-dl-2019,87181,WordSwapEmbedding,synonym,causes of left ventricular hypertrophy,causes of exited ventricular hypertrophy,FALSE,FALSE
+trec-dl-2019,87452,WordSwapEmbedding,synonym,causes of military suicide,causes of military suicidal,TRUE,TRUE
+trec-dl-2019,915593,WordSwapEmbedding,synonym,what types of food can you cook sous vide,what types of foods can you cook sous vide,TRUE,TRUE
+trec-dl-2019,962179,WordSwapEmbedding,synonym,when was the salvation army founded,when was the salut army founded,FALSE,FALSE
+trec-dl-2019,1037798,WordSwapWordNet,synonym,who is robert gray,who is robert grey,FALSE,FALSE
+trec-dl-2019,104861,WordSwapWordNet,synonym,cost of interior concrete flooring,cost of inner concrete flooring,TRUE,TRUE
+trec-dl-2019,1063750,WordSwapWordNet,synonym,why did the us volunterilay enter ww1,why did the us volunterilay enroll ww1,TRUE,TRUE
+trec-dl-2019,1103812,WordSwapWordNet,synonym,who formed the commonwealth of independent states,who formed the commonwealth of independent state,TRUE,TRUE
+trec-dl-2019,1106007,WordSwapWordNet,synonym,define visceral,delimitate visceral,TRUE,TRUE
+trec-dl-2019,1112341,WordSwapWordNet,synonym,what is the daily life of thai people,what is the day after day life of thai people,TRUE,TRUE
+trec-dl-2019,1113437,WordSwapWordNet,synonym,what is physical description of spruce,what is forcible description of spruce,FALSE,FALSE
+trec-dl-2019,1114646,WordSwapWordNet,synonym,what is famvir prescribed for,what is famvir ordained for,TRUE,TRUE
+trec-dl-2019,1114819,WordSwapWordNet,synonym,what is durable medical equipment consist of,what is long lasting medical equipment consist of,TRUE,TRUE
+trec-dl-2019,1115776,WordSwapWordNet,synonym,what is an aml surveillance analyst,what is an aml surveillance psychoanalyst,FALSE,FALSE
+trec-dl-2019,1117099,WordSwapWordNet,synonym,what is a active margin,what is a active border,FALSE,FALSE
+trec-dl-2019,1121402,WordSwapWordNet,synonym,what can contour plowing reduce,what can contour plowing abbreviate,TRUE,TRUE
+trec-dl-2019,1121709,WordSwapWordNet,synonym,what are the three percenters,what are the deuce ace percenters,FALSE,FALSE
+trec-dl-2019,1124210,WordSwapWordNet,synonym,tracheids are part of,tracheid are part of,TRUE,TRUE
+trec-dl-2019,1129237,WordSwapWordNet,synonym,hydrogen is a liquid below what temperature,hydrogen is a liquidity below what temperature,FALSE,FALSE
+trec-dl-2019,1133167,WordSwapWordNet,synonym,how is the weather in jamaica,how is the brave in jamaica,FALSE,FALSE
+trec-dl-2019,130510,WordSwapWordNet,synonym,definition declaratory judgment,definition declaratory judgement,FALSE,FALSE
+trec-dl-2019,146187,WordSwapWordNet,synonym,difference between a mcdouble and a double cheeseburger,conflict between a mcdouble and a double cheeseburger,TRUE,TRUE
+trec-dl-2019,148538,WordSwapWordNet,synonym,difference between rn and bsn,remainder between rn and bsn,FALSE,FALSE
+trec-dl-2019,156493,WordSwapWordNet,synonym,do goldfish grow,do goldfish acquire,FALSE,FALSE
+trec-dl-2019,168216,WordSwapWordNet,synonym,does legionella pneumophila cause pneumonia,does legionella pneumophila do pneumonia,FALSE,FALSE
+trec-dl-2019,182539,WordSwapWordNet,synonym,example of monotonic function,example of monotonic routine,FALSE,FALSE
+trec-dl-2019,183378,WordSwapWordNet,synonym,exons definition biology,exon definition biology,TRUE,TRUE
+trec-dl-2019,19335,WordSwapWordNet,synonym,anthropological definition of environment,anthropological definition of environs,TRUE,TRUE
+trec-dl-2019,207786,WordSwapWordNet,synonym,how are some sharks warm blooded,how are some sharks warm full blood,FALSE,FALSE
+trec-dl-2019,264014,WordSwapWordNet,synonym,how long is life cycle of flea,how long is life wheel of flea,FALSE,FALSE
+trec-dl-2019,359349,WordSwapWordNet,synonym,how to find the midsegment of a trapezoid,how to determine the midsegment of a trapezoid,TRUE,TRUE
+trec-dl-2019,405717,WordSwapWordNet,synonym,is cdg airport in main paris,is cdg airport in briny paris,FALSE,FALSE
+trec-dl-2019,443396,WordSwapWordNet,synonym,lps laws definition,l p laws definition,FALSE,FALSE
+trec-dl-2019,451602,WordSwapWordNet,synonym,medicare s definition of mechanical ventilation,medicare s definition of mechanical airing,TRUE,TRUE
+trec-dl-2019,47923,WordSwapWordNet,synonym,axon terminals or synaptic knob definition,axon terminals or synaptic boss definition,FALSE,FALSE
+trec-dl-2019,489204,WordSwapWordNet,synonym,right pelvic pain causes,rightfulness pelvic pain causes,FALSE,FALSE
+trec-dl-2019,490595,WordSwapWordNet,synonym,rsa definition key,rsa definition winder,FALSE,FALSE
+trec-dl-2019,527433,WordSwapWordNet,synonym,types of dysarthria from cerebral palsy,types of dysarthria from intellectual palsy,FALSE,FALSE
+trec-dl-2019,573724,WordSwapWordNet,synonym,what are the social determinants of health,what are the sociable determinants of health,TRUE,TRUE
+trec-dl-2019,833860,WordSwapWordNet,synonym,what is the most popular food in switzerland,what is the most democratic food in switzerland,FALSE,FALSE
+trec-dl-2019,855410,WordSwapWordNet,synonym,what is theraderm used for,what is theraderm ill used for,TRUE,TRUE
+trec-dl-2019,87181,WordSwapWordNet,synonym,causes of left ventricular hypertrophy,causes of provide ventricular hypertrophy,FALSE,FALSE
+trec-dl-2019,87452,WordSwapWordNet,synonym,causes of military suicide,get of military suicide,FALSE,FALSE
+trec-dl-2019,915593,WordSwapWordNet,synonym,what types of food can you cook sous vide,what case of food can you cook sous vide,FALSE,FALSE
+trec-dl-2019,962179,WordSwapWordNet,synonym,when was the salvation army founded,when was the salvation army plant,FALSE,FALSE
+antique,1016750,summarization_with_t5-base,naturality,how do i erase all the contacts in my lg 6100 verizon phone at once,lg 6100 veri,FALSE,FALSE
+antique,103298,summarization_with_t5-base,naturality,why precisely is foreign food considered ethnic,why precisely is foreign food,FALSE,FALSE
+antique,1034050,summarization_with_t5-base,naturality,why does the earth keep getting hotter and hotter every year,why does the earth keep,FALSE,FALSE
+antique,1037897,summarization_with_t5-base,naturality,why doesn t salt lake city have its own sub category,why doesn t salt lake city,FALSE,FALSE
+antique,1051346,summarization_with_t5-base,naturality,why is it when people cross the street they do not look to see if traffic is coming,sally kohn,FALSE,FALSE
+antique,1097878,summarization_with_t5-base,naturality,how to become smart,smarter,FALSE,FALSE
+antique,1107012,summarization_with_t5-base,naturality,what does north by north west mean,what does north by north,FALSE,FALSE
+antique,1144768,summarization_with_t5-base,naturality,what is dark energy,dark energy  what is dark energy,FALSE,FALSE
+antique,114758,summarization_with_t5-base,naturality,why does christianity teach,why does christianity,FALSE,FALSE
+antique,1158088,summarization_with_t5-base,naturality,why my neighbor s dog doesn t bark,a neighbor s dog doesn,FALSE,FALSE
+antique,11706,summarization_with_t5-base,naturality,why not legalize  and tax prostitution,why not legalize  and tax,FALSE,FALSE
+antique,1184520,summarization_with_t5-base,naturality,why be an  a theist,a theist,TRUE,TRUE
+antique,1188438,summarization_with_t5-base,naturality,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,a fence runsiing on,FALSE,FALSE
+antique,1191621,summarization_with_t5-base,naturality,how can some one so negative go to hevan  if there is one,hevan  how can some,FALSE,FALSE
+antique,1211877,summarization_with_t5-base,naturality,how does playing pool deal with science,how does playing pool deal,FALSE,FALSE
+antique,1246269,summarization_with_t5-base,naturality,how does a pardon work,how does a par,FALSE,FALSE
+antique,1251077,summarization_with_t5-base,naturality,what is the term  take hight road  mean,take hight road  means,TRUE,TRUE
+antique,126182,summarization_with_t5-base,naturality,how can i find out if i have a warrant without paying a fee,how can i find out,FALSE,FALSE
+antique,1289770,summarization_with_t5-base,naturality,what is the definition of answer,what is the definition of,FALSE,FALSE
+antique,1295284,summarization_with_t5-base,naturality,how can we solve a problem,how can we solve,FALSE,FALSE
+antique,1321784,summarization_with_t5-base,naturality,how do blackberry s recognize that they are in their holster,blackberry s holster,TRUE,TRUE
+antique,1341602,summarization_with_t5-base,naturality,what are some common causes of my cat s eye to be watery and drip clear fluid,a cat s eye is,FALSE,FALSE
+antique,1398838,summarization_with_t5-base,naturality,what does  crunching numbers  mean,crunching numbers  means,TRUE,TRUE
+antique,1423289,summarization_with_t5-base,naturality,why does my nextel turn off by itself,why does my nexte,FALSE,FALSE
+antique,1440810,summarization_with_t5-base,naturality,what is the difference between hotmail and hotmale,what is the difference between hotmail,FALSE,FALSE
+antique,1443637,summarization_with_t5-base,naturality,how do you find info about a house s history that isn t  historical,how do you find info about,FALSE,FALSE
+antique,1450678,summarization_with_t5-base,naturality,why is my wang so enormous,wang  why is my,FALSE,FALSE
+antique,1458676,summarization_with_t5-base,naturality,why do criminals go back to the scene of the crime,criminals go back to the scene,TRUE,TRUE
+antique,1467322,summarization_with_t5-base,naturality,why do i keep coming on here asking stupid questions that dont really matter pray tell,i keep coming on here asking,FALSE,FALSE
+antique,1471877,summarization_with_t5-base,naturality,why metals prices are getting all time high,metals prices are getting all time,FALSE,FALSE
+antique,1485589,summarization_with_t5-base,naturality,how sun rises,sun rises,TRUE,TRUE
+antique,1495234,summarization_with_t5-base,naturality,how do you use  incognito  in a sentence,incognito  is,FALSE,FALSE
+antique,1512776,summarization_with_t5-base,naturality,why can t i post to a finance message board,why can t i post,FALSE,FALSE
+antique,1514356,summarization_with_t5-base,naturality,why am i so sleepy even though i had a goodnights sleep,why am i so sleepy,FALSE,FALSE
+antique,1536937,summarization_with_t5-base,naturality,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,chinese chartacters,TRUE,TRUE
+antique,1582044,summarization_with_t5-base,naturality,how do tarot cards work,tarot cards,TRUE,TRUE
+antique,1583099,summarization_with_t5-base,naturality,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,israel has more weapons than,FALSE,FALSE
+antique,1607303,summarization_with_t5-base,naturality,how does a single parent with four teenagers get rich,single parent with four teenagers gets,FALSE,FALSE
+antique,1639607,summarization_with_t5-base,naturality,what is a diruetic,diruetics  what is,TRUE,FALSE
+antique,1647624,summarization_with_t5-base,naturality,why do american s say eggsit,american s say eggsit,TRUE,TRUE
+antique,1708787,summarization_with_t5-base,naturality,how to loose wait without exercise,how to loose wait without,FALSE,FALSE
+antique,1727343,summarization_with_t5-base,naturality,why do people have two nostrils,warum do people have two nostri,FALSE,FALSE
+antique,1727879,summarization_with_t5-base,naturality,why is organic all natural food  more expensive,organic all natural food is more expensive,TRUE,TRUE
+antique,17665,summarization_with_t5-base,naturality,how do i get rid of a bird s nest   my kichen window,a bird s nest can,FALSE,FALSE
+antique,1881436,summarization_with_t5-base,naturality,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,how do motorcycle remains upright and stable,FALSE,FALSE
+antique,189364,summarization_with_t5-base,naturality,how can i become a better ballet dancer,how can i become,FALSE,FALSE
+antique,1907320,summarization_with_t5-base,naturality,how do i get college money,how do i get,FALSE,FALSE
+antique,1907847,summarization_with_t5-base,naturality,what sounds like a clap,a clap,FALSE,FALSE
+antique,1933929,summarization_with_t5-base,naturality,why do dog go bathroom on the funiture,why do dog go bathroom,FALSE,FALSE
+antique,196651,summarization_with_t5-base,naturality,what is the difference between customer and consumer,what is the difference between customer and,FALSE,FALSE
+antique,1970273,summarization_with_t5-base,naturality,why do hot molecules move faster than cold molecules,why do hot molecules move,FALSE,FALSE
+antique,1978816,summarization_with_t5-base,naturality,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,if god talked to moses,FALSE,FALSE
+antique,2008456,summarization_with_t5-base,naturality,what can i do when my ignition key won t turn,what can i do,FALSE,FALSE
+antique,2035638,summarization_with_t5-base,naturality,why can t u wear white shoes on labour day,labour day  why can t,FALSE,FALSE
+antique,2041828,summarization_with_t5-base,naturality,what does the bible mean by calling pride a deadly sin,pride is a deadly sin in,FALSE,FALSE
+antique,2048278,summarization_with_t5-base,naturality,what is the ph of a 0 4 m solution of ch3coona,a 0 4 m solution,FALSE,FALSE
+antique,2094435,summarization_with_t5-base,naturality,what is involved in an artists  portfolio,artists  portfolio  what is involved,TRUE,FALSE
+antique,2112535,summarization_with_t5-base,naturality,how come my moma doesent know what  30 4 is,moma doesent know what 30,FALSE,FALSE
+antique,2113006,summarization_with_t5-base,naturality,when you go to buy a watch  why do all the watches clocks set to show 10 10,why do all watches clocks,FALSE,FALSE
+antique,212427,summarization_with_t5-base,naturality,why do criminals practice crime,warum do criminals practice crime,TRUE,FALSE
+antique,2137263,summarization_with_t5-base,naturality,what is an  encronologist,encronologist  what is,TRUE,FALSE
+antique,2147417,summarization_with_t5-base,naturality,why doesn t glue stick to the inside of the bottle,why doesn t glue stick to,FALSE,FALSE
+antique,2155390,summarization_with_t5-base,naturality,can i feed my red eared slider steak,can i feed my,FALSE,FALSE
+antique,2169746,summarization_with_t5-base,naturality,how can i get rid of a boil  on vaginal labia and underarm pits,how can i get rid of,FALSE,FALSE
+antique,2175167,summarization_with_t5-base,naturality,what is your definition of pornography,pornography  what is your,FALSE,FALSE
+antique,220575,summarization_with_t5-base,naturality,how do you use lube,lube  how do you,FALSE,FALSE
+antique,2235825,summarization_with_t5-base,naturality,why do i fall asleep after i eat and how can i prevent that,why do i fall asleep after,FALSE,FALSE
+antique,2306533,summarization_with_t5-base,naturality,how can i get water out of my ear,how can i get,FALSE,FALSE
+antique,2357505,summarization_with_t5-base,naturality,why do some people refer to the irs as uncle sam,some people refer to the i,FALSE,FALSE
+antique,2418824,summarization_with_t5-base,naturality,why do space shuttles move when the rockets are fired but not when water is ejected,space shuttles move when rockets,FALSE,FALSE
+antique,2421078,summarization_with_t5-base,naturality,why is my chihuahua  male  so hateful,chihuahu,FALSE,FALSE
+antique,242701,summarization_with_t5-base,naturality,why does taco bell always make me nauseas,taco bell always makes me nausea,TRUE,TRUE
+antique,2439070,summarization_with_t5-base,naturality,why we get irritate,why do we get,FALSE,FALSE
+antique,2466898,summarization_with_t5-base,naturality,how do i install led s into my car,how do i install led,FALSE,FALSE
+antique,2492366,summarization_with_t5-base,naturality,what is so bad about the seal hunt,seal hunt  what is so bad,FALSE,FALSE
+antique,2500918,summarization_with_t5-base,naturality,how do you cure poison oak and poison ivy,poison oak and poison iv,TRUE,TRUE
+antique,2522067,summarization_with_t5-base,naturality,why are liberals incapable of identifying and confronting evil,warum are liberals incapable of,FALSE,FALSE
+antique,2534994,summarization_with_t5-base,naturality,what is the meaning of my first name andrei,andrei is a,FALSE,FALSE
+antique,2543919,summarization_with_t5-base,naturality,what is the easiest way to make chocolate mousse,chocolate mousse is the easiest way to,FALSE,FALSE
+antique,2546730,summarization_with_t5-base,naturality,what quality of which is inherently contained in the question why,what quality of which is inherently,FALSE,FALSE
+antique,2550445,summarization_with_t5-base,naturality,why do teens today find it amusing to tear one another apart,why do teens today find it am,FALSE,FALSE
+antique,2571912,summarization_with_t5-base,naturality,if a coin is tossed twice  what is the probability of getting heads both times,a coin is tossed twice,FALSE,FALSE
+antique,2573745,summarization_with_t5-base,naturality,how did african american women get the right to vote,how did african american women get,FALSE,FALSE
+antique,2573803,summarization_with_t5-base,naturality,how do you get rid of sweat stains on clothes,how do you get rid of sweat,FALSE,FALSE
+antique,2587810,summarization_with_t5-base,naturality,what happens to bile salts when gallbladder has been removed,gallbladder removed from gall,FALSE,FALSE
+antique,2613648,summarization_with_t5-base,naturality,how can i strengthen my eyes,how can i strengthen,FALSE,FALSE
+antique,2620488,summarization_with_t5-base,naturality,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,egg compartment in most fridges has,FALSE,FALSE
+antique,2632334,summarization_with_t5-base,naturality,on the most fundamental level  why is killing other humans bad,on the most fundamental level,FALSE,FALSE
+antique,263783,summarization_with_t5-base,naturality,what affects did watergate have on the presidency,what effects did watergate have on,FALSE,FALSE
+antique,2677193,summarization_with_t5-base,naturality,what does the phrase  take no prisoners  mean,take no prisoners  is,TRUE,TRUE
+antique,2678484,summarization_with_t5-base,naturality,what is the mean of bibliography,what is the mean of,FALSE,FALSE
+antique,2678635,summarization_with_t5-base,naturality,why do husky s have coloful eyes then other dogs,husky s have,FALSE,FALSE
+antique,2689609,summarization_with_t5-base,naturality,why do people ignore global issues,why do people ignore global,FALSE,FALSE
+antique,2700836,summarization_with_t5-base,naturality,how do you wire an 800 watt inverter,how do you wire an,FALSE,FALSE
+antique,2704,summarization_with_t5-base,naturality,why does it seem that no matter how hard you try,why does it seem that,FALSE,FALSE
+antique,2735795,summarization_with_t5-base,naturality,how to decrease weight 100kg to 70kg,how to decrease weight 100,TRUE,TRUE
+antique,2764765,summarization_with_t5-base,naturality,how to study 17 18 hrs a day give me practical tips,how to study 17 18 hrs,TRUE,TRUE
+antique,2776069,summarization_with_t5-base,naturality,what is taj mahal,taj mahal,TRUE,TRUE
+antique,278043,summarization_with_t5-base,naturality,how is splitting a laser beam dangerous,splitting a laser beam is dangerous,TRUE,TRUE
+antique,2858043,summarization_with_t5-base,naturality,how do you stop bad feelings toward the people,how do you stop bad feelings toward,FALSE,FALSE
+antique,2891885,summarization_with_t5-base,naturality,why does everone want a horse,everone wants a horse,TRUE,TRUE
+antique,2897078,summarization_with_t5-base,naturality,how to get rid of stript throat,stript throat  how to get,FALSE,FALSE
+antique,2901754,summarization_with_t5-base,naturality,how are fico scores calculated,how are fico scores,FALSE,FALSE
+antique,2910592,summarization_with_t5-base,naturality,how do i get rid of pink eye quick at home,how do i get,FALSE,FALSE
+antique,2942624,summarization_with_t5-base,naturality,why do random strangers keep asking me what ethnicity i am,random strangers keep asking me what,FALSE,FALSE
+antique,2961191,summarization_with_t5-base,naturality,what is ogopogo,ogopogo is,TRUE,TRUE
+antique,3083719,summarization_with_t5-base,naturality,how do you safely wean a person off risperidal,how do you safely wean,FALSE,FALSE
+antique,3104841,summarization_with_t5-base,naturality,how do you take care of hamster gigy pig,hamster gigy,FALSE,FALSE
+antique,3118286,summarization_with_t5-base,naturality,how to reduce crime and violence,crime and violence,FALSE,FALSE
+antique,3124162,summarization_with_t5-base,naturality,how can i get rid of a sinus infection without medication,how can i get,FALSE,FALSE
+antique,3152714,summarization_with_t5-base,naturality,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black,FALSE,FALSE
+antique,3159749,summarization_with_t5-base,naturality,what is the difference between organic and inorganic eggs,organic and inorganic eggs are,FALSE,FALSE
+antique,3172166,summarization_with_t5-base,naturality,does any one know how to find out about an insurance claim,do you know how to find out,FALSE,FALSE
+antique,317469,summarization_with_t5-base,naturality,how can i get rid off my pimples white black heads  and oiliness of my face,pimples  white black,FALSE,FALSE
+antique,3178012,summarization_with_t5-base,naturality,why do we find bricks in toilets,bricks are a common problem,FALSE,FALSE
+antique,3211282,summarization_with_t5-base,naturality,i dont have any friands on yahoo how do i get some,i dont have any friand,FALSE,FALSE
+antique,3272207,summarization_with_t5-base,naturality,how to make pineapple upsidedown cake germain chocolate cake,pineapple upsidedown cake germain,FALSE,FALSE
+antique,3280274,summarization_with_t5-base,naturality,what is a schnitzel,schnitzel  what,FALSE,FALSE
+antique,332662,summarization_with_t5-base,naturality,what is sosiology,sosiology is a,TRUE,TRUE
+antique,3374970,summarization_with_t5-base,naturality,what is the correct form  i wear glasses or i am wearing glasses and why,glasses or i am wearing glasses,FALSE,FALSE
+antique,3382182,summarization_with_t5-base,naturality,is more difficult to train a male versus a female,training a male versus,FALSE,FALSE
+antique,344029,summarization_with_t5-base,naturality,what does bmr stand for when you are talking about health and what is bmr,bmr stands for,TRUE,TRUE
+antique,3470651,summarization_with_t5-base,naturality,how do i get rid of static shock electricity,how do i get,FALSE,FALSE
+antique,348777,summarization_with_t5-base,naturality,why would a child s psychologist recommend hospitalization to develop social skills,a child s psychologist would,FALSE,FALSE
+antique,3495304,summarization_with_t5-base,naturality,how can i find a diabetic freind,how can i find,FALSE,FALSE
+antique,3507499,summarization_with_t5-base,naturality,tell me the difference between revenge and vengeance,tell me the difference between,FALSE,FALSE
+antique,3556937,summarization_with_t5-base,naturality,how is lava made,lava   how is,FALSE,FALSE
+antique,358253,summarization_with_t5-base,naturality,why do wiccans believe that they have magical powers when they don t ever produce any magic,wiccans believe they,FALSE,FALSE
+antique,3608433,summarization_with_t5-base,naturality,how fast is the chicago transit authority train,chicago transit authority train is,FALSE,FALSE
+antique,3617468,summarization_with_t5-base,naturality,how do yooh laugh,how do yo,FALSE,FALSE
+antique,3626847,summarization_with_t5-base,naturality,what can  check engine  light signify in my 94 plymoth voyager,plymoth voyager,FALSE,FALSE
+antique,363519,summarization_with_t5-base,naturality,how do you install a oil breather on a 1994 ford tempo,how do you install an oil breath,FALSE,FALSE
+antique,3635284,summarization_with_t5-base,naturality,what is the procedure for getting a paternity test,paternity test  what is,TRUE,TRUE
+antique,3651236,summarization_with_t5-base,naturality,what does the  21 mean,21  what does the,FALSE,FALSE
+antique,3652886,summarization_with_t5-base,naturality,why isn t there a tool to suck up phlegm in your throat,why isn t there,FALSE,FALSE
+antique,3690922,summarization_with_t5-base,naturality,how do u end a bad rep,how do u end,FALSE,FALSE
+antique,3731489,summarization_with_t5-base,naturality,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,bulldog is aware of whats,FALSE,FALSE
+antique,3738877,summarization_with_t5-base,naturality,if i had a bad breath what should i do,if i had a,FALSE,FALSE
+antique,3752394,summarization_with_t5-base,naturality,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihad,why haven t mus,FALSE,FALSE
+antique,3814583,summarization_with_t5-base,naturality,why do only republicans defend martha stewart,why do only republicans,FALSE,FALSE
+antique,3824106,summarization_with_t5-base,naturality,what happens when a young girl  young boy meet alone,girl   young boy meet alone,TRUE,TRUE
+antique,3841762,summarization_with_t5-base,naturality,what is the most important number  and why,what is the most important number,FALSE,FALSE
+antique,3884772,summarization_with_t5-base,naturality,how about a bumper sticker thats says,a bumper sticker that says,FALSE,FALSE
+antique,3885753,summarization_with_t5-base,naturality,why are dead cockroaches always found lying on their backs instead of face down,dead cockroaches are,FALSE,FALSE
+antique,3913653,summarization_with_t5-base,naturality,how can sexual desire be overcome,how can sexual desire be,FALSE,FALSE
+antique,3958214,summarization_with_t5-base,naturality,how is light energy turned into heat energy,how is light energy turned,FALSE,FALSE
+antique,3961,summarization_with_t5-base,naturality,how to stop rabbit from peeing on the floor,how to stop rabbit from,FALSE,FALSE
+antique,397709,summarization_with_t5-base,naturality,how and what court should i take a driver who damaged my liability insurance car,how and what court should i,FALSE,FALSE
+antique,4031702,summarization_with_t5-base,naturality,how to spice up our lovemaking,how to spice up our,FALSE,FALSE
+antique,4032777,summarization_with_t5-base,naturality,why do american people put there animals on such a pedestal,u s  put animals,FALSE,FALSE
+antique,4042061,summarization_with_t5-base,naturality,why do parakeets bounce up and down,warum do parakeet,FALSE,FALSE
+antique,404359,summarization_with_t5-base,naturality,why is corruption high in the third world countries,warum is corruption high in the,FALSE,FALSE
+antique,4048305,summarization_with_t5-base,naturality,why aren t there ever any guilty bystanders,why aren t there ever,FALSE,FALSE
+antique,406082,summarization_with_t5-base,naturality,how do people build mussels on there biceps,how do people build mussels on,FALSE,FALSE
+antique,4069320,summarization_with_t5-base,naturality,athiests  how did you find the light,athiests  how,FALSE,FALSE
+antique,4165672,summarization_with_t5-base,naturality,how do we get up early in the morning without alarm,how do we get up early in,FALSE,FALSE
+antique,4183127,summarization_with_t5-base,naturality,why are some americans so prudish when it comes to sex,why are some americans so,FALSE,FALSE
+antique,4217473,summarization_with_t5-base,naturality,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,nude patch v1 0 0,FALSE,FALSE
+antique,4237144,summarization_with_t5-base,naturality,why do we say   god bless you  when someone sneezes,bob greene  why do,FALSE,FALSE
+antique,4262151,summarization_with_t5-base,naturality,how should a pregnant woman deal with morning sickness,how should a pregnant,FALSE,FALSE
+antique,4287367,summarization_with_t5-base,naturality,how can ppl tell if they r bipolar,how can ppl tell,FALSE,FALSE
+antique,4287894,summarization_with_t5-base,naturality,how long is the train ride from italy to finland,italy to finland,FALSE,FALSE
+antique,4336509,summarization_with_t5-base,naturality,what is the purpose of running a fever,what is the purpose of running,FALSE,FALSE
+antique,4387641,summarization_with_t5-base,naturality,how do i keep my cat from scratching my leather couch,how do i keep,FALSE,FALSE
+antique,4400543,summarization_with_t5-base,naturality,why do some animals always have more than one baby   some animals don t,some animals always have more than one,FALSE,FALSE
+antique,4450252,summarization_with_t5-base,naturality,what are the causes of college dropouts,college dropouts  what are,FALSE,FALSE
+antique,461995,summarization_with_t5-base,naturality,why does my congregation complain about lenght of my  90 minute sermons,why does my congregation complain about le,FALSE,FALSE
+antique,485408,summarization_with_t5-base,naturality,what can i do tonight,what can i do,FALSE,FALSE
+antique,489705,summarization_with_t5-base,naturality,what are some unwritten rules while using a urinal,some unwritten rules while using,FALSE,FALSE
+antique,511835,summarization_with_t5-base,naturality,how and why did the roman empire fell apart,roman empire fell apart,TRUE,TRUE
+antique,514804,summarization_with_t5-base,naturality,why isn t there any military bases in the state of mississippi,mississippi has,FALSE,FALSE
+antique,544869,summarization_with_t5-base,naturality,why is it so easy to be bad,why is it so easy,FALSE,FALSE
+antique,546552,summarization_with_t5-base,naturality,if jimmy hoffa is found on the farm  how will it change american culture,jimmy hoffa,FALSE,FALSE
+antique,566364,summarization_with_t5-base,naturality,what are caskets its so amazing how they are made,caskets are so amazing how,FALSE,FALSE
+antique,595342,summarization_with_t5-base,naturality,what is there to expect when you turn 17,17 years old   what is,FALSE,FALSE
+antique,643630,summarization_with_t5-base,naturality,how do you keep your parents from divorcing,how do you keep your,FALSE,FALSE
+antique,66151,summarization_with_t5-base,naturality,why does the it seem the u s  has more serial killers than other countries,u s  has more,FALSE,FALSE
+antique,684633,summarization_with_t5-base,naturality,what s the best asian and why,what s the best a,FALSE,FALSE
+antique,727663,summarization_with_t5-base,naturality,why do pigs wallow in mud,pigs wallow in,FALSE,FALSE
+antique,752633,summarization_with_t5-base,naturality,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,bomb exploded while you were shopping,TRUE,TRUE
+antique,763189,summarization_with_t5-base,naturality,why was  wearing the colour green considered a sign of madness,the colour green was considered a,FALSE,FALSE
+antique,772988,summarization_with_t5-base,naturality,what is the difference between dressing and stuffing,what is the difference between dressing and,FALSE,FALSE
+antique,844617,summarization_with_t5-base,naturality,how are dna and rna similar,dna and r,FALSE,FALSE
+antique,884643,summarization_with_t5-base,naturality,in the constellation lyra  why are some of the stars labeled with the roman alphabet,some stars are labeled with,FALSE,FALSE
+antique,913424,summarization_with_t5-base,naturality,why do i black out while i am driving,why do i black,FALSE,FALSE
+antique,929821,summarization_with_t5-base,naturality,why do guys sniff their underwear,why do guys sniff their,FALSE,FALSE
+antique,937635,summarization_with_t5-base,naturality,why do they put braille on a drive through atm,braille on drive through atm,FALSE,FALSE
+antique,94629,summarization_with_t5-base,naturality,why receptors are good drug target,receptors are good drug target,FALSE,FALSE
+antique,961127,summarization_with_t5-base,naturality,why do we put up with the heresies of science,why do we put up with the,FALSE,FALSE
+antique,963523,summarization_with_t5-base,naturality,how to get mythral shards on kingdom hearts 2,kingdom hearts 2 shards,FALSE,FALSE
+antique,98438,summarization_with_t5-base,naturality,where can i find a simplified explanation of how to use commas properly,commas should be used correctly,FALSE,FALSE
+antique,986260,summarization_with_t5-base,naturality,what is currently the meaning of life,what is the meaning of,FALSE,FALSE
+antique,993601,summarization_with_t5-base,naturality,why were black women abused sexually after the abolition of slavery in the us in 1865,black women abused sexually after,FALSE,FALSE
+antique,1016750,summarization_with_t5-base_from_description_to_title,naturality,how do i erase all the contacts in my lg 6100 verizon phone at once,lg 6100 phone erase,TRUE,TRUE
+antique,103298,summarization_with_t5-base_from_description_to_title,naturality,why precisely is foreign food considered ethnic,foreign food considered ethnic,TRUE,TRUE
+antique,1034050,summarization_with_t5-base_from_description_to_title,naturality,why does the earth keep getting hotter and hotter every year,earth keeps getting hotter,TRUE,TRUE
+antique,1037897,summarization_with_t5-base_from_description_to_title,naturality,why doesn t salt lake city have its own sub category,salt lake city sub category,TRUE,TRUE
+antique,1051346,summarization_with_t5-base_from_description_to_title,naturality,why is it when people cross the street they do not look to see if traffic is coming,people cross street without looking for traffic,TRUE,TRUE
+antique,1097878,summarization_with_t5-base_from_description_to_title,naturality,how to become smart,smarter,TRUE,TRUE
+antique,1107012,summarization_with_t5-base_from_description_to_title,naturality,what does north by north west mean,north west,TRUE,TRUE
+antique,1144768,summarization_with_t5-base_from_description_to_title,naturality,what is dark energy,dark energy,TRUE,TRUE
+antique,114758,summarization_with_t5-base_from_description_to_title,naturality,why does christianity teach,christianity,TRUE,TRUE
+antique,1158088,summarization_with_t5-base_from_description_to_title,naturality,why my neighbor s dog doesn t bark,neighbor s dog barks,TRUE,TRUE
+antique,11706,summarization_with_t5-base_from_description_to_title,naturality,why not legalize  and tax prostitution,prostitution legal,TRUE,TRUE
+antique,1184520,summarization_with_t5-base_from_description_to_title,naturality,why be an  a theist,a theist,TRUE,TRUE
+antique,1188438,summarization_with_t5-base_from_description_to_title,naturality,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,freeway fence runiing,FALSE,FALSE
+antique,1191621,summarization_with_t5-base_from_description_to_title,naturality,how can some one so negative go to hevan  if there is one,hevan slam,FALSE,FALSE
+antique,1211877,summarization_with_t5-base_from_description_to_title,naturality,how does playing pool deal with science,pool science,TRUE,TRUE
+antique,1246269,summarization_with_t5-base_from_description_to_title,naturality,how does a pardon work,pardon,TRUE,TRUE
+antique,1251077,summarization_with_t5-base_from_description_to_title,naturality,what is the term  take hight road  mean,take hight road,TRUE,TRUE
+antique,126182,summarization_with_t5-base_from_description_to_title,naturality,how can i find out if i have a warrant without paying a fee,warrants,FALSE,FALSE
+antique,1289770,summarization_with_t5-base_from_description_to_title,naturality,what is the definition of answer,answers to questions,TRUE,TRUE
+antique,1295284,summarization_with_t5-base_from_description_to_title,naturality,how can we solve a problem,a problem,TRUE,TRUE
+antique,1321784,summarization_with_t5-base_from_description_to_title,naturality,how do blackberry s recognize that they are in their holster,blackberry holster,TRUE,TRUE
+antique,1341602,summarization_with_t5-base_from_description_to_title,naturality,what are some common causes of my cat s eye to be watery and drip clear fluid,cat s eye watery,TRUE,TRUE
+antique,1398838,summarization_with_t5-base_from_description_to_title,naturality,what does  crunching numbers  mean,crunching numbers,TRUE,TRUE
+antique,1423289,summarization_with_t5-base_from_description_to_title,naturality,why does my nextel turn off by itself,nextel turn off,TRUE,TRUE
+antique,1440810,summarization_with_t5-base_from_description_to_title,naturality,what is the difference between hotmail and hotmale,hotmail and hotmale,TRUE,TRUE
+antique,1443637,summarization_with_t5-base_from_description_to_title,naturality,how do you find info about a house s history that isn t  historical,a house history,TRUE,TRUE
+antique,1450678,summarization_with_t5-base_from_description_to_title,naturality,why is my wang so enormous,wang,FALSE,FALSE
+antique,1458676,summarization_with_t5-base_from_description_to_title,naturality,why do criminals go back to the scene of the crime,criminals go back to the scene,TRUE,TRUE
+antique,1467322,summarization_with_t5-base_from_description_to_title,naturality,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do i keep coming on,FALSE,FALSE

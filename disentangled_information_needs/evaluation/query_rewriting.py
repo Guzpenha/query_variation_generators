@@ -3,7 +3,7 @@ from pyterrier_t5 import MonoT5ReRanker
 
 import pyterrier as pt
 if not pt.started():
-  pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+  pt.init("snapshop", boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
 
 import re
 import pandas as pd
@@ -15,6 +15,29 @@ import functools
 import onir_pt
 import wget
 import zipfile
+
+
+# https://macavaney.us/pt_models/msmarco.bert.seed42.tar.gz
+# https://macavaney.us/pt_models/msmarco.bert.seed43.tar.gz
+# https://macavaney.us/pt_models/msmarco.bert.seed44.tar.gz
+# https://macavaney.us/pt_models/msmarco.bert.seed45.tar.gz
+# https://macavaney.us/pt_models/msmarco.bert.seed46.tar.gz
+# https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz
+# https://macavaney.us/pt_models/msmarco.convknrm.seed43.tar.gz
+# https://macavaney.us/pt_models/msmarco.convknrm.seed44.tar.gz
+# https://macavaney.us/pt_models/msmarco.convknrm.seed45.tar.gz
+# https://macavaney.us/pt_models/msmarco.convknrm.seed46.tar.gz
+# https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz
+# https://macavaney.us/pt_models/msmarco.epic.seed43.tar.gz
+# https://macavaney.us/pt_models/msmarco.epic.seed44.tar.gz
+# https://macavaney.us/pt_models/msmarco.epic.seed45.tar.gz
+# https://macavaney.us/pt_models/msmarco.epic.seed46.tar.gz
+# https://macavaney.us/pt_models/msmarco.knrm.seed42.tar.gz
+# https://macavaney.us/pt_models/msmarco.knrm.seed43.tar.gz
+# https://macavaney.us/pt_models/msmarco.knrm.seed44.tar.gz
+# https://macavaney.us/pt_models/msmarco.knrm.seed45.tar.gz
+# https://macavaney.us/pt_models/msmarco.knrm.seed46.tar.gz
+
 
 def pair_iter(dataset):
     ds = dataset.irds_ref()
@@ -80,7 +103,8 @@ def main():
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
         if not os.path.isfile(model_path):
             logging.info("Fitting BERT.")
-            vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2,  'pre_validate': False})
+            vbert = onir_pt.reranker('vanilla_transformer', 'bert', vocab_config={'train': True}, 
+                                    config={'max_train_it':args.max_iter, 'learning_rate': 1e-5, 'batch_size': 2,  'pre_validate': False, 'patience':50})
             if 'msmarco' in args.task:
                 bm25 = pt.BatchRetrieve(index, wmodel="BM25", verbose=True) % args.cutoff_threshold >> pt.text.get_text(dataset, 'text')
                 validation_run = bm25(dataset.get_topics())
@@ -168,7 +192,7 @@ def main():
     cor_df.to_csv("{}/query_corr_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name))
 
     logging.info("Running remaining experiments and calculating metrics.")
-    metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']
+    metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']    
     
     df = pt.Experiment(
             # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
@@ -178,6 +202,7 @@ def main():
             metrics,
             baseline=0,
             names = [args.retrieval_model_name]+variation_methods)
+    # df.to_csv("{}/query_rewriting_{}_model_{}_cutoff_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
     df.to_csv("{}/query_rewriting_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
 
     df_per_q = pt.Experiment(
@@ -189,13 +214,15 @@ def main():
             perquery = True,
             names = [args.retrieval_model_name]+variation_methods)
 
+    df_per_q.fillna(0.0).to_csv("{}/for_oracle_{}_model_{}_.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
     query_variations['name'] = query_variations.apply(lambda r, n=args.retrieval_model_name: n+"+QueriesFrom"+r['method'], axis=1)
-    query_variations['qid'] = query_variations['q_id'].astype(str)
+    query_variations['qid'] = query_variations['q_id'].astype(str)    
     only_valid = df_per_q.merge(query_variations[query_variations['valid']][['qid', 'name', 'valid']], on=['qid', 'name'])
     only_valid_with_baseline = only_valid.merge(df_per_q[df_per_q['name']==args.retrieval_model_name], on=['qid', 'measure'])
     only_valid_with_baseline["decrease"] = only_valid_with_baseline['value_x'] - only_valid_with_baseline['value_y']
     only_valid_with_baseline["decrease_percentage"] = only_valid_with_baseline['decrease']/only_valid_with_baseline['value_y']
-    only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
+    # only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query_cutoff_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
+    only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
 
 if __name__ == "__main__":
     main()

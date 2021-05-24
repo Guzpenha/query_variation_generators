@@ -1,0 +1,458 @@
+dataset,q_id,method,transformation_type,original_query,variation,valid,follow_category
+antique,1471877,summarization_with_t5-base_from_description_to_title,naturality,why metals prices are getting all time high,metals prices,TRUE,TRUE
+antique,1485589,summarization_with_t5-base_from_description_to_title,naturality,how sun rises,sun rises,TRUE,TRUE
+antique,1495234,summarization_with_t5-base_from_description_to_title,naturality,how do you use  incognito  in a sentence,incognito sentence,TRUE,TRUE
+antique,1512776,summarization_with_t5-base_from_description_to_title,naturality,why can t i post to a finance message board,finance message board,FALSE,TRUE
+antique,1514356,summarization_with_t5-base_from_description_to_title,naturality,why am i so sleepy even though i had a goodnights sleep,why am i so sleepy,TRUE,TRUE
+antique,1536937,summarization_with_t5-base_from_description_to_title,naturality,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,chinese chartacters,TRUE,TRUE
+antique,1582044,summarization_with_t5-base_from_description_to_title,naturality,how do tarot cards work,tarot cards,TRUE,TRUE
+antique,1583099,summarization_with_t5-base_from_description_to_title,naturality,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,israel u s,TRUE,TRUE
+antique,1607303,summarization_with_t5-base_from_description_to_title,naturality,how does a single parent with four teenagers get rich,single parent with four teenagers,FALSE,TRUE
+antique,1607924,summarization_with_t5-base_from_description_to_title,naturality,how does the earth go,earth goes,TRUE,TRUE
+antique,1639607,summarization_with_t5-base_from_description_to_title,naturality,what is a diruetic,diruetic,TRUE,TRUE
+antique,1647624,summarization_with_t5-base_from_description_to_title,naturality,why do american s say eggsit,eggsit,TRUE,TRUE
+antique,1708787,summarization_with_t5-base_from_description_to_title,naturality,how to loose wait without exercise,wait without exercise,FALSE,TRUE
+antique,1727343,summarization_with_t5-base_from_description_to_title,naturality,why do people have two nostrils,nostrils,TRUE,TRUE
+antique,1727879,summarization_with_t5-base_from_description_to_title,naturality,why is organic all natural food  more expensive,organic food cost,TRUE,TRUE
+antique,17665,summarization_with_t5-base_from_description_to_title,naturality,how do i get rid of a bird s nest   my kichen window,bird nests,FALSE,TRUE
+antique,1881436,summarization_with_t5-base_from_description_to_title,naturality,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,gyroscopic forces on,TRUE,TRUE
+antique,189364,summarization_with_t5-base_from_description_to_title,naturality,how can i become a better ballet dancer,ballet dancer,FALSE,TRUE
+antique,1907320,summarization_with_t5-base_from_description_to_title,naturality,how do i get college money,college money,TRUE,TRUE
+antique,1907847,summarization_with_t5-base_from_description_to_title,naturality,what sounds like a clap,clap,FALSE,FALSE
+antique,1933929,summarization_with_t5-base_from_description_to_title,naturality,why do dog go bathroom on the funiture,dog bathroom funiture,TRUE,TRUE
+antique,196651,summarization_with_t5-base_from_description_to_title,naturality,what is the difference between customer and consumer,difference between customer and consumer,TRUE,TRUE
+antique,1970273,summarization_with_t5-base_from_description_to_title,naturality,why do hot molecules move faster than cold molecules,hot molecules move faster than cold molecules,TRUE,FALSE
+antique,1978816,summarization_with_t5-base_from_description_to_title,naturality,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,moses evolution,TRUE,TRUE
+antique,2008456,summarization_with_t5-base_from_description_to_title,naturality,what can i do when my ignition key won t turn,ignition key not turning,TRUE,TRUE
+antique,2035638,summarization_with_t5-base_from_description_to_title,naturality,why can t u wear white shoes on labour day,labour day white shoes,TRUE,TRUE
+antique,2041828,summarization_with_t5-base_from_description_to_title,naturality,what does the bible mean by calling pride a deadly sin,pride in bible,TRUE,TRUE
+antique,2048278,summarization_with_t5-base_from_description_to_title,naturality,what is the ph of a 0 4 m solution of ch3coona,ch3coona,FALSE,TRUE
+antique,2094435,summarization_with_t5-base_from_description_to_title,naturality,what is involved in an artists  portfolio,artists portfolio,TRUE,TRUE
+antique,2112535,summarization_with_t5-base_from_description_to_title,naturality,how come my moma doesent know what  30 4 is,moma doesent know what 30,FALSE,FALSE
+antique,2113006,summarization_with_t5-base_from_description_to_title,naturality,when you go to buy a watch  why do all the watches clocks set to show 10 10,watch 10 10,TRUE,TRUE
+antique,212427,summarization_with_t5-base_from_description_to_title,naturality,why do criminals practice crime,criminals crime,TRUE,TRUE
+antique,2137263,summarization_with_t5-base_from_description_to_title,naturality,what is an  encronologist,encronologist,TRUE,TRUE
+antique,2147417,summarization_with_t5-base_from_description_to_title,naturality,why doesn t glue stick to the inside of the bottle,glue inside bottle,TRUE,TRUE
+antique,2155390,summarization_with_t5-base_from_description_to_title,naturality,can i feed my red eared slider steak,slider steak,FALSE,TRUE
+antique,2169746,summarization_with_t5-base_from_description_to_title,naturality,how can i get rid of a boil  on vaginal labia and underarm pits,vaginal labia,FALSE,TRUE
+antique,2175167,summarization_with_t5-base_from_description_to_title,naturality,what is your definition of pornography,pornography,TRUE,TRUE
+antique,220575,summarization_with_t5-base_from_description_to_title,naturality,how do you use lube,lube,TRUE,TRUE
+antique,2235825,summarization_with_t5-base_from_description_to_title,naturality,why do i fall asleep after i eat and how can i prevent that,why do i fall asleep after,TRUE,TRUE
+antique,2306533,summarization_with_t5-base_from_description_to_title,naturality,how can i get water out of my ear,ear water,TRUE,TRUE
+antique,2357505,summarization_with_t5-base_from_description_to_title,naturality,why do some people refer to the irs as uncle sam,irs uncle s,TRUE,TRUE
+antique,2418824,summarization_with_t5-base_from_description_to_title,naturality,why do space shuttles move when the rockets are fired but not when water is ejected,shuttles move when rockets are,TRUE,TRUE
+antique,2421078,summarization_with_t5-base_from_description_to_title,naturality,why is my chihuahua  male  so hateful,chihuahu,FALSE,TRUE
+antique,242701,summarization_with_t5-base_from_description_to_title,naturality,why does taco bell always make me nauseas,taco bell nausea,TRUE,TRUE
+antique,2439070,summarization_with_t5-base_from_description_to_title,naturality,why we get irritate,irritate,TRUE,TRUE
+antique,2466898,summarization_with_t5-base_from_description_to_title,naturality,how do i install led s into my car,led s in car,TRUE,TRUE
+antique,2492366,summarization_with_t5-base_from_description_to_title,naturality,what is so bad about the seal hunt,seal hunt,TRUE,TRUE
+antique,2500918,summarization_with_t5-base_from_description_to_title,naturality,how do you cure poison oak and poison ivy,poison oak ivy,TRUE,TRUE
+antique,2522067,summarization_with_t5-base_from_description_to_title,naturality,why are liberals incapable of identifying and confronting evil,evil liberals,FALSE,FALSE
+antique,2534994,summarization_with_t5-base_from_description_to_title,naturality,what is the meaning of my first name andrei,andrei,TRUE,TRUE
+antique,2543919,summarization_with_t5-base_from_description_to_title,naturality,what is the easiest way to make chocolate mousse,chocolate mousse,TRUE,TRUE
+antique,2546730,summarization_with_t5-base_from_description_to_title,naturality,what quality of which is inherently contained in the question why,what quality of which is inherently,FALSE,FALSE
+antique,2550445,summarization_with_t5-base_from_description_to_title,naturality,why do teens today find it amusing to tear one another apart,teens tear one another apart,TRUE,TRUE
+antique,2571912,summarization_with_t5-base_from_description_to_title,naturality,if a coin is tossed twice  what is the probability of getting heads both times,coin tossed twice,FALSE,FALSE
+antique,2573745,summarization_with_t5-base_from_description_to_title,naturality,how did african american women get the right to vote,african american women vote,TRUE,TRUE
+antique,2573803,summarization_with_t5-base_from_description_to_title,naturality,how do you get rid of sweat stains on clothes,sweat stains,TRUE,TRUE
+antique,2587810,summarization_with_t5-base_from_description_to_title,naturality,what happens to bile salts when gallbladder has been removed,gallbladder removal,FALSE,TRUE
+antique,2613648,summarization_with_t5-base_from_description_to_title,naturality,how can i strengthen my eyes,i strengthen my eyes,FALSE,FALSE
+antique,2620488,summarization_with_t5-base_from_description_to_title,naturality,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,egg compartment in fridge,TRUE,TRUE
+antique,2630860,summarization_with_t5-base_from_description_to_title,naturality,why is god  male,god male,TRUE,TRUE
+antique,2632334,summarization_with_t5-base_from_description_to_title,naturality,on the most fundamental level  why is killing other humans bad,killing other humans,TRUE,TRUE
+antique,263783,summarization_with_t5-base_from_description_to_title,naturality,what affects did watergate have on the presidency,watergate presidency,TRUE,TRUE
+antique,2677193,summarization_with_t5-base_from_description_to_title,naturality,what does the phrase  take no prisoners  mean,take no prisoners,TRUE,TRUE
+antique,2678484,summarization_with_t5-base_from_description_to_title,naturality,what is the mean of bibliography,bibliography,TRUE,TRUE
+antique,2678635,summarization_with_t5-base_from_description_to_title,naturality,why do husky s have coloful eyes then other dogs,husky eyes,TRUE,TRUE
+antique,2689609,summarization_with_t5-base_from_description_to_title,naturality,why do people ignore global issues,global issues,FALSE,TRUE
+antique,2700836,summarization_with_t5-base_from_description_to_title,naturality,how do you wire an 800 watt inverter,800 watt inverter,FALSE,TRUE
+antique,2704,summarization_with_t5-base_from_description_to_title,naturality,why does it seem that no matter how hard you try,why is it that no matter how,TRUE,TRUE
+antique,2735795,summarization_with_t5-base_from_description_to_title,naturality,how to decrease weight 100kg to 70kg,how to decrease weight 100kg to,TRUE,TRUE
+antique,2764765,summarization_with_t5-base_from_description_to_title,naturality,how to study 17 18 hrs a day give me practical tips,17 18 hrs a day,FALSE,FALSE
+antique,2776069,summarization_with_t5-base_from_description_to_title,naturality,what is taj mahal,taj mahal,TRUE,TRUE
+antique,278043,summarization_with_t5-base_from_description_to_title,naturality,how is splitting a laser beam dangerous,laser beam splitting,TRUE,TRUE
+antique,2858043,summarization_with_t5-base_from_description_to_title,naturality,how do you stop bad feelings toward the people,bad feelings towards the people,FALSE,TRUE
+antique,2891885,summarization_with_t5-base_from_description_to_title,naturality,why does everone want a horse,everone s horse,FALSE,FALSE
+antique,2897078,summarization_with_t5-base_from_description_to_title,naturality,how to get rid of stript throat,stript throat,TRUE,TRUE
+antique,2901754,summarization_with_t5-base_from_description_to_title,naturality,how are fico scores calculated,fico scores,TRUE,TRUE
+antique,2910592,summarization_with_t5-base_from_description_to_title,naturality,how do i get rid of pink eye quick at home,pink eye,TRUE,TRUE
+antique,2942624,summarization_with_t5-base_from_description_to_title,naturality,why do random strangers keep asking me what ethnicity i am,ethnicity,FALSE,FALSE
+antique,2961191,summarization_with_t5-base_from_description_to_title,naturality,what is ogopogo,ogopogo,TRUE,TRUE
+antique,3083719,summarization_with_t5-base_from_description_to_title,naturality,how do you safely wean a person off risperidal,risperidal we,TRUE,FALSE
+antique,3104841,summarization_with_t5-base_from_description_to_title,naturality,how do you take care of hamster gigy pig,hamster pig,FALSE,FALSE
+antique,3118286,summarization_with_t5-base_from_description_to_title,naturality,how to reduce crime and violence,crime and violence,FALSE,TRUE
+antique,3124162,summarization_with_t5-base_from_description_to_title,naturality,how can i get rid of a sinus infection without medication,sinus infection,FALSE,TRUE
+antique,3152714,summarization_with_t5-base_from_description_to_title,naturality,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black,FALSE,FALSE
+antique,3159749,summarization_with_t5-base_from_description_to_title,naturality,what is the difference between organic and inorganic eggs,organic eggs inorganic eggs,TRUE,TRUE
+antique,3172166,summarization_with_t5-base_from_description_to_title,naturality,does any one know how to find out about an insurance claim,insurance claim,TRUE,TRUE
+antique,317469,summarization_with_t5-base_from_description_to_title,naturality,how can i get rid off my pimples white black heads  and oiliness of my face,pimples and oily face,TRUE,TRUE
+antique,3178012,summarization_with_t5-base_from_description_to_title,naturality,why do we find bricks in toilets,toilet bricks,TRUE,TRUE
+antique,3211282,summarization_with_t5-base_from_description_to_title,naturality,i dont have any friands on yahoo how do i get some,yahoo friands,FALSE,FALSE
+antique,3272207,summarization_with_t5-base_from_description_to_title,naturality,how to make pineapple upsidedown cake germain chocolate cake,pineapple upsidedown cake germain,TRUE,TRUE
+antique,3280274,summarization_with_t5-base_from_description_to_title,naturality,what is a schnitzel,schnitzel,TRUE,TRUE
+antique,332662,summarization_with_t5-base_from_description_to_title,naturality,what is sosiology,sosiology,TRUE,TRUE
+antique,3374970,summarization_with_t5-base_from_description_to_title,naturality,what is the correct form  i wear glasses or i am wearing glasses and why,i wear glasses,FALSE,FALSE
+antique,3382182,summarization_with_t5-base_from_description_to_title,naturality,is more difficult to train a male versus a female,male versus female training,TRUE,TRUE
+antique,3407617,summarization_with_t5-base_from_description_to_title,naturality,why is prostitution wrong,prostitution,TRUE,TRUE
+antique,344029,summarization_with_t5-base_from_description_to_title,naturality,what does bmr stand for when you are talking about health and what is bmr,bmr,TRUE,TRUE
+antique,3470651,summarization_with_t5-base_from_description_to_title,naturality,how do i get rid of static shock electricity,static shock electricity,TRUE,TRUE
+antique,348777,summarization_with_t5-base_from_description_to_title,naturality,why would a child s psychologist recommend hospitalization to develop social skills,a child s psychologist,FALSE,FALSE
+antique,3495304,summarization_with_t5-base_from_description_to_title,naturality,how can i find a diabetic freind,diabetic freind,TRUE,TRUE
+antique,3507499,summarization_with_t5-base_from_description_to_title,naturality,tell me the difference between revenge and vengeance,revenge vengeance,TRUE,TRUE
+antique,3556937,summarization_with_t5-base_from_description_to_title,naturality,how is lava made,lava,TRUE,TRUE
+antique,358253,summarization_with_t5-base_from_description_to_title,naturality,why do wiccans believe that they have magical powers when they don t ever produce any magic,wiccan magic,TRUE,TRUE
+antique,3608433,summarization_with_t5-base_from_description_to_title,naturality,how fast is the chicago transit authority train,chicago transit authority train,FALSE,TRUE
+antique,3617468,summarization_with_t5-base_from_description_to_title,naturality,how do yooh laugh,yooh laughs,TRUE,TRUE
+antique,3626847,summarization_with_t5-base_from_description_to_title,naturality,what can  check engine  light signify in my 94 plymoth voyager,94 plymoth,FALSE,TRUE
+antique,363519,summarization_with_t5-base_from_description_to_title,naturality,how do you install a oil breather on a 1994 ford tempo,ford tempo oil breather,FALSE,TRUE
+antique,3635284,summarization_with_t5-base_from_description_to_title,naturality,what is the procedure for getting a paternity test,paternity test,TRUE,TRUE
+antique,3651236,summarization_with_t5-base_from_description_to_title,naturality,what does the  21 mean,21,TRUE,TRUE
+antique,3652886,summarization_with_t5-base_from_description_to_title,naturality,why isn t there a tool to suck up phlegm in your throat,phlegm s,FALSE,FALSE
+antique,3690922,summarization_with_t5-base_from_description_to_title,naturality,how do u end a bad rep,bad rep,TRUE,TRUE
+antique,3731489,summarization_with_t5-base_from_description_to_title,naturality,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,bulldogs vet blood work,TRUE,TRUE
+antique,3738877,summarization_with_t5-base_from_description_to_title,naturality,if i had a bad breath what should i do,if i had a,FALSE,FALSE
+antique,3752394,summarization_with_t5-base_from_description_to_title,naturality,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihad,radical islam protests,TRUE,TRUE
+antique,3814583,summarization_with_t5-base_from_description_to_title,naturality,why do only republicans defend martha stewart,martha stewart,FALSE,TRUE
+antique,3824106,summarization_with_t5-base_from_description_to_title,naturality,what happens when a young girl  young boy meet alone,girl   boy meet alone,TRUE,TRUE
+antique,3841762,summarization_with_t5-base_from_description_to_title,naturality,what is the most important number  and why,most important number,TRUE,TRUE
+antique,3884772,summarization_with_t5-base_from_description_to_title,naturality,how about a bumper sticker thats says,bumper sticker,TRUE,TRUE
+antique,3885753,summarization_with_t5-base_from_description_to_title,naturality,why are dead cockroaches always found lying on their backs instead of face down,dead cockroaches,TRUE,TRUE
+antique,3913653,summarization_with_t5-base_from_description_to_title,naturality,how can sexual desire be overcome,sexual desire overcome,TRUE,TRUE
+antique,3958214,summarization_with_t5-base_from_description_to_title,naturality,how is light energy turned into heat energy,how is light energy turned into heat,TRUE,FALSE
+antique,3961,summarization_with_t5-base_from_description_to_title,naturality,how to stop rabbit from peeing on the floor,rabbit peeing on floor,TRUE,TRUE
+antique,397709,summarization_with_t5-base_from_description_to_title,naturality,how and what court should i take a driver who damaged my liability insurance car,driver who damaged my liability insurance car,FALSE,TRUE
+antique,4031702,summarization_with_t5-base_from_description_to_title,naturality,how to spice up our lovemaking,lovemaking,TRUE,TRUE
+antique,4032777,summarization_with_t5-base_from_description_to_title,naturality,why do american people put there animals on such a pedestal,animals on pedestal,FALSE,TRUE
+antique,4042061,summarization_with_t5-base_from_description_to_title,naturality,why do parakeets bounce up and down,parakeets bounce,TRUE,TRUE
+antique,404359,summarization_with_t5-base_from_description_to_title,naturality,why is corruption high in the third world countries,corruption in the third world,TRUE,TRUE
+antique,4048305,summarization_with_t5-base_from_description_to_title,naturality,why aren t there ever any guilty bystanders,guilty bystanders,TRUE,TRUE
+antique,406082,summarization_with_t5-base_from_description_to_title,naturality,how do people build mussels on there biceps,mussels on bicep,TRUE,TRUE
+antique,4069320,summarization_with_t5-base_from_description_to_title,naturality,athiests  how did you find the light,athiests,FALSE,TRUE
+antique,4092472,summarization_with_t5-base_from_description_to_title,naturality,what does elucidate mean,elucidate,TRUE,TRUE
+antique,4165672,summarization_with_t5-base_from_description_to_title,naturality,how do we get up early in the morning without alarm,how do we get up early in,FALSE,FALSE
+antique,4183127,summarization_with_t5-base_from_description_to_title,naturality,why are some americans so prudish when it comes to sex,prudish sex,FALSE,TRUE
+antique,4217473,summarization_with_t5-base_from_description_to_title,naturality,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,nude patch v1 0 0,FALSE,FALSE
+antique,4237144,summarization_with_t5-base_from_description_to_title,naturality,why do we say   god bless you  when someone sneezes,sneezes,FALSE,TRUE
+antique,4262151,summarization_with_t5-base_from_description_to_title,naturality,how should a pregnant woman deal with morning sickness,pregnant woman morning sickness,TRUE,TRUE
+antique,4287367,summarization_with_t5-base_from_description_to_title,naturality,how can ppl tell if they r bipolar,bipolar ppl,TRUE,TRUE
+antique,4287894,summarization_with_t5-base_from_description_to_title,naturality,how long is the train ride from italy to finland,train ride from italy to,FALSE,FALSE
+antique,4336509,summarization_with_t5-base_from_description_to_title,naturality,what is the purpose of running a fever,a fever,FALSE,TRUE
+antique,4387641,summarization_with_t5-base_from_description_to_title,naturality,how do i keep my cat from scratching my leather couch,cat scratching leather couch,TRUE,TRUE
+antique,4400543,summarization_with_t5-base_from_description_to_title,naturality,why do some animals always have more than one baby   some animals don t,animals always have more than one baby,TRUE,TRUE
+antique,4450252,summarization_with_t5-base_from_description_to_title,naturality,what are the causes of college dropouts,college dropouts,TRUE,TRUE
+antique,461995,summarization_with_t5-base_from_description_to_title,naturality,why does my congregation complain about lenght of my  90 minute sermons,lenght of sermons,TRUE,TRUE
+antique,489705,summarization_with_t5-base_from_description_to_title,naturality,what are some unwritten rules while using a urinal,urinal rules,TRUE,TRUE
+antique,511835,summarization_with_t5-base_from_description_to_title,naturality,how and why did the roman empire fell apart,roman empire fell apart,TRUE,TRUE
+antique,514804,summarization_with_t5-base_from_description_to_title,naturality,why isn t there any military bases in the state of mississippi,mississippi military,TRUE,TRUE
+antique,544869,summarization_with_t5-base_from_description_to_title,naturality,why is it so easy to be bad,bad habits,FALSE,FALSE
+antique,546552,summarization_with_t5-base_from_description_to_title,naturality,if jimmy hoffa is found on the farm  how will it change american culture,jimmy hoffa,TRUE,TRUE
+antique,566364,summarization_with_t5-base_from_description_to_title,naturality,what are caskets its so amazing how they are made,caskets,TRUE,TRUE
+antique,595342,summarization_with_t5-base_from_description_to_title,naturality,what is there to expect when you turn 17,17 years of age,TRUE,TRUE
+antique,643630,summarization_with_t5-base_from_description_to_title,naturality,how do you keep your parents from divorcing,divorcing parents,TRUE,TRUE
+antique,66151,summarization_with_t5-base_from_description_to_title,naturality,why does the it seem the u s  has more serial killers than other countries,u s  serial killer,FALSE,FALSE
+antique,684633,summarization_with_t5-base_from_description_to_title,naturality,what s the best asian and why,what s the best a,FALSE,FALSE
+antique,727663,summarization_with_t5-base_from_description_to_title,naturality,why do pigs wallow in mud,pigs wallow in,FALSE,FALSE
+antique,752633,summarization_with_t5-base_from_description_to_title,naturality,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,bombing in new york,FALSE,TRUE
+antique,763189,summarization_with_t5-base_from_description_to_title,naturality,why was  wearing the colour green considered a sign of madness,wore the colour green,FALSE,FALSE
+antique,772988,summarization_with_t5-base_from_description_to_title,naturality,what is the difference between dressing and stuffing,dressing and stuffing,TRUE,TRUE
+antique,844617,summarization_with_t5-base_from_description_to_title,naturality,how are dna and rna similar,dna and r,FALSE,FALSE
+antique,884643,summarization_with_t5-base_from_description_to_title,naturality,in the constellation lyra  why are some of the stars labeled with the roman alphabet,lyra stars,FALSE,TRUE
+antique,913424,summarization_with_t5-base_from_description_to_title,naturality,why do i black out while i am driving,blackout while driving,TRUE,TRUE
+antique,929821,summarization_with_t5-base_from_description_to_title,naturality,why do guys sniff their underwear,underwear sniffing,TRUE,TRUE
+antique,937635,summarization_with_t5-base_from_description_to_title,naturality,why do they put braille on a drive through atm,braille drive through atm,TRUE,TRUE
+antique,94629,summarization_with_t5-base_from_description_to_title,naturality,why receptors are good drug target,receptors,FALSE,TRUE
+antique,961127,summarization_with_t5-base_from_description_to_title,naturality,why do we put up with the heresies of science,science heresies,TRUE,TRUE
+antique,963523,summarization_with_t5-base_from_description_to_title,naturality,how to get mythral shards on kingdom hearts 2,kingdom hearts 2 mythral s,FALSE,FALSE
+antique,98438,summarization_with_t5-base_from_description_to_title,naturality,where can i find a simplified explanation of how to use commas properly,commas,TRUE,TRUE
+antique,986260,summarization_with_t5-base_from_description_to_title,naturality,what is currently the meaning of life,meaning of life,TRUE,TRUE
+antique,993601,summarization_with_t5-base_from_description_to_title,naturality,why were black women abused sexually after the abolition of slavery in the us in 1865,black women sexually abused after,FALSE,FALSE
+antique,1016750,back_translation_pivot_language_de,paraphrase,how do i erase all the contacts in my lg 6100 verizon phone at once,how can i delete all contacts in my lg 6100 verizon phone at the same time,TRUE,TRUE
+antique,103298,back_translation_pivot_language_de,paraphrase,why precisely is foreign food considered ethnic,why is foreign food considered ethnic,TRUE,FALSE
+antique,1034050,back_translation_pivot_language_de,paraphrase,why does the earth keep getting hotter and hotter every year,why is the earth getting hoter and hoter every year,TRUE,TRUE
+antique,1037897,back_translation_pivot_language_de,paraphrase,why doesn t salt lake city have its own sub category,why does the salt lake city not have its own subcategory,TRUE,TRUE
+antique,1051346,back_translation_pivot_language_de,paraphrase,why is it when people cross the street they do not look to see if traffic is coming,why is it when people cross the road  they don t see if traffic comes,TRUE,TRUE
+antique,1097878,back_translation_pivot_language_de,paraphrase,how to become smart,how can you become intelligent,TRUE,TRUE
+antique,1107012,back_translation_pivot_language_de,paraphrase,what does north by north west mean,what is north to northwest,TRUE,TRUE
+antique,1158088,back_translation_pivot_language_de,paraphrase,why my neighbor s dog doesn t bark,why didn t my neighbor s dog breathe,FALSE,FALSE
+antique,11706,back_translation_pivot_language_de,paraphrase,why not legalize  and tax prostitution,why not legalize and tax prostitution,TRUE,TRUE
+antique,1184520,back_translation_pivot_language_de,paraphrase,why be an  a theist,why be a  a theist,TRUE,FALSE
+antique,1188438,back_translation_pivot_language_de,paraphrase,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,why there is a hole that flows on the sides of the free road in the middle of the desert and over the grey area,FALSE,FALSE
+antique,1191621,back_translation_pivot_language_de,paraphrase,how can some one so negative go to hevan  if there is one,how can such a negative go to havana  if there is one,FALSE,FALSE
+antique,1211877,back_translation_pivot_language_de,paraphrase,how does playing pool deal with science,how does pool play with science,FALSE,FALSE
+antique,1246269,back_translation_pivot_language_de,paraphrase,how does a pardon work,how does a forgiveness work,FALSE,TRUE
+antique,1251077,back_translation_pivot_language_de,paraphrase,what is the term  take hight road  mean,what does the term  high road  mean,FALSE,FALSE
+antique,126182,back_translation_pivot_language_de,paraphrase,how can i find out if i have a warrant without paying a fee,how can i find out if i have a guarantee without paying a fee,FALSE,FALSE
+antique,1289770,back_translation_pivot_language_de,paraphrase,what is the definition of answer,what is the definition of the answer,TRUE,TRUE
+antique,1295284,back_translation_pivot_language_de,paraphrase,how can we solve a problem,how to solve a problem,TRUE,TRUE
+antique,1321784,back_translation_pivot_language_de,paraphrase,how do blackberry s recognize that they are in their holster,how do blackberry know they re in their holster,TRUE,TRUE
+antique,1341602,back_translation_pivot_language_de,paraphrase,what are some common causes of my cat s eye to be watery and drip clear fluid,what are some common reasons for my cat s eye to be water and drink clean fluid,TRUE,TRUE
+antique,1423289,back_translation_pivot_language_de,paraphrase,why does my nextel turn off by itself,why does my successor disappear,FALSE,FALSE
+antique,1440810,back_translation_pivot_language_de,paraphrase,what is the difference between hotmail and hotmale,what is the difference between hotmail and hotmail,FALSE,FALSE
+antique,1443637,back_translation_pivot_language_de,paraphrase,how do you find info about a house s history that isn t  historical,how do you find information about the history of a house that is not  historical,TRUE,TRUE
+antique,1450678,back_translation_pivot_language_de,paraphrase,why is my wang so enormous,why is my money so huge,FALSE,FALSE
+antique,1458676,back_translation_pivot_language_de,paraphrase,why do criminals go back to the scene of the crime,why do criminals go back to the scene of crime,TRUE,FALSE
+antique,1467322,back_translation_pivot_language_de,paraphrase,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do i continue to come here and ask stupid questions that don t really mean to pray,TRUE,TRUE
+antique,1471877,back_translation_pivot_language_de,paraphrase,why metals prices are getting all time high,why are metal prices increasing,TRUE,TRUE
+antique,1485589,back_translation_pivot_language_de,paraphrase,how sun rises,how does the sun rise,TRUE,TRUE
+antique,1512776,back_translation_pivot_language_de,paraphrase,why can t i post to a finance message board,why can t i post to a financial news board,FALSE,TRUE
+antique,1514356,back_translation_pivot_language_de,paraphrase,why am i so sleepy even though i had a goodnights sleep,why am i so sleeping even if i had a good night sleeping,FALSE,FALSE
+antique,1536937,back_translation_pivot_language_de,paraphrase,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,why there is a chinese map  but then you can split it in english  i e    wei  ni how ma  vs,FALSE,FALSE
+antique,1583099,back_translation_pivot_language_de,paraphrase,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,why is the us 2 trying to help israel  so what over the palaces israel has more weapons than the palaces,FALSE,FALSE
+antique,1607303,back_translation_pivot_language_de,paraphrase,how does a single parent with four teenagers get rich,how can a single parent with four teenagers become rich,TRUE,TRUE
+antique,1607924,back_translation_pivot_language_de,paraphrase,how does the earth go,how is the earth,TRUE,TRUE
+antique,1639607,back_translation_pivot_language_de,paraphrase,what is a diruetic,what is a dyreetic,FALSE,FALSE
+antique,1647624,back_translation_pivot_language_de,paraphrase,why do american s say eggsit,why do americans say eggs,FALSE,FALSE
+antique,1708787,back_translation_pivot_language_de,paraphrase,how to loose wait without exercise,how to wait without exercise,FALSE,FALSE
+antique,1727879,back_translation_pivot_language_de,paraphrase,why is organic all natural food  more expensive,why is organic all natural foods more expensive,TRUE,TRUE
+antique,17665,back_translation_pivot_language_de,paraphrase,how do i get rid of a bird s nest   my kichen window,how can i get rid of the nose of a bird   my kichen window,FALSE,FALSE
+antique,1881436,back_translation_pivot_language_de,paraphrase,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,how does the motorcycle remain rich and stable through gyroscopic forces,FALSE,FALSE
+antique,1907320,back_translation_pivot_language_de,paraphrase,how do i get college money,how can i get college money,TRUE,TRUE
+antique,1933929,back_translation_pivot_language_de,paraphrase,why do dog go bathroom on the funiture,why do dogs go to the bathroom,FALSE,FALSE
+antique,1970273,back_translation_pivot_language_de,paraphrase,why do hot molecules move faster than cold molecules,why hot molecules move faster than cold molecules,TRUE,FALSE
+antique,1978816,back_translation_pivot_language_de,paraphrase,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,if god talked to moses  why did god not explain to moses about evolution  why is the whole day 5 days 6 lies,TRUE,TRUE
+antique,2008456,back_translation_pivot_language_de,paraphrase,what can i do when my ignition key won t turn,what can i do if my burning key doesn t turn,FALSE,FALSE
+antique,2035638,back_translation_pivot_language_de,paraphrase,why can t u wear white shoes on labour day,why not wear white shoes on the day of work,FALSE,FALSE
+antique,2041828,back_translation_pivot_language_de,paraphrase,what does the bible mean by calling pride a deadly sin,what does the bible mean when one calls pride a deadly sin,TRUE,TRUE
+antique,2094435,back_translation_pivot_language_de,paraphrase,what is involved in an artists  portfolio,what is involved in the portfolio of an artist,TRUE,TRUE
+antique,2112535,back_translation_pivot_language_de,paraphrase,how come my moma doesent know what  30 4 is,how does my mom come when i know what 30 4 is,FALSE,FALSE
+antique,2113006,back_translation_pivot_language_de,paraphrase,when you go to buy a watch  why do all the watches clocks set to show 10 10,if you buy a clock  why all clocks show 10 10,TRUE,TRUE
+antique,212427,back_translation_pivot_language_de,paraphrase,why do criminals practice crime,why do criminals do crime,TRUE,TRUE
+antique,2147417,back_translation_pivot_language_de,paraphrase,why doesn t glue stick to the inside of the bottle,why not climb on the inside of the bottle,FALSE,FALSE
+antique,2155390,back_translation_pivot_language_de,paraphrase,can i feed my red eared slider steak,can i feed my red egg slider steak,FALSE,FALSE
+antique,2169746,back_translation_pivot_language_de,paraphrase,how can i get rid of a boil  on vaginal labia and underarm pits,how can i get rid of a bone  on the vaginal leaf and underlying bones,FALSE,FALSE
+antique,2235825,back_translation_pivot_language_de,paraphrase,why do i fall asleep after i eat and how can i prevent that,why do i sleep after eating and how can i prevent it,TRUE,TRUE
+antique,2306533,back_translation_pivot_language_de,paraphrase,how can i get water out of my ear,how can i get water from my ear,TRUE,TRUE
+antique,2357505,back_translation_pivot_language_de,paraphrase,why do some people refer to the irs as uncle sam,why do some people call the irs uncle sam,TRUE,TRUE
+antique,2418824,back_translation_pivot_language_de,paraphrase,why do space shuttles move when the rockets are fired but not when water is ejected,why are the spacecraft moving when the missiles are shot  but not when water is shot,FALSE,FALSE
+antique,2421078,back_translation_pivot_language_de,paraphrase,why is my chihuahua  male  so hateful,why is my chihuahua  man  so hateful,TRUE,TRUE
+antique,242701,back_translation_pivot_language_de,paraphrase,why does taco bell always make me nauseas,why does taco bell get tired,FALSE,FALSE
+antique,2439070,back_translation_pivot_language_de,paraphrase,why we get irritate,why are we irritated,TRUE,TRUE
+antique,2466898,back_translation_pivot_language_de,paraphrase,how do i install led s into my car,how can i install led s in my car,TRUE,TRUE
+antique,2492366,back_translation_pivot_language_de,paraphrase,what is so bad about the seal hunt,what s so bad about seafood,FALSE,FALSE
+antique,2500918,back_translation_pivot_language_de,paraphrase,how do you cure poison oak and poison ivy,how to heal gift oak and gift ivy,FALSE,FALSE
+antique,2522067,back_translation_pivot_language_de,paraphrase,why are liberals incapable of identifying and confronting evil,why are the liberals unable to identify and confront evil,TRUE,TRUE
+antique,2534994,back_translation_pivot_language_de,paraphrase,what is the meaning of my first name andrei,what does my first name andrei mean,TRUE,TRUE
+antique,2543919,back_translation_pivot_language_de,paraphrase,what is the easiest way to make chocolate mousse,what is the easiest way to make chocolate mouse,FALSE,FALSE
+antique,2546730,back_translation_pivot_language_de,paraphrase,what quality of which is inherently contained in the question why,what quality is included in the question why,FALSE,FALSE
+antique,2550445,back_translation_pivot_language_de,paraphrase,why do teens today find it amusing to tear one another apart,why do young people enjoy crying each other,FALSE,FALSE
+antique,2571912,back_translation_pivot_language_de,paraphrase,if a coin is tossed twice  what is the probability of getting heads both times,if a coin is killed twice  what is the probability that you get the head twice,FALSE,FALSE
+antique,2573745,back_translation_pivot_language_de,paraphrase,how did african american women get the right to vote,how did african americans get the right to vote,FALSE,TRUE
+antique,2573803,back_translation_pivot_language_de,paraphrase,how do you get rid of sweat stains on clothes,how to get rid of sweating on clothes,TRUE,TRUE
+antique,2587810,back_translation_pivot_language_de,paraphrase,what happens to bile salts when gallbladder has been removed,what happens to gel stones when the gall bladder is removed,FALSE,FALSE
+antique,2620488,back_translation_pivot_language_de,paraphrase,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,why do they say not to keep eggs in the refrigerator when in most refrigerators there is a special apartment for eggs,TRUE,TRUE
+antique,2630860,back_translation_pivot_language_de,paraphrase,why is god  male,why is god  man,TRUE,TRUE
+antique,2632334,back_translation_pivot_language_de,paraphrase,on the most fundamental level  why is killing other humans bad,at the most basic level  why is it bad to kill other people,TRUE,TRUE
+antique,263783,back_translation_pivot_language_de,paraphrase,what affects did watergate have on the presidency,what impact does wattergate have on the presidency,TRUE,TRUE
+antique,2677193,back_translation_pivot_language_de,paraphrase,what does the phrase  take no prisoners  mean,what does the word  no prisoners take,FALSE,FALSE
+antique,2678484,back_translation_pivot_language_de,paraphrase,what is the mean of bibliography,what is the meaning of bibliography,TRUE,TRUE
+antique,2678635,back_translation_pivot_language_de,paraphrase,why do husky s have coloful eyes then other dogs,why husky s eyes are dirty  then other dogs,FALSE,FALSE
+antique,2689609,back_translation_pivot_language_de,paraphrase,why do people ignore global issues,why do people ignore global problems,TRUE,TRUE
+antique,2700836,back_translation_pivot_language_de,paraphrase,how do you wire an 800 watt inverter,how to use a 800 watt inverter,FALSE,FALSE
+antique,2704,back_translation_pivot_language_de,paraphrase,why does it seem that no matter how hard you try,why does it seem like that  no matter how hard you try,TRUE,TRUE
+antique,2735795,back_translation_pivot_language_de,paraphrase,how to decrease weight 100kg to 70kg,how to reduce weight from 100 kg to 70 kg,TRUE,TRUE
+antique,2764765,back_translation_pivot_language_de,paraphrase,how to study 17 18 hrs a day give me practical tips,how can i study 17 18 hours a day give me practical tips,TRUE,TRUE
+antique,278043,back_translation_pivot_language_de,paraphrase,how is splitting a laser beam dangerous,how is a laser radiation dangerous,FALSE,FALSE
+antique,2858043,back_translation_pivot_language_de,paraphrase,how do you stop bad feelings toward the people,how do you prevent bad feelings towards people,TRUE,TRUE
+antique,2891885,back_translation_pivot_language_de,paraphrase,why does everone want a horse,why do everyone want a horse,TRUE,FALSE
+antique,2897078,back_translation_pivot_language_de,paraphrase,how to get rid of stript throat,how to get rid of stripte neck,FALSE,FALSE
+antique,2901754,back_translation_pivot_language_de,paraphrase,how are fico scores calculated,how is the fico score calculated,TRUE,TRUE
+antique,2910592,back_translation_pivot_language_de,paraphrase,how do i get rid of pink eye quick at home,how can i get rid of the red eye at home,FALSE,TRUE
+antique,2942624,back_translation_pivot_language_de,paraphrase,why do random strangers keep asking me what ethnicity i am,why do random strangers still ask me what ethnicity am i,TRUE,TRUE
+antique,3083719,back_translation_pivot_language_de,paraphrase,how do you safely wean a person off risperidal,how to lose a person from risperidal,FALSE,FALSE
+antique,3104841,back_translation_pivot_language_de,paraphrase,how do you take care of hamster gigy pig,how to take care of hamster gigy pig,TRUE,TRUE
+antique,3124162,back_translation_pivot_language_de,paraphrase,how can i get rid of a sinus infection without medication,how can i get rid of a sinus infection without medications,TRUE,TRUE
+antique,3152714,back_translation_pivot_language_de,paraphrase,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black woman and don t like the hair under the arms or in the private area  but always dirty bump  how can i prevent,FALSE,FALSE
+antique,3159749,back_translation_pivot_language_de,paraphrase,what is the difference between organic and inorganic eggs,what is the difference between organic and anorganic eggs,TRUE,TRUE
+antique,3172166,back_translation_pivot_language_de,paraphrase,does any one know how to find out about an insurance claim,does anyone know how to find out about an insurance claim,TRUE,TRUE
+antique,317469,back_translation_pivot_language_de,paraphrase,how can i get rid off my pimples white black heads  and oiliness of my face,how can i get rid of my fungus  white black heads and oliveness of the face,FALSE,FALSE
+antique,3178012,back_translation_pivot_language_de,paraphrase,why do we find bricks in toilets,why do we find bricks in the toilets,TRUE,TRUE
+antique,3211282,back_translation_pivot_language_de,paraphrase,i dont have any friands on yahoo how do i get some,i have no friends on yahoo  how can i get some,TRUE,TRUE
+antique,3280274,back_translation_pivot_language_de,paraphrase,what is a schnitzel,what is a cut,FALSE,FALSE
+antique,332662,back_translation_pivot_language_de,paraphrase,what is sosiology,what is sociology,TRUE,TRUE
+antique,3374970,back_translation_pivot_language_de,paraphrase,what is the correct form  i wear glasses or i am wearing glasses and why,what is the right form  i wear glasses or i wear glasses and why,FALSE,TRUE
+antique,3382182,back_translation_pivot_language_de,paraphrase,is more difficult to train a male versus a female,is it more difficult to train a man against a woman,FALSE,TRUE
+antique,344029,back_translation_pivot_language_de,paraphrase,what does bmr stand for when you are talking about health and what is bmr,what does bmr mean when you talk about health and what is bmr,TRUE,TRUE
+antique,3470651,back_translation_pivot_language_de,paraphrase,how do i get rid of static shock electricity,how can i get rid of static shock   electricity,TRUE,TRUE
+antique,3495304,back_translation_pivot_language_de,paraphrase,how can i find a diabetic freind,how can i find a diabetic,FALSE,TRUE
+antique,3507499,back_translation_pivot_language_de,paraphrase,tell me the difference between revenge and vengeance,tell me the difference between revenge and revenge,FALSE,TRUE
+antique,358253,back_translation_pivot_language_de,paraphrase,why do wiccans believe that they have magical powers when they don t ever produce any magic,why do wikans believe that they have magical powers when they never produce magic,TRUE,TRUE
+antique,3617468,back_translation_pivot_language_de,paraphrase,how do yooh laugh,how does yooh smile,FALSE,FALSE
+antique,3626847,back_translation_pivot_language_de,paraphrase,what can  check engine  light signify in my 94 plymoth voyager,what can  check engine  light mean in my 94 plymoth voyager,TRUE,TRUE
+antique,363519,back_translation_pivot_language_de,paraphrase,how do you install a oil breather on a 1994 ford tempo,how to install an oil brush on a 1994 ford temp,FALSE,FALSE
+antique,3635284,back_translation_pivot_language_de,paraphrase,what is the procedure for getting a paternity test,what is the procedure for obtaining a paternity examination,TRUE,TRUE
+antique,3651236,back_translation_pivot_language_de,paraphrase,what does the  21 mean,what does it mean  21,TRUE,TRUE
+antique,3652886,back_translation_pivot_language_de,paraphrase,why isn t there a tool to suck up phlegm in your throat,why is there no tool to give phlegm in your neck,FALSE,FALSE
+antique,3690922,back_translation_pivot_language_de,paraphrase,how do u end a bad rep,how to end a bad rep,TRUE,TRUE
+antique,3731489,back_translation_pivot_language_de,paraphrase,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,bulldog is aware of what is happening and tries to stop it  already in vet just waiting for bloodwork  ears fi,TRUE,TRUE
+antique,3738877,back_translation_pivot_language_de,paraphrase,if i had a bad breath what should i do,if i had a bad breath  what should i do,FALSE,FALSE
+antique,3752394,back_translation_pivot_language_de,paraphrase,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihad,why did muslims not protest terrorism by radical islam  as they did the cartoon jihad,TRUE,TRUE
+antique,3814583,back_translation_pivot_language_de,paraphrase,why do only republicans defend martha stewart,why only the republicans defend martha stewart,TRUE,TRUE
+antique,3824106,back_translation_pivot_language_de,paraphrase,what happens when a young girl  young boy meet alone,what happens when a young girl and a young boy meet alone,TRUE,TRUE
+antique,3841762,back_translation_pivot_language_de,paraphrase,what is the most important number  and why,what is the most important number and why,FALSE,FALSE
+antique,3884772,back_translation_pivot_language_de,paraphrase,how about a bumper sticker thats says,how does a bumper stick look like this,TRUE,TRUE
+antique,3885753,back_translation_pivot_language_de,paraphrase,why are dead cockroaches always found lying on their backs instead of face down,why are dead cockroaches always on their back instead of looking down,TRUE,TRUE
+antique,3958214,back_translation_pivot_language_de,paraphrase,how is light energy turned into heat energy,how is light energy converted into heat energy,TRUE,TRUE
+antique,3961,back_translation_pivot_language_de,paraphrase,how to stop rabbit from peeing on the floor,how to prevent the rabbits on the ground,FALSE,FALSE
+antique,397709,back_translation_pivot_language_de,paraphrase,how and what court should i take a driver who damaged my liability insurance car,how and in which court should i take a driver who damaged my prison car,FALSE,FALSE
+antique,4031702,back_translation_pivot_language_de,paraphrase,how to spice up our lovemaking,how can we increase our liebemaking,FALSE,FALSE
+antique,4032777,back_translation_pivot_language_de,paraphrase,why do american people put there animals on such a pedestal,why do americans put animals on such pedestrians,FALSE,FALSE
+antique,4042061,back_translation_pivot_language_de,paraphrase,why do parakeets bounce up and down,why are parakeits climbing up and down,FALSE,FALSE
+antique,4048305,back_translation_pivot_language_de,paraphrase,why aren t there ever any guilty bystanders,why are there never guilty,FALSE,FALSE
+antique,406082,back_translation_pivot_language_de,paraphrase,how do people build mussels on there biceps,how do people build muscles on the biceps,TRUE,TRUE
+antique,4069320,back_translation_pivot_language_de,paraphrase,athiests  how did you find the light,atheists  how did you find the light,TRUE,TRUE
+antique,4092472,back_translation_pivot_language_de,paraphrase,what does elucidate mean,what is elucidate,TRUE,TRUE
+antique,4165672,back_translation_pivot_language_de,paraphrase,how do we get up early in the morning without alarm,how to get up early in the morning without alarm,TRUE,TRUE
+antique,4183127,back_translation_pivot_language_de,paraphrase,why are some americans so prudish when it comes to sex,why are some americans so cautious when it comes to sex,FALSE,TRUE
+antique,4217473,back_translation_pivot_language_de,paraphrase,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,how do i remove the naked patch v1 0 0 1022 from the sims 2 game,TRUE,TRUE
+antique,4237144,back_translation_pivot_language_de,paraphrase,why do we say   god bless you  when someone sneezes,why do we say   god bless you  when someone cuts,FALSE,FALSE
+antique,4262151,back_translation_pivot_language_de,paraphrase,how should a pregnant woman deal with morning sickness,how should a pregnant woman deal with morning disease,FALSE,TRUE
+antique,4287367,back_translation_pivot_language_de,paraphrase,how can ppl tell if they r bipolar,how can ppl tell if they are bipolar,TRUE,TRUE
+antique,4287894,back_translation_pivot_language_de,paraphrase,how long is the train ride from italy to finland,how long does the train travel from italy to finland take,TRUE,TRUE
+antique,4336509,back_translation_pivot_language_de,paraphrase,what is the purpose of running a fever,what is the purpose of leading a fever,FALSE,FALSE
+antique,4338583,back_translation_pivot_language_de,paraphrase,how is it being you,how is it to be you,TRUE,TRUE
+antique,4387641,back_translation_pivot_language_de,paraphrase,how do i keep my cat from scratching my leather couch,how can i keep my cat from scratching my skin shoe,FALSE,FALSE
+antique,4400543,back_translation_pivot_language_de,paraphrase,why do some animals always have more than one baby   some animals don t,why do some animals have more than a baby and some animals do not,TRUE,TRUE
+antique,4450252,back_translation_pivot_language_de,paraphrase,what are the causes of college dropouts,what are the causes of high school failure,FALSE,FALSE
+antique,461995,back_translation_pivot_language_de,paraphrase,why does my congregation complain about lenght of my  90 minute sermons,why does my community complain about the length of my 90 minute sermon,TRUE,TRUE
+antique,489705,back_translation_pivot_language_de,paraphrase,what are some unwritten rules while using a urinal,what are some unwritten rules during the use of a urinal,TRUE,TRUE
+antique,511835,back_translation_pivot_language_de,paraphrase,how and why did the roman empire fell apart,how and why was the roman empire separated,FALSE,FALSE
+antique,514804,back_translation_pivot_language_de,paraphrase,why isn t there any military bases in the state of mississippi,why is there no military bases in the state of mississippi,TRUE,TRUE
+antique,546552,back_translation_pivot_language_de,paraphrase,if jimmy hoffa is found on the farm  how will it change american culture,if jimmy hoffa is found on the farm  how will it change the american culture,FALSE,FALSE
+antique,554539,back_translation_pivot_language_de,paraphrase,why do you read,why are you leaving,FALSE,FALSE
+antique,566364,back_translation_pivot_language_de,paraphrase,what are caskets its so amazing how they are made,what are caskets so amazing as they are made,FALSE,FALSE
+antique,595342,back_translation_pivot_language_de,paraphrase,what is there to expect when you turn 17,what do you expect if you run 17,FALSE,FALSE
+antique,643630,back_translation_pivot_language_de,paraphrase,how do you keep your parents from divorcing,how do you protect your parents from divorce,TRUE,TRUE
+antique,66151,back_translation_pivot_language_de,paraphrase,why does the it seem the u s  has more serial killers than other countries,why does it seem that the u s  has more serial killer than other countries,TRUE,TRUE
+antique,684633,back_translation_pivot_language_de,paraphrase,what s the best asian and why,what is the best in asia and why,FALSE,FALSE
+antique,727663,back_translation_pivot_language_de,paraphrase,why do pigs wallow in mud,why do pigs sleep in waste,FALSE,FALSE
+antique,752633,back_translation_pivot_language_de,paraphrase,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,what did you do when there was a bomb while shopping in new york,TRUE,TRUE
+antique,763189,back_translation_pivot_language_de,paraphrase,why was  wearing the colour green considered a sign of madness,why was wearing the colour green considered a sign of madness,FALSE,FALSE
+antique,772988,back_translation_pivot_language_de,paraphrase,what is the difference between dressing and stuffing,what is the difference between clothing and metabolism,FALSE,FALSE
+antique,884643,back_translation_pivot_language_de,paraphrase,in the constellation lyra  why are some of the stars labeled with the roman alphabet,in the constellation lyra  why are some of the stars marked with the roman alphabet,TRUE,TRUE
+antique,913424,back_translation_pivot_language_de,paraphrase,why do i black out while i am driving,why do i make black while i drive,FALSE,FALSE
+antique,929821,back_translation_pivot_language_de,paraphrase,why do guys sniff their underwear,why do men cut their underwear,FALSE,FALSE
+antique,937635,back_translation_pivot_language_de,paraphrase,why do they put braille on a drive through atm,why do you put braille on a drive through atm,FALSE,FALSE
+antique,94629,back_translation_pivot_language_de,paraphrase,why receptors are good drug target,why are receptors a good drug target,TRUE,TRUE
+antique,961127,back_translation_pivot_language_de,paraphrase,why do we put up with the heresies of science,why do we deal with the heresies of science,TRUE,TRUE
+antique,963523,back_translation_pivot_language_de,paraphrase,how to get mythral shards on kingdom hearts 2,how to get mythal shards on kingdom hearts 2,TRUE,TRUE
+antique,98438,back_translation_pivot_language_de,paraphrase,where can i find a simplified explanation of how to use commas properly,where can i find a simplified explanation about how commas can be properly used,TRUE,TRUE
+antique,986260,back_translation_pivot_language_de,paraphrase,what is currently the meaning of life,what is the meaning of life at this moment,TRUE,TRUE
+antique,993601,back_translation_pivot_language_de,paraphrase,why were black women abused sexually after the abolition of slavery in the us in 1865,why were black women sexually abused after the abolition of slavery in the united states in 1865,TRUE,TRUE
+antique,1016750,ramsrigouthamg/t5_paraphraser,paraphrase,how do i erase all the contacts in my lg 6100 verizon phone at once,how do i erase all the contacts in my lg 6100 phone at once,TRUE,FALSE
+antique,103298,ramsrigouthamg/t5_paraphraser,paraphrase,why precisely is foreign food considered ethnic,why is foreign food considered ethnic,TRUE,FALSE
+antique,1034050,ramsrigouthamg/t5_paraphraser,paraphrase,why does the earth keep getting hotter and hotter every year,why does the earth get hotter and hotter every year,TRUE,TRUE
+antique,1051346,ramsrigouthamg/t5_paraphraser,paraphrase,why is it when people cross the street they do not look to see if traffic is coming,why do people not look for traffic when they cross the street,TRUE,TRUE
+antique,1097878,ramsrigouthamg/t5_paraphraser,paraphrase,how to become smart,how can i become smart,TRUE,TRUE
+antique,1107012,ramsrigouthamg/t5_paraphraser,paraphrase,what does north by north west mean,what does north mean,FALSE,FALSE
+antique,1158088,ramsrigouthamg/t5_paraphraser,paraphrase,why my neighbor s dog doesn t bark,why doesn t my neighbor s dog bark,TRUE,FALSE
+antique,11706,ramsrigouthamg/t5_paraphraser,paraphrase,why not legalize  and tax prostitution,why don t we legalize prostitution,TRUE,TRUE
+antique,1184520,ramsrigouthamg/t5_paraphraser,paraphrase,why be an  a theist,why should i be an  atheist,TRUE,TRUE
+antique,1188438,ramsrigouthamg/t5_paraphraser,paraphrase,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,why is there a fence runningiing on the sides of the freeway in the middle of the desert up and over rough terrain,FALSE,FALSE
+antique,1251077,ramsrigouthamg/t5_paraphraser,paraphrase,what is the term  take hight road  mean,what does  take hight road  mean,FALSE,FALSE
+antique,126182,ramsrigouthamg/t5_paraphraser,paraphrase,how can i find out if i have a warrant without paying a fee,how do i find out if i have a warrant without paying a fee,TRUE,TRUE
+antique,1295284,ramsrigouthamg/t5_paraphraser,paraphrase,how can we solve a problem,how do i solve a problem,TRUE,TRUE
+antique,1341602,ramsrigouthamg/t5_paraphraser,paraphrase,what are some common causes of my cat s eye to be watery and drip clear fluid,what causes my cat s eye to be watery and drip clear fluid,TRUE,TRUE
+antique,1443637,ramsrigouthamg/t5_paraphraser,paraphrase,how do you find info about a house s history that isn t  historical,how do you find information about a house s history that isn t  historical,TRUE,TRUE
+antique,1467322,ramsrigouthamg/t5_paraphraser,paraphrase,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do people ask stupid questions on quora,FALSE,FALSE
+antique,1471877,ramsrigouthamg/t5_paraphraser,paraphrase,why metals prices are getting all time high,why are metal prices so high,TRUE,TRUE
+antique,1485589,ramsrigouthamg/t5_paraphraser,paraphrase,how sun rises,how does the sun rise,TRUE,FALSE
+antique,1512776,ramsrigouthamg/t5_paraphraser,paraphrase,why can t i post to a finance message board,why can t i post on a finance message board,TRUE,TRUE
+antique,1514356,ramsrigouthamg/t5_paraphraser,paraphrase,why am i so sleepy even though i had a goodnights sleep,why am i so sleepy even though i had a goodnight s sleep,TRUE,TRUE
+antique,1536937,ramsrigouthamg/t5_paraphraser,paraphrase,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,why are there chinese chartacters but then you can spell them out in english i e   wei  ni how ma  vs the,TRUE,TRUE
+antique,1583099,ramsrigouthamg/t5_paraphraser,paraphrase,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,why u s is trying to help israel so what about palastene israel has more weapons than palastene,TRUE,TRUE
+antique,1607303,ramsrigouthamg/t5_paraphraser,paraphrase,how does a single parent with four teenagers get rich,how do single parents get rich,TRUE,FALSE
+antique,1639607,ramsrigouthamg/t5_paraphraser,paraphrase,what is a diruetic,what is diruetic,TRUE,TRUE
+antique,1647624,ramsrigouthamg/t5_paraphraser,paraphrase,why do american s say eggsit,why do americans say eggsit,TRUE,TRUE
+antique,1708787,ramsrigouthamg/t5_paraphraser,paraphrase,how to loose wait without exercise,how can i loose my wait without doing exercise,TRUE,TRUE
+antique,1727879,ramsrigouthamg/t5_paraphraser,paraphrase,why is organic all natural food  more expensive,why is organic food so expensive,TRUE,TRUE
+antique,17665,ramsrigouthamg/t5_paraphraser,paraphrase,how do i get rid of a bird s nest   my kichen window,how do i get rid of a bird s nest at my kichen window,TRUE,TRUE
+antique,1933929,ramsrigouthamg/t5_paraphraser,paraphrase,why do dog go bathroom on the funiture,why do dogs go to the bathroom,FALSE,FALSE
+antique,2008456,ramsrigouthamg/t5_paraphraser,paraphrase,what can i do when my ignition key won t turn,what should i do if my ignition key won t turn,TRUE,TRUE
+antique,2035638,ramsrigouthamg/t5_paraphraser,paraphrase,why can t u wear white shoes on labour day,why can t i wear white shoes on labour day,TRUE,TRUE
+antique,2041828,ramsrigouthamg/t5_paraphraser,paraphrase,what does the bible mean by calling pride a deadly sin,is pride a sin,FALSE,TRUE
+antique,2094435,ramsrigouthamg/t5_paraphraser,paraphrase,what is involved in an artists  portfolio,what is involved in an artist s portfolio,TRUE,TRUE
+antique,2112535,ramsrigouthamg/t5_paraphraser,paraphrase,how come my moma doesent know what  30 4 is,how come my mom doesn t know what 30 4 is,TRUE,TRUE
+antique,2137263,ramsrigouthamg/t5_paraphraser,paraphrase,what is an  encronologist,what is an encronologist,FALSE,FALSE
+antique,2147417,ramsrigouthamg/t5_paraphraser,paraphrase,why doesn t glue stick to the inside of the bottle,why doesn t glue stick to the inside of a bottle,TRUE,TRUE
+antique,2155390,ramsrigouthamg/t5_paraphraser,paraphrase,can i feed my red eared slider steak,how do you feed a red eared slider steak,TRUE,TRUE
+antique,2175167,ramsrigouthamg/t5_paraphraser,paraphrase,what is your definition of pornography,what is the definition of pornography,TRUE,TRUE
+antique,2235825,ramsrigouthamg/t5_paraphraser,paraphrase,why do i fall asleep after i eat and how can i prevent that,why do i fall asleep after eating,TRUE,TRUE
+antique,2306533,ramsrigouthamg/t5_paraphraser,paraphrase,how can i get water out of my ear,how do i get water out of my ear,TRUE,TRUE
+antique,2418824,ramsrigouthamg/t5_paraphraser,paraphrase,why do space shuttles move when the rockets are fired but not when water is ejected,why do space shuttles move when rockets are fired but not when water is ejected,FALSE,FALSE
+antique,242701,ramsrigouthamg/t5_paraphraser,paraphrase,why does taco bell always make me nauseas,why does taco bell make me nausea,TRUE,FALSE
+antique,2439070,ramsrigouthamg/t5_paraphraser,paraphrase,why we get irritate,why do we get irritated,TRUE,TRUE
+antique,2466898,ramsrigouthamg/t5_paraphraser,paraphrase,how do i install led s into my car,how do i install led lights in my car,TRUE,TRUE
+antique,2534994,ramsrigouthamg/t5_paraphraser,paraphrase,what is the meaning of my first name andrei,what is the meaning of andrei,TRUE,TRUE
+antique,2543919,ramsrigouthamg/t5_paraphraser,paraphrase,what is the easiest way to make chocolate mousse,what is the best way to make chocolate mousse,FALSE,TRUE
+antique,2550445,ramsrigouthamg/t5_paraphraser,paraphrase,why do teens today find it amusing to tear one another apart,why do teens tear each other apart,TRUE,TRUE
+antique,2573803,ramsrigouthamg/t5_paraphraser,paraphrase,how do you get rid of sweat stains on clothes,how do i get rid of sweat stains on clothes,TRUE,TRUE
+antique,2587810,ramsrigouthamg/t5_paraphraser,paraphrase,what happens to bile salts when gallbladder has been removed,what happens to bile salts after gallbladder removal,TRUE,TRUE
+antique,2613648,ramsrigouthamg/t5_paraphraser,paraphrase,how can i strengthen my eyes,how do i strengthen my eyes,TRUE,TRUE
+antique,2620488,ramsrigouthamg/t5_paraphraser,paraphrase,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,why do they say don t keep eggs in the fridge if there is a special compartment in most fridges for eggs,TRUE,TRUE
+antique,2630860,ramsrigouthamg/t5_paraphraser,paraphrase,why is god  male,why is god male,FALSE,FALSE
+antique,2632334,ramsrigouthamg/t5_paraphraser,paraphrase,on the most fundamental level  why is killing other humans bad,why is killing other humans bad,TRUE,TRUE
+antique,263783,ramsrigouthamg/t5_paraphraser,paraphrase,what affects did watergate have on the presidency,what impact did watergate have on the us presidency,TRUE,TRUE
+antique,2678484,ramsrigouthamg/t5_paraphraser,paraphrase,what is the mean of bibliography,what is bibliography,TRUE,FALSE
+antique,2678635,ramsrigouthamg/t5_paraphraser,paraphrase,why do husky s have coloful eyes then other dogs,why do husky s have more coloful eyes than other dogs,TRUE,TRUE
+antique,2735795,ramsrigouthamg/t5_paraphraser,paraphrase,how to decrease weight 100kg to 70kg,how can i reduce my weight from 100kg to 70kg,TRUE,TRUE
+antique,2764765,ramsrigouthamg/t5_paraphraser,paraphrase,how to study 17 18 hrs a day give me practical tips,how do i study 17 18 hours a day give me practical tips,TRUE,TRUE
+antique,278043,ramsrigouthamg/t5_paraphraser,paraphrase,how is splitting a laser beam dangerous,is splitting a laser beam dangerous,TRUE,TRUE
+antique,2858043,ramsrigouthamg/t5_paraphraser,paraphrase,how do you stop bad feelings toward the people,how do i stop feeling bad for people,FALSE,FALSE
+antique,2891885,ramsrigouthamg/t5_paraphraser,paraphrase,why does everone want a horse,why do people want a horse,TRUE,TRUE
+antique,2897078,ramsrigouthamg/t5_paraphraser,paraphrase,how to get rid of stript throat,how do i get rid of stript throat,TRUE,TRUE
+antique,2910592,ramsrigouthamg/t5_paraphraser,paraphrase,how do i get rid of pink eye quick at home,how do i get rid of pink eye,TRUE,TRUE
+antique,2942624,ramsrigouthamg/t5_paraphraser,paraphrase,why do random strangers keep asking me what ethnicity i am,why do people ask me what ethnicity i am,TRUE,TRUE
+antique,3104841,ramsrigouthamg/t5_paraphraser,paraphrase,how do you take care of hamster gigy pig,how do you take care of a hamster gigy pig,TRUE,TRUE
+antique,3118286,ramsrigouthamg/t5_paraphraser,paraphrase,how to reduce crime and violence,how can we reduce crime and violence,TRUE,TRUE
+antique,3124162,ramsrigouthamg/t5_paraphraser,paraphrase,how can i get rid of a sinus infection without medication,how do i get rid of sinus infection without medication,TRUE,TRUE
+antique,3152714,ramsrigouthamg/t5_paraphraser,paraphrase,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black woman and don t like hair under arms or private area but always get razor bumps how can i prevent,FALSE,FALSE
+antique,3172166,ramsrigouthamg/t5_paraphraser,paraphrase,does any one know how to find out about an insurance claim,how do i find out about an insurance claim,TRUE,TRUE
+antique,317469,ramsrigouthamg/t5_paraphraser,paraphrase,how can i get rid off my pimples white black heads  and oiliness of my face,how do i get rid of acne and its spots,TRUE,TRUE
+antique,3211282,ramsrigouthamg/t5_paraphraser,paraphrase,i dont have any friands on yahoo how do i get some,i don t have any friands on yahoo how do i get some,TRUE,TRUE
+antique,3272207,ramsrigouthamg/t5_paraphraser,paraphrase,how to make pineapple upsidedown cake germain chocolate cake,how do i make a pineapple upsidedown cake,TRUE,TRUE
+antique,3382182,ramsrigouthamg/t5_paraphraser,paraphrase,is more difficult to train a male versus a female,is it more difficult to train a male than a female,TRUE,TRUE
+antique,3470651,ramsrigouthamg/t5_paraphraser,paraphrase,how do i get rid of static shock electricity,how do i get rid of static shock,FALSE,FALSE
+antique,3495304,ramsrigouthamg/t5_paraphraser,paraphrase,how can i find a diabetic freind,how do i find a diabetic friend,TRUE,TRUE
+antique,3507499,ramsrigouthamg/t5_paraphraser,paraphrase,tell me the difference between revenge and vengeance,what is the difference between revenge and vengeance,TRUE,TRUE
+antique,358253,ramsrigouthamg/t5_paraphraser,paraphrase,why do wiccans believe that they have magical powers when they don t ever produce any magic,why do wiccans believe that they have magical powers,TRUE,TRUE
+antique,3617468,ramsrigouthamg/t5_paraphraser,paraphrase,how do yooh laugh,how do i make myself laugh,FALSE,FALSE
+antique,363519,ramsrigouthamg/t5_paraphraser,paraphrase,how do you install a oil breather on a 1994 ford tempo,how do you install an oil breather on a 1994 ford tempo,TRUE,TRUE
+antique,3635284,ramsrigouthamg/t5_paraphraser,paraphrase,what is the procedure for getting a paternity test,how do i get a paternity test,TRUE,TRUE
+antique,3651236,ramsrigouthamg/t5_paraphraser,paraphrase,what does the  21 mean,what does  21 mean,TRUE,FALSE
+antique,3690922,ramsrigouthamg/t5_paraphraser,paraphrase,how do u end a bad rep,how do i end a bad rep,TRUE,TRUE
+antique,3731489,ramsrigouthamg/t5_paraphraser,paraphrase,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,how can i stop my dog from getting sick,FALSE,FALSE
+antique,3738877,ramsrigouthamg/t5_paraphraser,paraphrase,if i had a bad breath what should i do,what should i do if i have bad breath,FALSE,FALSE
+antique,3814583,ramsrigouthamg/t5_paraphraser,paraphrase,why do only republicans defend martha stewart,why do republicans defend martha stewart,TRUE,TRUE
+antique,3824106,ramsrigouthamg/t5_paraphraser,paraphrase,what happens when a young girl  young boy meet alone,what happens when a young girl and a young boy meet alone,TRUE,TRUE
+antique,3841762,ramsrigouthamg/t5_paraphraser,paraphrase,what is the most important number  and why,what is the most important number,TRUE,TRUE
+antique,3884772,ramsrigouthamg/t5_paraphraser,paraphrase,how about a bumper sticker thats says,how about a bumper sticker that says,FALSE,FALSE
+antique,3913653,ramsrigouthamg/t5_paraphraser,paraphrase,how can sexual desire be overcome,how can i overcome sexual desire,TRUE,TRUE
+antique,3958214,ramsrigouthamg/t5_paraphraser,paraphrase,how is light energy turned into heat energy,how is light energy converted into heat energy,TRUE,TRUE
+antique,3961,ramsrigouthamg/t5_paraphraser,paraphrase,how to stop rabbit from peeing on the floor,how do i stop my rabbit from peeing on my floor,TRUE,TRUE
+antique,397709,ramsrigouthamg/t5_paraphraser,paraphrase,how and what court should i take a driver who damaged my liability insurance car,how and what court should i take a driver who damaged my insurance car,FALSE,FALSE
+antique,4031702,ramsrigouthamg/t5_paraphraser,paraphrase,how to spice up our lovemaking,how do i spice up my lovemaking,TRUE,TRUE
+antique,4032777,ramsrigouthamg/t5_paraphraser,paraphrase,why do american people put there animals on such a pedestal,why do americans put animals on pedestals,TRUE,TRUE
+antique,404359,ramsrigouthamg/t5_paraphraser,paraphrase,why is corruption high in the third world countries,why is corruption so high in third world countries,TRUE,TRUE
+antique,4048305,ramsrigouthamg/t5_paraphraser,paraphrase,why aren t there ever any guilty bystanders,why aren t there any guilty bystanders,TRUE,TRUE
+antique,406082,ramsrigouthamg/t5_paraphraser,paraphrase,how do people build mussels on there biceps,how do people build mussels on their biceps,TRUE,TRUE
+antique,4069320,ramsrigouthamg/t5_paraphraser,paraphrase,athiests  how did you find the light,how do athiests find light,TRUE,TRUE
+antique,4165672,ramsrigouthamg/t5_paraphraser,paraphrase,how do we get up early in the morning without alarm,how do i get up early in the morning without an alarm,TRUE,TRUE
+antique,4183127,ramsrigouthamg/t5_paraphraser,paraphrase,why are some americans so prudish when it comes to sex,why are americans so prudish when it comes to sex,TRUE,TRUE
+antique,4217473,ramsrigouthamg/t5_paraphraser,paraphrase,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,how do i remove the nude patch v1 0 0 1022 from sims 2,TRUE,TRUE
+antique,4237144,ramsrigouthamg/t5_paraphraser,paraphrase,why do we say   god bless you  when someone sneezes,why do we say god bless you when someone sneezes,FALSE,FALSE
+antique,4262151,ramsrigouthamg/t5_paraphraser,paraphrase,how should a pregnant woman deal with morning sickness,how do pregnant women deal with morning sickness,TRUE,TRUE
+antique,4287367,ramsrigouthamg/t5_paraphraser,paraphrase,how can ppl tell if they r bipolar,how do i know if i m bipolar,TRUE,TRUE
+antique,4338583,ramsrigouthamg/t5_paraphraser,paraphrase,how is it being you,how is it to be you,TRUE,TRUE
+antique,4387641,ramsrigouthamg/t5_paraphraser,paraphrase,how do i keep my cat from scratching my leather couch,how do i stop my cat from scratching my leather couch,TRUE,TRUE
+antique,4400543,ramsrigouthamg/t5_paraphraser,paraphrase,why do some animals always have more than one baby   some animals don t,why do some animals have more than one baby,TRUE,TRUE
+antique,461995,ramsrigouthamg/t5_paraphraser,paraphrase,why does my congregation complain about lenght of my  90 minute sermons,why does my congregation complain about the length of my sermons,TRUE,TRUE
+antique,485408,ramsrigouthamg/t5_paraphraser,paraphrase,what can i do tonight,what should i do tonight,TRUE,TRUE
+antique,511835,ramsrigouthamg/t5_paraphraser,paraphrase,how and why did the roman empire fell apart,why did the roman empire fall apart,TRUE,FALSE
+antique,514804,ramsrigouthamg/t5_paraphraser,paraphrase,why isn t there any military bases in the state of mississippi,why are there no military bases in mississippi,TRUE,TRUE
+antique,566364,ramsrigouthamg/t5_paraphraser,paraphrase,what are caskets its so amazing how they are made,how are caskets made,TRUE,FALSE
+antique,595342,ramsrigouthamg/t5_paraphraser,paraphrase,what is there to expect when you turn 17,what should i expect when i turn 17,TRUE,TRUE
+antique,643630,ramsrigouthamg/t5_paraphraser,paraphrase,how do you keep your parents from divorcing,how do i keep my parents from divorcing,TRUE,TRUE
+antique,66151,ramsrigouthamg/t5_paraphraser,paraphrase,why does the it seem the u s  has more serial killers than other countries,why does the us have more serial killers than other countries,TRUE,TRUE
+antique,684633,ramsrigouthamg/t5_paraphraser,paraphrase,what s the best asian and why,what s the best asian food,FALSE,FALSE
+antique,752633,ramsrigouthamg/t5_paraphraser,paraphrase,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,what did you do when a bomb hit you while you were shopping in new york,FALSE,FALSE
+antique,763189,ramsrigouthamg/t5_paraphraser,paraphrase,why was  wearing the colour green considered a sign of madness,why is wearing the colour green considered a sign of madness,TRUE,TRUE

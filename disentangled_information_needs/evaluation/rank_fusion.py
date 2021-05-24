@@ -5,7 +5,7 @@ from pyterrier_t5 import MonoT5ReRanker
 
 import pyterrier as pt
 if not pt.started():
-  pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+  pt.init("snapshot", boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
 
 import pandas as pd
 import ir_datasets
@@ -84,6 +84,21 @@ def pair_iter(dataset):
             yield onir_pt.TrainPair(docpair.query_id, text_query,
                                     docpair.doc_id_a, text_a,
                                     docpair.doc_id_b, text_b)
+
+
+def fuse_by_sd(trec_runs):
+    dfs = []
+    for t in trec_runs:
+        dfs.append(t.run_data)
+    df_c = pd.concat(dfs)
+    df_c = df_c[df_c['rank']<10]
+    sds = df_c.groupby(["system", 'qid'])['score'].std().reset_index()
+    min_sds = sds.groupby(['qid'])['score'].min().reset_index()
+    min_only = sds.merge(min_sds, on = ['qid', 'score']).drop_duplicates('qid')
+
+    trec_run_by_min_sd = df_c.merge(min_only[['system', 'qid']], on=['system', 'qid'])
+    trec_run_by_min_sd['system'] = 'minSD'
+    return trec_run_by_min_sd
 
 def main():
     logging_level = logging.INFO
@@ -247,6 +262,7 @@ def main():
 
     logging.info("Applying rank fusion")
     fuse_methods = [
+        ("SD", fuse_by_sd),
         ("CombSum", combos),
         ("RRF", fusion.reciprocal_rank_fusion)
     ]
@@ -254,11 +270,11 @@ def main():
     final_df_all = []
     for fusion_name, f in fuse_methods:
         logging.info("Fusing with {}".format(fusion_name))        
-        # fused_run = f(all_runs + [trec_run_standard_queries])
+        # fused_run = f(all_runs + [trec_run_standard_queries])        
         fused_run = f(all_runs)
         if fusion_name == "RRF":
             fused_df_all = fused_run.run_data
-        elif fusion_name == "CombSum":
+        elif fusion_name == "CombSum" or fusion_name == "SD":
             fused_df_all = fused_run
         fused_df_all['qid'] = fused_df_all['query']
         fused_df_all['docno'] = fused_df_all['docid']
@@ -269,7 +285,7 @@ def main():
             logging.info("Applying rank fusion for cat {}".format(cat))
             # fused_run = f(runs_by_type[cat] + [trec_run_standard_queries])
             fused_run = f(runs_by_type[cat])
-            if fusion_name == "CombSum":
+            if fusion_name == "CombSum" or fusion_name == "SD":
                 fused_df = fused_run
             else:
                 fused_df = fused_run.run_data

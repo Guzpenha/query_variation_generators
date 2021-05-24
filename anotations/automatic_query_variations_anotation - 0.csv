@@ -1,0 +1,458 @@
+dataset,q_id,method,transformation_type,original_query,variation,valid,follow_category
+antique,884643,ramsrigouthamg/t5_paraphraser,paraphrase,in the constellation lyra  why are some of the stars labeled with the roman alphabet,in the constellation lyra  why are some stars labeled with the roman alphabet,TRUE,TRUE
+antique,913424,ramsrigouthamg/t5_paraphraser,paraphrase,why do i black out while i am driving,why do i black out while driving,TRUE,FALSE
+antique,929821,ramsrigouthamg/t5_paraphraser,paraphrase,why do guys sniff their underwear,why do guys sniff underwear,TRUE,TRUE
+antique,94629,ramsrigouthamg/t5_paraphraser,paraphrase,why receptors are good drug target,why are receptors a good drug target,TRUE,TRUE
+antique,963523,ramsrigouthamg/t5_paraphraser,paraphrase,how to get mythral shards on kingdom hearts 2,how do i get mythral shards on kingdom hearts 2,TRUE,TRUE
+antique,98438,ramsrigouthamg/t5_paraphraser,paraphrase,where can i find a simplified explanation of how to use commas properly,where can i find a simplified explanation of how to use commas,TRUE,TRUE
+antique,986260,ramsrigouthamg/t5_paraphraser,paraphrase,what is currently the meaning of life,what is the meaning of life,TRUE,TRUE
+antique,993601,ramsrigouthamg/t5_paraphraser,paraphrase,why were black women abused sexually after the abolition of slavery in the us in 1865,why were black women sexually abused after the abolition of slavery in the us in 1865,TRUE,TRUE
+antique,103298,t5_uqv_paraphraser,paraphrase,why precisely is foreign food considered ethnic,why is foreign food considered ethnic,TRUE,TRUE
+antique,1037897,t5_uqv_paraphraser,paraphrase,why doesn t salt lake city have its own sub category,why doesn t salt lake city have its own subcategory,TRUE,FALSE
+antique,1188438,t5_uqv_paraphraser,paraphrase,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,why is there a fence runningiing on the sides of the freeway in the middle of the desert,FALSE,FALSE
+antique,1191621,t5_uqv_paraphraser,paraphrase,how can some one so negative go to hevan  if there is one,how can some one so negative go to hevan,TRUE,TRUE
+antique,1251077,t5_uqv_paraphraser,paraphrase,what is the term  take hight road  mean,what does the term  take hight road  mean,TRUE,TRUE
+antique,126182,t5_uqv_paraphraser,paraphrase,how can i find out if i have a warrant without paying a fee,how can i find out if i have a warrant,FALSE,FALSE
+antique,1341602,t5_uqv_paraphraser,paraphrase,what are some common causes of my cat s eye to be watery and drip clear fluid,what causes my cat s eye to be watery and drip clear fluid,TRUE,TRUE
+antique,1440810,t5_uqv_paraphraser,paraphrase,what is the difference between hotmail and hotmale,what is the difference between hotmail and hotmail,FALSE,FALSE
+antique,1443637,t5_uqv_paraphraser,paraphrase,how do you find info about a house s history that isn t  historical,how do you find information about a house s history that isn t  historical,TRUE,TRUE
+antique,1467322,t5_uqv_paraphraser,paraphrase,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do i keep coming on here asking stupid questions that dont really matter,TRUE,TRUE
+antique,1485589,t5_uqv_paraphraser,paraphrase,how sun rises,sun rises,TRUE,FALSE
+antique,1536937,t5_uqv_paraphraser,paraphrase,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,why are there chinese chartacters i e   wei  ni how ma,FALSE,FALSE
+antique,1583099,t5_uqv_paraphraser,paraphrase,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,what about palastene israel has more weapons than palastene,TRUE,FALSE
+antique,1647624,t5_uqv_paraphraser,paraphrase,why do american s say eggsit,why do americans say eggsit,TRUE,TRUE
+antique,1708787,t5_uqv_paraphraser,paraphrase,how to loose wait without exercise,how to lose wait without exercise,FALSE,FALSE
+antique,1727879,t5_uqv_paraphraser,paraphrase,why is organic all natural food  more expensive,why is organic all natural food more expensive,FALSE,FALSE
+antique,17665,t5_uqv_paraphraser,paraphrase,how do i get rid of a bird s nest   my kichen window,how do i get rid of a bird s nest at my kichen window,TRUE,TRUE
+antique,1881436,t5_uqv_paraphraser,paraphrase,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,gyroscopic forces on a motorcycle,TRUE,TRUE
+antique,1933929,t5_uqv_paraphraser,paraphrase,why do dog go bathroom on the funiture,why do dogs go to the bathroom on the funiture,TRUE,TRUE
+antique,196651,t5_uqv_paraphraser,paraphrase,what is the difference between customer and consumer,what is the difference between a customer and a consumer,TRUE,TRUE
+antique,1978816,t5_uqv_paraphraser,paraphrase,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,if god talked to moses why didn t he explain evolution to him,FALSE,TRUE
+antique,2041828,t5_uqv_paraphraser,paraphrase,what does the bible mean by calling pride a deadly sin,what does the bible mean by the term pride a deadly sin,FALSE,FALSE
+antique,2112535,t5_uqv_paraphraser,paraphrase,how come my moma doesent know what  30 4 is,how come my moma doesent know what 30 4 is,FALSE,FALSE
+antique,2113006,t5_uqv_paraphraser,paraphrase,when you go to buy a watch  why do all the watches clocks set to show 10 10,why do all the watches clocks set to show 10 10 when you go to buy a watch,TRUE,TRUE
+antique,2418824,t5_uqv_paraphraser,paraphrase,why do space shuttles move when the rockets are fired but not when water is ejected,why do space shuttles move when rockets are fired,FALSE,TRUE
+antique,242701,t5_uqv_paraphraser,paraphrase,why does taco bell always make me nauseas,why does taco bell make me nauseas,TRUE,TRUE
+antique,2439070,t5_uqv_paraphraser,paraphrase,why we get irritate,why do we get irritate,TRUE,TRUE
+antique,2587810,t5_uqv_paraphraser,paraphrase,what happens to bile salts when gallbladder has been removed,what happens to bile salts after gallbladder removal,TRUE,TRUE
+antique,2632334,t5_uqv_paraphraser,paraphrase,on the most fundamental level  why is killing other humans bad,why is killing other humans bad,FALSE,TRUE
+antique,263783,t5_uqv_paraphraser,paraphrase,what affects did watergate have on the presidency,what effects did watergate have on the presidency,TRUE,TRUE
+antique,2678484,t5_uqv_paraphraser,paraphrase,what is the mean of bibliography,what is the meaning of bibliography,TRUE,TRUE
+antique,2678635,t5_uqv_paraphraser,paraphrase,why do husky s have coloful eyes then other dogs,why do husky s have coloful eyes,TRUE,TRUE
+antique,2735795,t5_uqv_paraphraser,paraphrase,how to decrease weight 100kg to 70kg,how to reduce weight 100kg to 70kg,TRUE,TRUE
+antique,2764765,t5_uqv_paraphraser,paraphrase,how to study 17 18 hrs a day give me practical tips,how to study 17 18 hrs a day,FALSE,TRUE
+antique,2910592,t5_uqv_paraphraser,paraphrase,how do i get rid of pink eye quick at home,how to get rid of pink eye,FALSE,TRUE
+antique,3152714,t5_uqv_paraphraser,paraphrase,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black woman and always get razor bumps under my arms   how can i prevent them,TRUE,TRUE
+antique,3172166,t5_uqv_paraphraser,paraphrase,does any one know how to find out about an insurance claim,how to find out about an insurance claim,TRUE,TRUE
+antique,317469,t5_uqv_paraphraser,paraphrase,how can i get rid off my pimples white black heads  and oiliness of my face,how can i get rid of my pimples white black heads  and oiliness of my face,TRUE,TRUE
+antique,3272207,t5_uqv_paraphraser,paraphrase,how to make pineapple upsidedown cake germain chocolate cake,how to make a pineapple upsidedown cake,FALSE,FALSE
+antique,3374970,t5_uqv_paraphraser,paraphrase,what is the correct form  i wear glasses or i am wearing glasses and why,what is the correct form of glasses,FALSE,FALSE
+antique,3382182,t5_uqv_paraphraser,paraphrase,is more difficult to train a male versus a female,how to train a male versus a female,FALSE,FALSE
+antique,344029,t5_uqv_paraphraser,paraphrase,what does bmr stand for when you are talking about health and what is bmr,what does bmr stand for when you are talking about health,TRUE,TRUE
+antique,3507499,t5_uqv_paraphraser,paraphrase,tell me the difference between revenge and vengeance,what is the difference between revenge and vengeance,TRUE,TRUE
+antique,358253,t5_uqv_paraphraser,paraphrase,why do wiccans believe that they have magical powers when they don t ever produce any magic,why do wiccans believe that they have magical powers,TRUE,TRUE
+antique,363519,t5_uqv_paraphraser,paraphrase,how do you install a oil breather on a 1994 ford tempo,how do you install an oil breather on a 1994 ford tempo,TRUE,TRUE
+antique,3738877,t5_uqv_paraphraser,paraphrase,if i had a bad breath what should i do,what should i do if i had a bad breath,TRUE,TRUE
+antique,3814583,t5_uqv_paraphraser,paraphrase,why do only republicans defend martha stewart,why do republicans defend martha stewart,TRUE,TRUE
+antique,3824106,t5_uqv_paraphraser,paraphrase,what happens when a young girl  young boy meet alone,what happens when a young girl meets a young boy alone,TRUE,TRUE
+antique,3884772,t5_uqv_paraphraser,paraphrase,how about a bumper sticker thats says,how about a bumper sticker that says,FALSE,FALSE
+antique,3885753,t5_uqv_paraphraser,paraphrase,why are dead cockroaches always found lying on their backs instead of face down,why are dead cockroaches always found lying on their backs,TRUE,TRUE
+antique,3961,t5_uqv_paraphraser,paraphrase,how to stop rabbit from peeing on the floor,how to stop rabbit peeing on the floor,TRUE,TRUE
+antique,4032777,t5_uqv_paraphraser,paraphrase,why do american people put there animals on such a pedestal,why do american people put animals on such pedestals,TRUE,TRUE
+antique,406082,t5_uqv_paraphraser,paraphrase,how do people build mussels on there biceps,how do people build mussels on their biceps,TRUE,TRUE
+antique,4069320,t5_uqv_paraphraser,paraphrase,athiests  how did you find the light,how did you find the light,FALSE,FALSE
+antique,4217473,t5_uqv_paraphraser,paraphrase,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,how do i remove the nude patch v1 0 0 1022 from the sims 2 game,FALSE,FALSE
+antique,4400543,t5_uqv_paraphraser,paraphrase,why do some animals always have more than one baby   some animals don t,why do some animals always have more than one baby   some don t,TRUE,TRUE
+antique,461995,t5_uqv_paraphraser,paraphrase,why does my congregation complain about lenght of my  90 minute sermons,why does my congregation complain about lenght of my 90 minute sermons,FALSE,FALSE
+antique,511835,t5_uqv_paraphraser,paraphrase,how and why did the roman empire fell apart,how and why did the roman empire fall apart,TRUE,TRUE
+antique,514804,t5_uqv_paraphraser,paraphrase,why isn t there any military bases in the state of mississippi,military bases in mississippi,FALSE,TRUE
+antique,566364,t5_uqv_paraphraser,paraphrase,what are caskets its so amazing how they are made,how are caskets made,TRUE,FALSE
+antique,595342,t5_uqv_paraphraser,paraphrase,what is there to expect when you turn 17,what do you expect when you turn 17,TRUE,TRUE
+antique,66151,t5_uqv_paraphraser,paraphrase,why does the it seem the u s  has more serial killers than other countries,why does it seem the u s  has more serial killers than other countries,FALSE,FALSE
+antique,684633,t5_uqv_paraphraser,paraphrase,what s the best asian and why,what s the best asian food,FALSE,FALSE
+antique,727663,t5_uqv_paraphraser,paraphrase,why do pigs wallow in mud,pigs wallow in mud,TRUE,TRUE
+antique,752633,t5_uqv_paraphraser,paraphrase,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,how did you do  when there was a bomb while you were shopping in new york,FALSE,FALSE
+antique,763189,t5_uqv_paraphraser,paraphrase,why was  wearing the colour green considered a sign of madness,why was wearing the colour green considered a sign of madness,FALSE,FALSE
+antique,884643,t5_uqv_paraphraser,paraphrase,in the constellation lyra  why are some of the stars labeled with the roman alphabet,why are some stars labeled with the roman alphabet,FALSE,TRUE
+antique,913424,t5_uqv_paraphraser,paraphrase,why do i black out while i am driving,why do i black out while driving,TRUE,TRUE
+antique,986260,t5_uqv_paraphraser,paraphrase,what is currently the meaning of life,what is the meaning of life,TRUE,TRUE
+antique,1016750,WordSwapEmbedding,synonym,how do i erase all the contacts in my lg 6100 verizon phone at once,how do i erase all the contacts in my lg 6100 verizon tel at once,TRUE,TRUE
+antique,103298,WordSwapEmbedding,synonym,why precisely is foreign food considered ethnic,why precisely is foreign alimentary considered ethnic,FALSE,FALSE
+antique,1034050,WordSwapEmbedding,synonym,why does the earth keep getting hotter and hotter every year,why does the tierra keep getting hotter and hotter every year,FALSE,FALSE
+antique,1037897,WordSwapEmbedding,synonym,why doesn t salt lake city have its own sub category,why doesn t saline lake city have its own sub category,FALSE,FALSE
+antique,1051346,WordSwapEmbedding,synonym,why is it when people cross the street they do not look to see if traffic is coming,why is it when people cross the street they do not glance to see if traffic is coming,TRUE,TRUE
+antique,1097878,WordSwapEmbedding,synonym,how to become smart,how to become ingenious,FALSE,TRUE
+antique,1107012,WordSwapEmbedding,synonym,what does north by north west mean,what does nordic by north west mean,FALSE,FALSE
+antique,1144768,WordSwapEmbedding,synonym,what is dark energy,what is blackness energy,FALSE,FALSE
+antique,114758,WordSwapEmbedding,synonym,why does christianity teach,why does christian teach,TRUE,TRUE
+antique,1158088,WordSwapEmbedding,synonym,why my neighbor s dog doesn t bark,why my neighbor s doggie doesn t bark,TRUE,TRUE
+antique,11706,WordSwapEmbedding,synonym,why not legalize  and tax prostitution,why not legalize  and taxing prostitution,TRUE,TRUE
+antique,1188438,WordSwapEmbedding,synonym,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,why is there a fence runiing on the sides of the expressway in the idler of the desert up and over rough terrain,TRUE,TRUE
+antique,1191621,WordSwapEmbedding,synonym,how can some one so negative go to hevan  if there is one,how can some one so noxious go to hevan  if there is one,TRUE,TRUE
+antique,1211877,WordSwapEmbedding,synonym,how does playing pool deal with science,how does playing pool dealing with science,TRUE,TRUE
+antique,1246269,WordSwapEmbedding,synonym,how does a pardon work,how does a pardons work,TRUE,FALSE
+antique,1251077,WordSwapEmbedding,synonym,what is the term  take hight road  mean,what is the term  take hight chemin  mean,FALSE,FALSE
+antique,126182,WordSwapEmbedding,synonym,how can i find out if i have a warrant without paying a fee,how can i find out if i have a warrant without wage a fee,FALSE,FALSE
+antique,1289770,WordSwapEmbedding,synonym,what is the definition of answer,what is the definition of response,TRUE,TRUE
+antique,1295284,WordSwapEmbedding,synonym,how can we solve a problem,how can we settling a problem,TRUE,TRUE
+antique,1321784,WordSwapEmbedding,synonym,how do blackberry s recognize that they are in their holster,how do blackberry s acknowledgement that they are in their holster,TRUE,TRUE
+antique,1341602,WordSwapEmbedding,synonym,what are some common causes of my cat s eye to be watery and drip clear fluid,what are some common causes of my cat s ocular to be watery and drip clear fluid,TRUE,TRUE
+antique,1398838,WordSwapEmbedding,synonym,what does  crunching numbers  mean,what does  crunching digit  mean,FALSE,FALSE
+antique,1423289,WordSwapEmbedding,synonym,why does my nextel turn off by itself,why does my nextel turning off by itself,TRUE,TRUE
+antique,1440810,WordSwapEmbedding,synonym,what is the difference between hotmail and hotmale,what is the variance between hotmail and hotmale,TRUE,TRUE
+antique,1443637,WordSwapEmbedding,synonym,how do you find info about a house s history that isn t  historical,how do you find info about a house s tale that isn t  historical,FALSE,FALSE
+antique,1450678,WordSwapEmbedding,synonym,why is my wang so enormous,why is my wang so huge,TRUE,TRUE
+antique,1458676,WordSwapEmbedding,synonym,why do criminals go back to the scene of the crime,why do criminals go back to the scene of the offence,TRUE,TRUE
+antique,1467322,WordSwapEmbedding,synonym,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do i keep coming on here asking stupid questions that dont really issue pray tell,FALSE,FALSE
+antique,1471877,WordSwapEmbedding,synonym,why metals prices are getting all time high,why metals prices are getting all time alto,FALSE,FALSE
+antique,1485589,WordSwapEmbedding,synonym,how sun rises,how sun soars,TRUE,TRUE
+antique,1495234,WordSwapEmbedding,synonym,how do you use  incognito  in a sentence,how do you use  incognito  in a condemnation,FALSE,FALSE
+antique,1512776,WordSwapEmbedding,synonym,why can t i post to a finance message board,why can t i post to a funding message board,FALSE,FALSE
+antique,1514356,WordSwapEmbedding,synonym,why am i so sleepy even though i had a goodnights sleep,why am i so sleepy even despite i had a goodnights sleep,TRUE,TRUE
+antique,1536937,WordSwapEmbedding,synonym,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,why is there chino chartacters but then you can spell them out in englishman i e    wei  ni how ma  vs the,FALSE,FALSE
+antique,1582044,WordSwapEmbedding,synonym,how do tarot cards work,how do taro cards work,TRUE,TRUE
+antique,1583099,WordSwapEmbedding,synonym,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,why u s is attempts 2 help israel  so what about palastene israel has more weapons than palastene,TRUE,TRUE
+antique,1607303,WordSwapEmbedding,synonym,how does a single parent with four teenagers get rich,how does a single parent with four teenagers got rich,TRUE,TRUE
+antique,1607924,WordSwapEmbedding,synonym,how does the earth go,how does the terra go,FALSE,FALSE
+antique,1647624,WordSwapEmbedding,synonym,why do american s say eggsit,why do american s told eggsit,FALSE,FALSE
+antique,1708787,WordSwapEmbedding,synonym,how to loose wait without exercise,how to loose awaited without exercise,FALSE,FALSE
+antique,1727343,WordSwapEmbedding,synonym,why do people have two nostrils,why do people have deux nostrils,FALSE,FALSE
+antique,1727879,WordSwapEmbedding,synonym,why is organic all natural food  more expensive,why is organic all natural diet  more expensive,TRUE,TRUE
+antique,17665,WordSwapEmbedding,synonym,how do i get rid of a bird s nest   my kichen window,how do i get rid of a bird s redd   my kichen window,FALSE,FALSE
+antique,1881436,WordSwapEmbedding,synonym,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,how do biker remains upright and stable by gyroscopic forces in detail    pls,TRUE,TRUE
+antique,189364,WordSwapEmbedding,synonym,how can i become a better ballet dancer,how can i becomes a better ballet dancer,TRUE,TRUE
+antique,1907320,WordSwapEmbedding,synonym,how do i get college money,how do i get university money,TRUE,TRUE
+antique,1907847,WordSwapEmbedding,synonym,what sounds like a clap,what sounds loves a clap,FALSE,FALSE
+antique,1933929,WordSwapEmbedding,synonym,why do dog go bathroom on the funiture,why do dog go latrine on the funiture,FALSE,TRUE
+antique,196651,WordSwapEmbedding,synonym,what is the difference between customer and consumer,what is the difference between clients and consumer,TRUE,FALSE
+antique,1970273,WordSwapEmbedding,synonym,why do hot molecules move faster than cold molecules,why do hot molecules move faster than icy molecules,FALSE,FALSE
+antique,1978816,WordSwapEmbedding,synonym,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,if goodness talked to moses why didn t god explained to moses about evolution  why all the day 5 day 6 lies,FALSE,FALSE
+antique,2008456,WordSwapEmbedding,synonym,what can i do when my ignition key won t turn,what can i do when my ignition important won t turn,FALSE,FALSE
+antique,2035638,WordSwapEmbedding,synonym,why can t u wear white shoes on labour day,why can t u wear white shoes on job day,FALSE,FALSE
+antique,2041828,WordSwapEmbedding,synonym,what does the bible mean by calling pride a deadly sin,what does the bible mean by calling pride a deadly oin,FALSE,FALSE
+antique,2048278,WordSwapEmbedding,synonym,what is the ph of a 0 4 m solution of ch3coona,what is the ph of a 0 4 m solving of ch3coona,TRUE,TRUE
+antique,2094435,WordSwapEmbedding,synonym,what is involved in an artists  portfolio,what is implicated in an artists  portfolio,TRUE,TRUE
+antique,2112535,WordSwapEmbedding,synonym,how come my moma doesent know what  30 4 is,how coming my moma doesent know what  30 4 is,TRUE,TRUE
+antique,2113006,WordSwapEmbedding,synonym,when you go to buy a watch  why do all the watches clocks set to show 10 10,when you go to purchased a watch  why do all the watches clocks set to show 10 10,TRUE,TRUE
+antique,212427,WordSwapEmbedding,synonym,why do criminals practice crime,why do criminals practice misdemeanour,TRUE,TRUE
+antique,2147417,WordSwapEmbedding,synonym,why doesn t glue stick to the inside of the bottle,why doesn t paste stick to the inside of the bottle,FALSE,FALSE
+antique,2155390,WordSwapEmbedding,synonym,can i feed my red eared slider steak,can i foods my red eared slider steak,FALSE,FALSE
+antique,2169746,WordSwapEmbedding,synonym,how can i get rid of a boil  on vaginal labia and underarm pits,how can i get rid of a boil  on vaginal vulva and underarm pits,FALSE,FALSE
+antique,2175167,WordSwapEmbedding,synonym,what is your definition of pornography,what is your definition of porn,TRUE,TRUE
+antique,2180502,WordSwapEmbedding,synonym,how honest are you,how truthful are you,TRUE,TRUE
+antique,220575,WordSwapEmbedding,synonym,how do you use lube,how do you use lubrication,TRUE,TRUE
+antique,2235825,WordSwapEmbedding,synonym,why do i fall asleep after i eat and how can i prevent that,why do i fall asleep after i eat and how can i deter that,TRUE,TRUE
+antique,2306533,WordSwapEmbedding,synonym,how can i get water out of my ear,how can i gets water out of my ear,TRUE,TRUE
+antique,2357505,WordSwapEmbedding,synonym,why do some people refer to the irs as uncle sam,why do some people refer to the irs as uncle sams,TRUE,TRUE
+antique,2418824,WordSwapEmbedding,synonym,why do space shuttles move when the rockets are fired but not when water is ejected,why do space shuttles move when the missiles are fired but not when water is ejected,FALSE,FALSE
+antique,2421078,WordSwapEmbedding,synonym,why is my chihuahua  male  so hateful,why is my chihuahua  male  so detested,FALSE,FALSE
+antique,242701,WordSwapEmbedding,synonym,why does taco bell always make me nauseas,why does taco bell continually make me nauseas,TRUE,TRUE
+antique,2439070,WordSwapEmbedding,synonym,why we get irritate,why we got irritate,TRUE,TRUE
+antique,2466898,WordSwapEmbedding,synonym,how do i install led s into my car,how do i install led s into my motorcars,TRUE,TRUE
+antique,2492366,WordSwapEmbedding,synonym,what is so bad about the seal hunt,what is so bad about the seal hunting,TRUE,TRUE
+antique,2500918,WordSwapEmbedding,synonym,how do you cure poison oak and poison ivy,how do you cure toxin oak and poison ivy,FALSE,FALSE
+antique,2522067,WordSwapEmbedding,synonym,why are liberals incapable of identifying and confronting evil,why are liberals incapable of identifying and confronting demonic,FALSE,FALSE
+antique,2534994,WordSwapEmbedding,synonym,what is the meaning of my first name andrei,what is the meaning of my first denomination andrei,FALSE,FALSE
+antique,2543919,WordSwapEmbedding,synonym,what is the easiest way to make chocolate mousse,what is the easiest routes to make chocolate mousse,TRUE,TRUE
+antique,2546730,WordSwapEmbedding,synonym,what quality of which is inherently contained in the question why,what quality of which is inherently contained in the issue why,FALSE,FALSE
+antique,2550445,WordSwapEmbedding,synonym,why do teens today find it amusing to tear one another apart,why do teens today found it amusing to tear one another apart,TRUE,TRUE
+antique,2571912,WordSwapEmbedding,synonym,if a coin is tossed twice  what is the probability of getting heads both times,if a coin is thrown twice  what is the probability of getting heads both times,TRUE,TRUE
+antique,2573745,WordSwapEmbedding,synonym,how did african american women get the right to vote,how did african american women get the rights to vote,TRUE,TRUE
+antique,2573803,WordSwapEmbedding,synonym,how do you get rid of sweat stains on clothes,how do you gets rid of sweat stains on clothes,TRUE,TRUE
+antique,2587810,WordSwapEmbedding,synonym,what happens to bile salts when gallbladder has been removed,what comes to bile salts when gallbladder has been removed,TRUE,TRUE
+antique,2613648,WordSwapEmbedding,synonym,how can i strengthen my eyes,how can i reinforcing my eyes,FALSE,FALSE
+antique,2620488,WordSwapEmbedding,synonym,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,why do they say isnt keep eggs in the fridge if there is a special compartment in most icebox for eggs,FALSE,FALSE
+antique,2630860,WordSwapEmbedding,synonym,why is god  male,why is deities  male,FALSE,FALSE
+antique,2632334,WordSwapEmbedding,synonym,on the most fundamental level  why is killing other humans bad,on the most fundamental level  why is assassination other humans bad,TRUE,TRUE
+antique,263783,WordSwapEmbedding,synonym,what affects did watergate have on the presidency,what afflicts did watergate have on the presidency,TRUE,TRUE
+antique,2677193,WordSwapEmbedding,synonym,what does the phrase  take no prisoners  mean,what does the phrase  take no pows  mean,FALSE,FALSE
+antique,2678484,WordSwapEmbedding,synonym,what is the mean of bibliography,what is the meaning of bibliography,TRUE,TRUE
+antique,2678635,WordSwapEmbedding,synonym,why do husky s have coloful eyes then other dogs,why do husky s have coloful eye then other dogs,TRUE,FALSE
+antique,2689609,WordSwapEmbedding,synonym,why do people ignore global issues,why do people ignore global matters,TRUE,TRUE
+antique,2700836,WordSwapEmbedding,synonym,how do you wire an 800 watt inverter,how do you wired an 800 watt inverter,TRUE,TRUE
+antique,2704,WordSwapEmbedding,synonym,why does it seem that no matter how hard you try,why does it seem that no matter how hard you attempts,TRUE,TRUE
+antique,2735795,WordSwapEmbedding,synonym,how to decrease weight 100kg to 70kg,how to diminishing weight 100kg to 70kg,TRUE,TRUE
+antique,2764765,WordSwapEmbedding,synonym,how to study 17 18 hrs a day give me practical tips,how to explores 17 18 hrs a day give me practical tips,FALSE,FALSE
+antique,278043,WordSwapEmbedding,synonym,how is splitting a laser beam dangerous,how is splitting a laser beam risky,TRUE,TRUE
+antique,2858043,WordSwapEmbedding,synonym,how do you stop bad feelings toward the people,how do you stop bad moods toward the people,TRUE,FALSE
+antique,2891885,WordSwapEmbedding,synonym,why does everone want a horse,why does everone desiring a horse,TRUE,TRUE
+antique,2897078,WordSwapEmbedding,synonym,how to get rid of stript throat,how to get extricate of stript throat,FALSE,FALSE
+antique,2901754,WordSwapEmbedding,synonym,how are fico scores calculated,how are fico scores computed,TRUE,TRUE
+antique,2910592,WordSwapEmbedding,synonym,how do i get rid of pink eye quick at home,how do i get rid of pink eye speedily at home,TRUE,TRUE
+antique,2942624,WordSwapEmbedding,synonym,why do random strangers keep asking me what ethnicity i am,why do random strangers keep demand me what ethnicity i am,TRUE,FALSE
+antique,3083719,WordSwapEmbedding,synonym,how do you safely wean a person off risperidal,how do you safely wean a anybody off risperidal,TRUE,FALSE
+antique,3104841,WordSwapEmbedding,synonym,how do you take care of hamster gigy pig,how do you take care of hamster gigy pork,FALSE,FALSE
+antique,3118286,WordSwapEmbedding,synonym,how to reduce crime and violence,how to reduce misdemeanors and violence,TRUE,FALSE
+antique,3124162,WordSwapEmbedding,synonym,how can i get rid of a sinus infection without medication,how can i get rid of a sinus infection without medical,TRUE,TRUE
+antique,3152714,WordSwapEmbedding,synonym,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a black women and don t like hair under arms or private sphere but always got razor bumps how can i prevent,FALSE,FALSE
+antique,3159749,WordSwapEmbedding,synonym,what is the difference between organic and inorganic eggs,what is the divergence between organic and inorganic eggs,TRUE,FALSE
+antique,3172166,WordSwapEmbedding,synonym,does any one know how to find out about an insurance claim,does any one know how to find out about an insurance grievance,FALSE,FALSE
+antique,317469,WordSwapEmbedding,synonym,how can i get rid off my pimples white black heads  and oiliness of my face,how can i get rid off my pimples white black heads  and oiliness of my faces,TRUE,TRUE
+antique,3178012,WordSwapEmbedding,synonym,why do we find bricks in toilets,why do we find bricks in loo,TRUE,TRUE
+antique,3211282,WordSwapEmbedding,synonym,i dont have any friands on yahoo how do i get some,i wouldnt have any friands on yahoo how do i get some,TRUE,FALSE
+antique,3272207,WordSwapEmbedding,synonym,how to make pineapple upsidedown cake germain chocolate cake,how to make pineapple upsidedown cake germain chocolate pudding,FALSE,FALSE
+antique,3374970,WordSwapEmbedding,synonym,what is the correct form  i wear glasses or i am wearing glasses and why,what is the correct form  i wear glasses or i am wearing eyeglasses and why,TRUE,FALSE
+antique,3382182,WordSwapEmbedding,synonym,is more difficult to train a male versus a female,is more difficult to train a male versus a daughters,FALSE,FALSE
+antique,3407617,WordSwapEmbedding,synonym,why is prostitution wrong,why is prostitution misspelled,FALSE,FALSE
+antique,344029,WordSwapEmbedding,synonym,what does bmr stand for when you are talking about health and what is bmr,what does bmr stand for when you are speaks about health and what is bmr,TRUE,TRUE
+antique,3470651,WordSwapEmbedding,synonym,how do i get rid of static shock electricity,how do i obtain rid of static shock electricity,FALSE,FALSE
+antique,348777,WordSwapEmbedding,synonym,why would a child s psychologist recommend hospitalization to develop social skills,why would a child s psychologist recommends hospitalization to develop social skills,TRUE,TRUE
+antique,3495304,WordSwapEmbedding,synonym,how can i find a diabetic freind,how can i found a diabetic freind,TRUE,FALSE
+antique,3507499,WordSwapEmbedding,synonym,tell me the difference between revenge and vengeance,tell me the dispute between revenge and vengeance,FALSE,FALSE
+antique,3556937,WordSwapEmbedding,synonym,how is lava made,how is lava accomplished,TRUE,TRUE
+antique,358253,WordSwapEmbedding,synonym,why do wiccans believe that they have magical powers when they don t ever produce any magic,why do wiccans reckon that they have magical powers when they don t ever produce any magic,TRUE,TRUE
+antique,3608433,WordSwapEmbedding,synonym,how fast is the chicago transit authority train,how swiftly is the chicago transit authority train,TRUE,TRUE
+antique,3617468,WordSwapEmbedding,synonym,how do yooh laugh,how do yooh laughter,TRUE,TRUE
+antique,3626847,WordSwapEmbedding,synonym,what can  check engine  light signify in my 94 plymoth voyager,what can  audit engine  light signify in my 94 plymoth voyager,FALSE,TRUE
+antique,363519,WordSwapEmbedding,synonym,how do you install a oil breather on a 1994 ford tempo,how do you install a oil suction on a 1994 ford tempo,FALSE,FALSE
+antique,3635284,WordSwapEmbedding,synonym,what is the procedure for getting a paternity test,what is the procedure for getting a fatherhood test,TRUE,TRUE
+antique,3651236,WordSwapEmbedding,synonym,what does the  21 mean,what does the  21 imply,TRUE,TRUE
+antique,3652886,WordSwapEmbedding,synonym,why isn t there a tool to suck up phlegm in your throat,why isn t there a tool to suck up phlegm in your larynx,TRUE,TRUE
+antique,3690922,WordSwapEmbedding,synonym,how do u end a bad rep,how do u terminates a bad rep,TRUE,TRUE
+antique,3731489,WordSwapEmbedding,synonym,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,bulldog is aware of whats happening and trying to halting it  already at vet just waiting for blood work  earlobes fi,TRUE,TRUE
+antique,3738877,WordSwapEmbedding,synonym,if i had a bad breath what should i do,if i had a inclement breath what should i do,FALSE,FALSE
+antique,3752394,WordSwapEmbedding,synonym,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihad,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihadi,TRUE,FALSE
+antique,3814583,WordSwapEmbedding,synonym,why do only republicans defend martha stewart,why do only republicans defend martha sylvain,FALSE,FALSE
+antique,3824106,WordSwapEmbedding,synonym,what happens when a young girl  young boy meet alone,what happens when a youthful girl  young boy meet alone,TRUE,FALSE
+antique,3841762,WordSwapEmbedding,synonym,what is the most important number  and why,what is the most sizeable number  and why,FALSE,FALSE
+antique,3884772,WordSwapEmbedding,synonym,how about a bumper sticker thats says,how about a bumper sticker theyre says,FALSE,FALSE
+antique,3885753,WordSwapEmbedding,synonym,why are dead cockroaches always found lying on their backs instead of face down,why are dead cockroaches always found lying on their backs conversely of face down,TRUE,FALSE
+antique,3913653,WordSwapEmbedding,synonym,how can sexual desire be overcome,how can sexual wanting be overcome,TRUE,TRUE
+antique,3958214,WordSwapEmbedding,synonym,how is light energy turned into heat energy,how is light energy turned into heats energy,TRUE,TRUE
+antique,3961,WordSwapEmbedding,synonym,how to stop rabbit from peeing on the floor,how to stop rabbit from peeing on the flooring,TRUE,TRUE
+antique,397709,WordSwapEmbedding,synonym,how and what court should i take a driver who damaged my liability insurance car,how and what court should i take a driver who damaged my obligations insurance car,TRUE,FALSE
+antique,4031702,WordSwapEmbedding,synonym,how to spice up our lovemaking,how to sauce up our lovemaking,TRUE,FALSE
+antique,4032777,WordSwapEmbedding,synonym,why do american people put there animals on such a pedestal,why do american people put there beasts on such a pedestal,FALSE,FALSE
+antique,4042061,WordSwapEmbedding,synonym,why do parakeets bounce up and down,why do parrots bounce up and down,TRUE,TRUE
+antique,404359,WordSwapEmbedding,synonym,why is corruption high in the third world countries,why is graft high in the third world countries,TRUE,FALSE
+antique,4048305,WordSwapEmbedding,synonym,why aren t there ever any guilty bystanders,why aren t there ever any culpable bystanders,TRUE,TRUE
+antique,406082,WordSwapEmbedding,synonym,how do people build mussels on there biceps,how do people build mussel on there biceps,FALSE,FALSE
+antique,4069320,WordSwapEmbedding,synonym,athiests  how did you find the light,athiests  how did you unearth the light,TRUE,TRUE
+antique,4092472,WordSwapEmbedding,synonym,what does elucidate mean,what does clarify mean,TRUE,FALSE
+antique,4165672,WordSwapEmbedding,synonym,how do we get up early in the morning without alarm,how do we get up swift in the morning without alarm,TRUE,TRUE
+antique,4183127,WordSwapEmbedding,synonym,why are some americans so prudish when it comes to sex,why are some us so prudish when it comes to sex,TRUE,TRUE
+antique,4217473,WordSwapEmbedding,synonym,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,how do i expunge the nude patch  v1 0 0 1022 from the sims 2 game,TRUE,TRUE
+antique,4237144,WordSwapEmbedding,synonym,why do we say   god bless you  when someone sneezes,why do we told   god bless you  when someone sneezes,TRUE,TRUE
+antique,4262151,WordSwapEmbedding,synonym,how should a pregnant woman deal with morning sickness,how should a pregnant women deal with morning sickness,TRUE,TRUE
+antique,4287367,WordSwapEmbedding,synonym,how can ppl tell if they r bipolar,how can ppl told if they r bipolar,TRUE,FALSE
+antique,4287894,WordSwapEmbedding,synonym,how long is the train ride from italy to finland,how long is the train ride from italy to finns,FALSE,FALSE
+antique,4336509,WordSwapEmbedding,synonym,what is the purpose of running a fever,what is the purpose of execute a fever,FALSE,FALSE
+antique,4387641,WordSwapEmbedding,synonym,how do i keep my cat from scratching my leather couch,how do i retaining my cat from scratching my leather couch,TRUE,TRUE
+antique,4400543,WordSwapEmbedding,synonym,why do some animals always have more than one baby   some animals don t,why do some animal always have more than one baby   some animals don t,TRUE,TRUE
+antique,4450252,WordSwapEmbedding,synonym,what are the causes of college dropouts,what are the causes of academics dropouts,TRUE,TRUE
+antique,461995,WordSwapEmbedding,synonym,why does my congregation complain about lenght of my  90 minute sermons,why does my congregation complain about lenght of my  90 minute speeches,TRUE,TRUE
+antique,485408,WordSwapEmbedding,synonym,what can i do tonight,what can i do sunday,FALSE,FALSE
+antique,489705,WordSwapEmbedding,synonym,what are some unwritten rules while using a urinal,what are some unwritten regs while using a urinal,TRUE,FALSE
+antique,511835,WordSwapEmbedding,synonym,how and why did the roman empire fell apart,how and why did the roman empire decreased apart,FALSE,FALSE
+antique,514804,WordSwapEmbedding,synonym,why isn t there any military bases in the state of mississippi,why isn t there any military groundwork in the state of mississippi,TRUE,FALSE
+antique,544869,WordSwapEmbedding,synonym,why is it so easy to be bad,why is it so easy to be rotten,TRUE,FALSE
+antique,546552,WordSwapEmbedding,synonym,if jimmy hoffa is found on the farm  how will it change american culture,if jimmy hoffa is found on the farm  how will it change american civilisations,TRUE,FALSE
+antique,566364,WordSwapEmbedding,synonym,what are caskets its so amazing how they are made,what are caskets its so spectacular how they are made,TRUE,TRUE
+antique,595342,WordSwapEmbedding,synonym,what is there to expect when you turn 17,what is there to expects when you turn 17,TRUE,TRUE
+antique,643630,WordSwapEmbedding,synonym,how do you keep your parents from divorcing,how do you keep your parenting from divorcing,TRUE,FALSE
+antique,66151,WordSwapEmbedding,synonym,why does the it seem the u s  has more serial killers than other countries,why does the it seem the u s  has more serial assassins than other countries,TRUE,TRUE
+antique,684633,WordSwapEmbedding,synonym,what s the best asian and why,what s the best asia and why,FALSE,FALSE
+antique,727663,WordSwapEmbedding,synonym,why do pigs wallow in mud,why do pigs bath in mud,TRUE,TRUE
+antique,752633,WordSwapEmbedding,synonym,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,how  did you do  when there  was a explosions  while  you were  shopping  in  new york,TRUE,TRUE
+antique,763189,WordSwapEmbedding,synonym,why was  wearing the colour green considered a sign of madness,why was  wearing the colour green considered a sign of insanity,TRUE,TRUE
+antique,772988,WordSwapEmbedding,synonym,what is the difference between dressing and stuffing,what is the difference between seasoning and stuffing,TRUE,FALSE
+antique,844617,WordSwapEmbedding,synonym,how are dna and rna similar,how are dna and rna analogue,TRUE,FALSE
+antique,884643,WordSwapEmbedding,synonym,in the constellation lyra  why are some of the stars labeled with the roman alphabet,in the constellation lyra  why are some of the superstar labeled with the roman alphabet,FALSE,FALSE
+antique,913424,WordSwapEmbedding,synonym,why do i black out while i am driving,why do i black out while i am motorists,TRUE,TRUE
+antique,929821,WordSwapEmbedding,synonym,why do guys sniff their underwear,why do grooms sniff their underwear,FALSE,FALSE
+antique,937635,WordSwapEmbedding,synonym,why do they put braille on a drive through atm,why do they put braille on a driving through atm,TRUE,TRUE
+antique,94629,WordSwapEmbedding,synonym,why receptors are good drug target,why receptors are buena drug target,FALSE,FALSE
+antique,961127,WordSwapEmbedding,synonym,why do we put up with the heresies of science,why do we put up with the heresies of scientifically,FALSE,FALSE
+antique,963523,WordSwapEmbedding,synonym,how to get mythral shards on kingdom hearts 2,how to gets mythral shards on kingdom hearts 2,TRUE,TRUE
+antique,98438,WordSwapEmbedding,synonym,where can i find a simplified explanation of how to use commas properly,where can i find a simplified explanation of how to use commas adequately,TRUE,TRUE
+antique,986260,WordSwapEmbedding,synonym,what is currently the meaning of life,what is currently the meaning of living,TRUE,TRUE
+antique,993601,WordSwapEmbedding,synonym,why were black women abused sexually after the abolition of slavery in the us in 1865,why were black women abused sexually after the eradication of slavery in the us in 1865,TRUE,TRUE
+antique,1016750,WordSwapWordNet,synonym,how do i erase all the contacts in my lg 6100 verizon phone at once,how do i erase all the contacts in my lg 6100 verizon earpiece at once,FALSE,FALSE
+antique,103298,WordSwapWordNet,synonym,why precisely is foreign food considered ethnic,why precisely is extraneous food considered ethnic,FALSE,FALSE
+antique,1034050,WordSwapWordNet,synonym,why does the earth keep getting hotter and hotter every year,why does the earth keep capture hotter and hotter every year,FALSE,FALSE
+antique,1037897,WordSwapWordNet,synonym,why doesn t salt lake city have its own sub category,why doesn t salt lake city have its own pigboat category,FALSE,FALSE
+antique,1051346,WordSwapWordNet,synonym,why is it when people cross the street they do not look to see if traffic is coming,why is it when people cross the street they do not flavour to see if traffic is coming,FALSE,FALSE
+antique,1097878,WordSwapWordNet,synonym,how to become smart,how to become ache,FALSE,FALSE
+antique,1107012,WordSwapWordNet,synonym,what does north by north west mean,what does northerly by north west mean,TRUE,FALSE
+antique,1144768,WordSwapWordNet,synonym,what is dark energy,what is wickedness energy,FALSE,FALSE
+antique,1158088,WordSwapWordNet,synonym,why my neighbor s dog doesn t bark,why my neighbor s frank doesn t bark,FALSE,FALSE
+antique,11706,WordSwapWordNet,synonym,why not legalize  and tax prostitution,why not decriminalise  and tax prostitution,TRUE,TRUE
+antique,1184520,WordSwapWordNet,synonym,why be an  a theist,why be an  a theistical,TRUE,TRUE
+antique,1188438,WordSwapWordNet,synonym,why is there a fence runiing on the sides of the freeway in the middle of the desert up and over rough terrain,why is there a fence runiing on the position of the throughway in the middle of the desert up and over rough terrain,TRUE,FALSE
+antique,1191621,WordSwapWordNet,synonym,how can some one so negative go to hevan  if there is one,how can some one so negative offer to hevan  if there is one,FALSE,FALSE
+antique,1211877,WordSwapWordNet,synonym,how does playing pool deal with science,how does represent pool deal with science,FALSE,FALSE
+antique,1246269,WordSwapWordNet,synonym,how does a pardon work,how does a excuse work,TRUE,FALSE
+antique,1251077,WordSwapWordNet,synonym,what is the term  take hight road  mean,what is the term  issue hight road  mean,FALSE,FALSE
+antique,126182,WordSwapWordNet,synonym,how can i find out if i have a warrant without paying a fee,how can i happen out if i have a warrant without paying a fee,FALSE,FALSE
+antique,1289770,WordSwapWordNet,synonym,what is the definition of answer,what is the definition of solvent,FALSE,FALSE
+antique,1295284,WordSwapWordNet,synonym,how can we solve a problem,how can we solve a job,FALSE,FALSE
+antique,1321784,WordSwapWordNet,synonym,how do blackberry s recognize that they are in their holster,how do blackberry s agnize that they are in their holster,FALSE,FALSE
+antique,1341602,WordSwapWordNet,synonym,what are some common causes of my cat s eye to be watery and drip clear fluid,what are some common causes of my cat s eye to be watery and drip make fluid,TRUE,FALSE
+antique,1398838,WordSwapWordNet,synonym,what does  crunching numbers  mean,what does  bray numbers  mean,FALSE,FALSE
+antique,1423289,WordSwapWordNet,synonym,why does my nextel turn off by itself,why does my nextel bend off by itself,FALSE,FALSE
+antique,1440810,WordSwapWordNet,synonym,what is the difference between hotmail and hotmale,what is the deviation between hotmail and hotmale,TRUE,FALSE
+antique,1443637,WordSwapWordNet,synonym,how do you find info about a house s history that isn t  historical,how do you regain info about a house s history that isn t  historical,TRUE,FALSE
+antique,1450678,WordSwapWordNet,synonym,why is my wang so enormous,why is my wang so tremendous,TRUE,FALSE
+antique,1458676,WordSwapWordNet,synonym,why do criminals go back to the scene of the crime,why do criminals fail back to the scene of the crime,FALSE,FALSE
+antique,1467322,WordSwapWordNet,synonym,why do i keep coming on here asking stupid questions that dont really matter pray tell,why do i keep coming on here asking stupid questions that dont really matter pray order,TRUE,FALSE
+antique,1471877,WordSwapWordNet,synonym,why metals prices are getting all time high,why metals prices are produce all time high,FALSE,FALSE
+antique,1485589,WordSwapWordNet,synonym,how sun rises,how sun ascend,TRUE,TRUE
+antique,1495234,WordSwapWordNet,synonym,how do you use  incognito  in a sentence,how do you role  incognito  in a sentence,FALSE,FALSE
+antique,1512776,WordSwapWordNet,synonym,why can t i post to a finance message board,why can t i post to a finance message card,FALSE,FALSE
+antique,1514356,WordSwapWordNet,synonym,why am i so sleepy even though i had a goodnights sleep,why am i so sleepy tied though i had a goodnights sleep,FALSE,FALSE
+antique,1536937,WordSwapWordNet,synonym,why is there chinese chartacters but then you can spell them out in english i e    wei  ni how ma  vs the,why is there formosan chartacters but then you can spell them out in english i tocopherol    wei  ni how ma  vs the,FALSE,FALSE
+antique,1582044,WordSwapWordNet,synonym,how do tarot cards work,how do tarot cards mould,FALSE,FALSE
+antique,1583099,WordSwapWordNet,synonym,why u s is trying 2 help israel  so what about palastene israel has more weapons than palastene,why u s is strain 2 help israel  so what about palastene israel has more weapons than palastene,FALSE,FALSE
+antique,1607303,WordSwapWordNet,synonym,how does a single parent with four teenagers get rich,how does a single parent with four teenagers flummox rich,FALSE,FALSE
+antique,1607924,WordSwapWordNet,synonym,how does the earth go,how does the earth function,FALSE,FALSE
+antique,1647624,WordSwapWordNet,synonym,why do american s say eggsit,why do american s enjoin eggsit,FALSE,FALSE
+antique,1708787,WordSwapWordNet,synonym,how to loose wait without exercise,how to wanton wait without exercise,FALSE,FALSE
+antique,1727343,WordSwapWordNet,synonym,why do people have two nostrils,why do mass have two nostrils,FALSE,FALSE
+antique,1727879,WordSwapWordNet,synonym,why is organic all natural food  more expensive,why is organic all natural nutrient  more expensive,TRUE,TRUE
+antique,17665,WordSwapWordNet,synonym,how do i get rid of a bird s nest   my kichen window,how do i obtain rid of a bird s nest   my kichen window,FALSE,FALSE
+antique,1881436,WordSwapWordNet,synonym,how do motorcycle remains upright and stable by gyroscopic forces in detail    pls,how do motorcycle remains upright and stable by gyroscopic force in detail    pls,TRUE,TRUE
+antique,189364,WordSwapWordNet,synonym,how can i become a better ballet dancer,how can i become a ripe ballet dancer,FALSE,FALSE
+antique,1907320,WordSwapWordNet,synonym,how do i get college money,how do i stimulate college money,FALSE,FALSE
+antique,1907847,WordSwapWordNet,synonym,what sounds like a clap,what sound like a clap,TRUE,TRUE
+antique,1933929,WordSwapWordNet,synonym,why do dog go bathroom on the funiture,why do dog last bathroom on the funiture,FALSE,FALSE
+antique,196651,WordSwapWordNet,synonym,what is the difference between customer and consumer,what is the conflict between customer and consumer,FALSE,FALSE
+antique,1970273,WordSwapWordNet,synonym,why do hot molecules move faster than cold molecules,why do hot molecules move faster than cold speck,FALSE,FALSE
+antique,1978816,WordSwapWordNet,synonym,if god talked to moses why didn t god explain to moses about evolution  why all the day 5 day 6 lies,if god blab to moses why didn t god explain to moses about evolution  why all the daytime 5 day 6 lies,FALSE,FALSE
+antique,2008456,WordSwapWordNet,synonym,what can i do when my ignition key won t turn,what can i do when my ignition key won t crook,FALSE,FALSE
+antique,2035638,WordSwapWordNet,synonym,why can t u wear white shoes on labour day,why can t u wear tweed shoes on labour day,FALSE,FALSE
+antique,2041828,WordSwapWordNet,synonym,what does the bible mean by calling pride a deadly sin,what does the bible mean by calling pride a deadly sinfulness,TRUE,FALSE
+antique,2048278,WordSwapWordNet,synonym,what is the ph of a 0 4 m solution of ch3coona,what is the ph of a 0 quadruplet m solution of ch3coona,FALSE,FALSE
+antique,2094435,WordSwapWordNet,synonym,what is involved in an artists  portfolio,what is tortuous in an artists  portfolio,FALSE,FALSE
+antique,2112535,WordSwapWordNet,synonym,how come my moma doesent know what  30 4 is,how come my moma doesent recognise what  30 4 is,TRUE,TRUE
+antique,2113006,WordSwapWordNet,synonym,when you go to buy a watch  why do all the watches clocks set to show 10 10,when you go to buy a watch  why do all the watches clocks set to prove 10 10,FALSE,FALSE
+antique,212427,WordSwapWordNet,synonym,why do criminals practice crime,why do criminals apply crime,TRUE,FALSE
+antique,2147417,WordSwapWordNet,synonym,why doesn t glue stick to the inside of the bottle,why doesn t paste stick to the inside of the bottle,TRUE,FALSE
+antique,2155390,WordSwapWordNet,synonym,can i feed my red eared slider steak,can i fertilise my red eared slider steak,FALSE,FALSE
+antique,2169746,WordSwapWordNet,synonym,how can i get rid of a boil  on vaginal labia and underarm pits,how can i bring rid of a boil  on vaginal labia and underarm pits,FALSE,FALSE
+antique,2175167,WordSwapWordNet,synonym,what is your definition of pornography,what is your definition of smut,FALSE,FALSE
+antique,2180502,WordSwapWordNet,synonym,how honest are you,how reliable are you,TRUE,FALSE
+antique,220575,WordSwapWordNet,synonym,how do you use lube,how do you function lube,TRUE,FALSE
+antique,2235825,WordSwapWordNet,synonym,why do i fall asleep after i eat and how can i prevent that,why do i pin asleep after i eat and how can i prevent that,FALSE,FALSE
+antique,2306533,WordSwapWordNet,synonym,how can i get water out of my ear,how can i father water out of my ear,FALSE,FALSE
+antique,2357505,WordSwapWordNet,synonym,why do some people refer to the irs as uncle sam,why do some people mention to the irs as uncle sam,TRUE,TRUE
+antique,2418824,WordSwapWordNet,synonym,why do space shuttles move when the rockets are fired but not when water is ejected,why do space shuttles impress when the rockets are fired but not when water is ejected,FALSE,FALSE
+antique,242701,WordSwapWordNet,synonym,why does taco bell always make me nauseas,why does taco bell always realise me nauseas,FALSE,FALSE
+antique,2439070,WordSwapWordNet,synonym,why we get irritate,why we cause irritate,FALSE,FALSE
+antique,2466898,WordSwapWordNet,synonym,how do i install led s into my car,how do i install led s into my railcar,FALSE,FALSE
+antique,2492366,WordSwapWordNet,synonym,what is so bad about the seal hunt,what is so uncollectible about the seal hunt,FALSE,FALSE
+antique,2500918,WordSwapWordNet,synonym,how do you cure poison oak and poison ivy,how do you therapeutic poison oak and poison ivy,FALSE,FALSE
+antique,2522067,WordSwapWordNet,synonym,why are liberals incapable of identifying and confronting evil,why are liberals incompetent of identifying and confronting evil,TRUE,TRUE
+antique,2534994,WordSwapWordNet,synonym,what is the meaning of my first name andrei,what is the meaning of my initiative name andrei,FALSE,FALSE
+antique,2543919,WordSwapWordNet,synonym,what is the easiest way to make chocolate mousse,what is the easiest way to puddle chocolate mousse,TRUE,FALSE
+antique,2546730,WordSwapWordNet,synonym,what quality of which is inherently contained in the question why,what quality of which is inherently moderate in the question why,FALSE,FALSE
+antique,2550445,WordSwapWordNet,synonym,why do teens today find it amusing to tear one another apart,why do teens today find it amusing to tear one another aside,TRUE,FALSE
+antique,2571912,WordSwapWordNet,synonym,if a coin is tossed twice  what is the probability of getting heads both times,if a coin is tossed twice  what is the probability of getting chief both times,FALSE,FALSE
+antique,2573745,WordSwapWordNet,synonym,how did african american women get the right to vote,how did african american women gravel the right to vote,FALSE,FALSE
+antique,2573803,WordSwapWordNet,synonym,how do you get rid of sweat stains on clothes,how do you capture rid of sweat stains on clothes,FALSE,FALSE
+antique,2587810,WordSwapWordNet,synonym,what happens to bile salts when gallbladder has been removed,what happens to bile salt when gallbladder has been removed,TRUE,TRUE
+antique,2613648,WordSwapWordNet,synonym,how can i strengthen my eyes,how can i strengthen my heart,FALSE,FALSE
+antique,2620488,WordSwapWordNet,synonym,why do they say dont keep eggs in the fridge if there is a special compartment in most fridges for eggs,why do they allege dont retain eggs in the fridge if there is a special compartment in most fridges for eggs,TRUE,FALSE
+antique,2630860,WordSwapWordNet,synonym,why is god  male,why is idol  male,FALSE,FALSE
+antique,2632334,WordSwapWordNet,synonym,on the most fundamental level  why is killing other humans bad,on the most fundamental level  why is obliterate other humans bad,TRUE,FALSE
+antique,263783,WordSwapWordNet,synonym,what affects did watergate have on the presidency,what dissemble did watergate have on the presidency,FALSE,FALSE
+antique,2677193,WordSwapWordNet,synonym,what does the phrase  take no prisoners  mean,what does the phrase  lead no prisoners  mean,FALSE,FALSE
+antique,2678484,WordSwapWordNet,synonym,what is the mean of bibliography,what is the imply of bibliography,TRUE,FALSE
+antique,2678635,WordSwapWordNet,synonym,why do husky s have coloful eyes then other dogs,why do husky s have coloful eyes then other track,FALSE,FALSE
+antique,2689609,WordSwapWordNet,synonym,why do people ignore global issues,why do people ignore global cut,FALSE,FALSE
+antique,2700836,WordSwapWordNet,synonym,how do you wire an 800 watt inverter,how do you telegram an 800 watt inverter,FALSE,FALSE
+antique,2704,WordSwapWordNet,synonym,why does it seem that no matter how hard you try,why does it seem that no matter how unvoiced you try,FALSE,FALSE
+antique,2735795,WordSwapWordNet,synonym,how to decrease weight 100kg to 70kg,how to step down weight 100kg to 70kg,TRUE,TRUE
+antique,2764765,WordSwapWordNet,synonym,how to study 17 18 hrs a day give me practical tips,how to study 17 18 hrs a day return me practical tips,TRUE,TRUE
+antique,278043,WordSwapWordNet,synonym,how is splitting a laser beam dangerous,how is splitting a laser beam grievous,FALSE,FALSE
+antique,2858043,WordSwapWordNet,synonym,how do you stop bad feelings toward the people,how do you stop bad notion toward the people,TRUE,FALSE
+antique,2891885,WordSwapWordNet,synonym,why does everone want a horse,why does everone require a horse,TRUE,FALSE
+antique,2897078,WordSwapWordNet,synonym,how to get rid of stript throat,how to stupefy rid of stript throat,FALSE,FALSE
+antique,2901754,WordSwapWordNet,synonym,how are fico scores calculated,how are fico scores measured,TRUE,TRUE
+antique,2910592,WordSwapWordNet,synonym,how do i get rid of pink eye quick at home,how do i flummox rid of pink eye quick at home,FALSE,FALSE
+antique,2942624,WordSwapWordNet,synonym,why do random strangers keep asking me what ethnicity i am,why do random strangers livelihood asking me what ethnicity i am,FALSE,FALSE
+antique,3083719,WordSwapWordNet,synonym,how do you safely wean a person off risperidal,how do you safely wean a someone off risperidal,TRUE,TRUE
+antique,3104841,WordSwapWordNet,synonym,how do you take care of hamster gigy pig,how do you contain care of hamster gigy pig,FALSE,FALSE
+antique,3118286,WordSwapWordNet,synonym,how to reduce crime and violence,how to subdue crime and violence,TRUE,TRUE
+antique,3124162,WordSwapWordNet,synonym,how can i get rid of a sinus infection without medication,how can i pose rid of a sinus infection without medication,TRUE,FALSE
+antique,3152714,WordSwapWordNet,synonym,i m a black women and don t like hair under arms or private area but always get razor bumps how can i prevent,i m a melanize women and don t like hair under arms or private domain but always get razor bumps how can i prevent,FALSE,FALSE
+antique,3159749,WordSwapWordNet,synonym,what is the difference between organic and inorganic eggs,what is the difference between organic and inorganic nut,FALSE,FALSE
+antique,3172166,WordSwapWordNet,synonym,does any one know how to find out about an insurance claim,does any i know how to find out about an insurance claim,FALSE,FALSE
+antique,317469,WordSwapWordNet,synonym,how can i get rid off my pimples white black heads  and oiliness of my face,how can i mother rid off my pimples white black heads  and oiliness of my face,FALSE,FALSE
+antique,3178012,WordSwapWordNet,synonym,why do we find bricks in toilets,why do we find bricks in toilette,TRUE,TRUE
+antique,3211282,WordSwapWordNet,synonym,i dont have any friands on yahoo how do i get some,i dont have any friands on yahoo how do i stick some,TRUE,FALSE
+antique,3272207,WordSwapWordNet,synonym,how to make pineapple upsidedown cake germain chocolate cake,how to draw pineapple upsidedown cake germain chocolate cake,FALSE,FALSE
+antique,3374970,WordSwapWordNet,synonym,what is the correct form  i wear glasses or i am wearing glasses and why,what is the correct form  i wear meth or i am wearing glasses and why,FALSE,FALSE
+antique,3382182,WordSwapWordNet,synonym,is more difficult to train a male versus a female,is more difficult to discipline a male versus a female,TRUE,TRUE
+antique,3407617,WordSwapWordNet,synonym,why is prostitution wrong,why is prostitution improper,TRUE,TRUE
+antique,3470651,WordSwapWordNet,synonym,how do i get rid of static shock electricity,how do i get disembarrass of static shock electricity,,FALSE
+antique,348777,WordSwapWordNet,synonym,why would a child s psychologist recommend hospitalization to develop social skills,why would a child s psychologist recommend hospitalization to modernize social skills,FALSE,FALSE
+antique,3495304,WordSwapWordNet,synonym,how can i find a diabetic freind,how can i chance a diabetic freind,FALSE,FALSE
+antique,3507499,WordSwapWordNet,synonym,tell me the difference between revenge and vengeance,tell me the difference between avenge and vengeance,FALSE,FALSE
+antique,3556937,WordSwapWordNet,synonym,how is lava made,how is lava ready,TRUE,FALSE
+antique,358253,WordSwapWordNet,synonym,why do wiccans believe that they have magical powers when they don t ever produce any magic,why do wiccans think that they have magical powers when they don t ever produce any magic,TRUE,TRUE
+antique,3608433,WordSwapWordNet,synonym,how fast is the chicago transit authority train,how fast is the chicago transit authority cultivate,FALSE,FALSE
+antique,3617468,WordSwapWordNet,synonym,how do yooh laugh,how do yooh gag,TRUE,FALSE
+antique,3626847,WordSwapWordNet,synonym,what can  check engine  light signify in my 94 plymoth voyager,what can  mark engine  light signify in my 94 plymoth voyager,FALSE,FALSE
+antique,363519,WordSwapWordNet,synonym,how do you install a oil breather on a 1994 ford tempo,how do you install a oil breather on a 1994 fording tempo,TRUE,TRUE
+antique,3635284,WordSwapWordNet,synonym,what is the procedure for getting a paternity test,what is the procedure for getting a paternity essay,FALSE,FALSE
+antique,3651236,WordSwapWordNet,synonym,what does the  21 mean,what does the  21 beggarly,FALSE,FALSE
+antique,3652886,WordSwapWordNet,synonym,why isn t there a tool to suck up phlegm in your throat,why isn t there a shaft to suck up phlegm in your throat,FALSE,FALSE
+antique,3690922,WordSwapWordNet,synonym,how do u end a bad rep,how do u close a bad rep,FALSE,FALSE
+antique,3731489,WordSwapWordNet,synonym,bulldog is aware of whats happening and trying to stop it  already at vet just waiting for blood work  ears fi,bulldog is aware of whats happening and adjudicate to stoppage it  already at vet just waiting for blood work  ears fi,FALSE,FALSE
+antique,3738877,WordSwapWordNet,synonym,if i had a bad breath what should i do,if i had a tough breath what should i do,TRUE,TRUE
+antique,3752394,WordSwapWordNet,synonym,why haven t muslims protested the terrorism by radical islam like they did the cartoon jihad,why haven t muslims protested the terrorism by radical islam care they did the cartoon jihad,TRUE,FALSE
+antique,3814583,WordSwapWordNet,synonym,why do only republicans defend martha stewart,why do only republicans fight martha stewart,FALSE,FALSE
+antique,3824106,WordSwapWordNet,synonym,what happens when a young girl  young boy meet alone,what happens when a youthful girl  young boy meet alone,FALSE,FALSE
+antique,3841762,WordSwapWordNet,synonym,what is the most important number  and why,what is the most important act  and why,FALSE,FALSE
+antique,3884772,WordSwapWordNet,synonym,how about a bumper sticker thats says,how about a bumper sticker thats enunciate,TRUE,TRUE
+antique,3885753,WordSwapWordNet,synonym,why are dead cockroaches always found lying on their backs instead of face down,why are dead cockroaches forever found lying on their backs instead of face down,TRUE,FALSE
+antique,3913653,WordSwapWordNet,synonym,how can sexual desire be overcome,how can sexual desire be overtake,TRUE,FALSE
+antique,3958214,WordSwapWordNet,synonym,how is light energy turned into heat energy,how is brightness energy turned into heat energy,FALSE,FALSE
+antique,3961,WordSwapWordNet,synonym,how to stop rabbit from peeing on the floor,how to halt rabbit from peeing on the floor,TRUE,TRUE
+antique,397709,WordSwapWordNet,synonym,how and what court should i take a driver who damaged my liability insurance car,how and what court should i carry a driver who damaged my liability insurance car,TRUE,TRUE
+antique,4031702,WordSwapWordNet,synonym,how to spice up our lovemaking,how to spiciness up our lovemaking,TRUE,FALSE
+antique,4032777,WordSwapWordNet,synonym,why do american people put there animals on such a pedestal,why do american people lay there animals on such a pedestal,TRUE,TRUE
+antique,4042061,WordSwapWordNet,synonym,why do parakeets bounce up and down,why do parakeets jounce up and down,TRUE,FALSE
+antique,404359,WordSwapWordNet,synonym,why is corruption high in the third world countries,why is corruption high in the third public countries,FALSE,FALSE
+antique,4048305,WordSwapWordNet,synonym,why aren t there ever any guilty bystanders,why aren t there ever any shamed bystanders,FALSE,FALSE
+antique,406082,WordSwapWordNet,synonym,how do people build mussels on there biceps,how do people chassis mussels on there biceps,FALSE,FALSE
+antique,4069320,WordSwapWordNet,synonym,athiests  how did you find the light,athiests  how did you ascertain the light,TRUE,TRUE
+antique,4092472,WordSwapWordNet,synonym,what does elucidate mean,what does crystallize mean,FALSE,FALSE
+antique,4165672,WordSwapWordNet,synonym,how do we get up early in the morning without alarm,how do we get up early in the morning without dismay,TRUE,FALSE
+antique,4183127,WordSwapWordNet,synonym,why are some americans so prudish when it comes to sex,why are some americans so strait laced when it comes to sex,TRUE,TRUE
+antique,4217473,WordSwapWordNet,synonym,how do i remove the nude patch  v1 0 0 1022 from the sims 2 game,how do i remove the nude patch  v1 0 0 1022 from the sims 2 gimpy,FALSE,FALSE
+antique,4237144,WordSwapWordNet,synonym,why do we say   god bless you  when someone sneezes,why do we tell   god bless you  when someone sneezes,TRUE,TRUE
+antique,4262151,WordSwapWordNet,synonym,how should a pregnant woman deal with morning sickness,how should a pregnant woman deal with aurora sickness,TRUE,FALSE
+antique,4287367,WordSwapWordNet,synonym,how can ppl tell if they r bipolar,how can ppl tell if they radius bipolar,FALSE,FALSE
+antique,4287894,WordSwapWordNet,synonym,how long is the train ride from italy to finland,how long is the train drive from italy to finland,TRUE,TRUE
+antique,4336509,WordSwapWordNet,synonym,what is the purpose of running a fever,what is the purpose of lead a fever,TRUE,FALSE
+antique,4387641,WordSwapWordNet,synonym,how do i keep my cat from scratching my leather couch,how do i keep my cat from rub my leather couch,TRUE,FALSE
+antique,4400543,WordSwapWordNet,synonym,why do some animals always have more than one baby   some animals don t,why do some animals always have more than nonpareil baby   some animals don t,FALSE,FALSE
+antique,4450252,WordSwapWordNet,synonym,what are the causes of college dropouts,what are the stimulate of college dropouts,FALSE,FALSE
+antique,461995,WordSwapWordNet,synonym,why does my congregation complain about lenght of my  90 minute sermons,why does my congregation complain about lenght of my  90 moment sermons,FALSE,FALSE
+antique,489705,WordSwapWordNet,synonym,what are some unwritten rules while using a urinal,what are some oral rules while using a urinal,TRUE,TRUE
+antique,511835,WordSwapWordNet,synonym,how and why did the roman empire fell apart,how and why did the roman empire accrue apart,TRUE,FALSE
+antique,514804,WordSwapWordNet,synonym,why isn t there any military bases in the state of mississippi,why isn t there any military bag in the state of mississippi,FALSE,FALSE
+antique,544869,WordSwapWordNet,synonym,why is it so easy to be bad,why is it so leisurely to be bad,FALSE,FALSE
+antique,546552,WordSwapWordNet,synonym,if jimmy hoffa is found on the farm  how will it change american culture,if jimmy hoffa is find on the farm  how will it change american culture,TRUE,TRUE
+antique,554539,WordSwapWordNet,synonym,why do you read,why do you say,FALSE,FALSE
+antique,566364,WordSwapWordNet,synonym,what are caskets its so amazing how they are made,what are caskets its so astound how they are made,TRUE,TRUE
+antique,595342,WordSwapWordNet,synonym,what is there to expect when you turn 17,what is there to expect when you number 17,FALSE,FALSE
+antique,643630,WordSwapWordNet,synonym,how do you keep your parents from divorcing,how do you keep your nurture from divorcing,FALSE,FALSE
+antique,66151,WordSwapWordNet,synonym,why does the it seem the u s  has more serial killers than other countries,why does the it seem the u s  has more sequential killers than other countries,FALSE,FALSE
+antique,684633,WordSwapWordNet,synonym,what s the best asian and why,what s the right asian and why,FALSE,FALSE
+antique,727663,WordSwapWordNet,synonym,why do pigs wallow in mud,why do grunter wallow in mud,FALSE,FALSE
+antique,752633,WordSwapWordNet,synonym,how  did you do  when there  was a bomb  while  you were  shopping  in  new york,how  did you do  when there  was a bomb  while  you were  shopping  in  raw york,FALSE,FALSE
+antique,763189,WordSwapWordNet,synonym,why was  wearing the colour green considered a sign of madness,why was  wearing the colour green see a sign of madness,TRUE,TRUE
+antique,772988,WordSwapWordNet,synonym,what is the difference between dressing and stuffing,what is the difference between fertilisation and stuffing,FALSE,FALSE
+antique,844617,WordSwapWordNet,synonym,how are dna and rna similar,how are dna and rna exchangeable,FALSE,FALSE
+antique,884643,WordSwapWordNet,synonym,in the constellation lyra  why are some of the stars labeled with the roman alphabet,in the constellation lyra  why are some of the whizz labeled with the roman alphabet,FALSE,FALSE
+antique,913424,WordSwapWordNet,synonym,why do i black out while i am driving,why do i pitch dark out while i am driving,FALSE,FALSE
+antique,929821,WordSwapWordNet,synonym,why do guys sniff their underwear,why do guys sniff their underclothing,TRUE,TRUE
+antique,937635,WordSwapWordNet,synonym,why do they put braille on a drive through atm,why do they position braille on a drive through atm,TRUE,TRUE
+antique,94629,WordSwapWordNet,synonym,why receptors are good drug target,why receptors are soundly drug target,TRUE,FALSE
+antique,961127,WordSwapWordNet,synonym,why do we put up with the heresies of science,why do we put up with the heresy of science,TRUE,TRUE
+antique,963523,WordSwapWordNet,synonym,how to get mythral shards on kingdom hearts 2,how to get mythral shards on kingdom ticker 2,FALSE,FALSE
+antique,98438,WordSwapWordNet,synonym,where can i find a simplified explanation of how to use commas properly,where can i find a simplified explanation of how to expend commas properly,FALSE,FALSE
+antique,986260,WordSwapWordNet,synonym,what is currently the meaning of life,what is currently the meaning of biography,FALSE,FALSE
+antique,993601,WordSwapWordNet,synonym,why were black women abused sexually after the abolition of slavery in the us in 1865,why were bootleg women abused sexually after the abolition of slavery in the us in 1865,FALSE,FALSE

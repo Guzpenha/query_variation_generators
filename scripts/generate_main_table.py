@@ -16,10 +16,20 @@ cat = {"OriginalQuery": "original_query",
     "QueriesFromback_translation_pivot_language_de": "paraphrase",
     "QueriesFromramsrigouthamg/t5_paraphraser": "paraphrase",
     "QueriesFromt5_uqv_paraphraser": "paraphrase",
-    "QueriesFromWordSwapEmbedding": "synonym",
-    "QueriesFromWordSwapMaskedLM": "synonym",
-    "QueriesFromWordSwapWordNet": "synonym",
+    "QueriesFromWordSwapEmbedding": "paraphrase",
+    "QueriesFromWordSwapMaskedLM": "paraphrase",
+    "QueriesFromWordSwapWordNet": "paraphrase",
     }
+
+model_cat = {
+    'BM25' : 'Trad',
+    'BM25+RM3' : 'Trad', 
+    'BM25+KNRM': 'NN', 
+    'msmarco.convknrm.seed42.tar.gz': 'NN',
+    'BM25+BERT': 'TNN',
+    'BM25+T5': 'TNN',
+    'msmarco.epic.seed42.tar.gz': 'TNN'
+}
 
 def main():
     logging_level = logging.INFO
@@ -77,6 +87,7 @@ def main():
 
     _, _, filenames = next(walk(path))
     dfs = []
+    dfs_raw = []
     df_count = []
     for f in filenames:
         if 'query_rewriting' in f and 'per_query' in f and task in f:
@@ -85,12 +96,21 @@ def main():
            df_count["name_x"] = df_count.apply(lambda r: "QueriesFrom"+r['name_x'].split("QueriesFrom")[-1], axis=1)
            df_count.columns = ['name_x', 'count_queries']
            df['decrease_percentage'] = df['decrease_percentage'] * 100
-           df = df[df['measure']==metric].groupby("name_x")['decrease_percentage'].mean().reset_index()           
+           dfs_raw.append(df[df['measure']==metric])
+           df = df[df['measure']==metric].groupby("name_x")['decrease_percentage'].mean().reset_index()
            df["name_x"] = df.apply(lambda r: "QueriesFrom"+r['name_x'].split("QueriesFrom")[-1], axis=1)
            model_name = f.split("model_")[-1].split(".csv")[0].split("_per_query")[0]
            df.columns = ['name_x', metric+"_"+model_name]
            df = df.set_index('name_x')
            dfs.append(df)
+    
+    dfs_raw_all = pd.concat(dfs_raw)
+    dfs_raw_all["name_x"] = dfs_raw_all.apply(lambda r: "QueriesFrom"+r['name_x'].split("QueriesFrom")[-1], axis=1)
+    dfs_raw_all['category'] = dfs_raw_all.apply(lambda r, m=cat: m[r['name_x']], axis=1) 
+    dfs_raw_all['model_category'] = dfs_raw_all.apply(lambda r, m=model_cat: m[r['name_y']], axis=1)     
+    dfs_raw_all['dataset'] = task
+    dfs_raw_all.fillna(0.0).to_csv("{}per_query_all_{}.csv".format(path, task), sep='\t', index=False)
+    
     df_all = functools.reduce(lambda df1, df2: df1.join(df2), dfs)
     df_all['category'] = df_all.apply(lambda r, m=cat: m[r.name], axis=1)        
     df_all = df_all[['category', '{}_BM25'.format(metric), 
