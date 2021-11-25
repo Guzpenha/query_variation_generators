@@ -1,6 +1,5 @@
-# Automatic Query Variations
-
-This repository contains the code and annotation data for the paper *"Analysing the Robustness of Neural Ranking Models withAutomatic Query Variations"*.
+# Query Variation Generators
+This repository contains the code and annotation data for the ECIR'22 paper *"Evaluating the Robustness of Retrieval Pipelines with Query Variation Generators"*.
 
 ## Setup
 Install the requirements using 
@@ -8,7 +7,7 @@ Install the requirements using
     pip install -r requirements.txt
 
 ## Steps to reproduce the results
-First we need to generate_weak supervsion for the desired test sets. We can do that with the scripts/generate_weak_supervision.py. In the paper we test for TREC-DL ('msmarco-passage/trec-dl-2019/judged') and ANTIQUE ('antique/train/split200-valid'), but any IR-datasets (https://ir-datasets.com/index.html) can be used here. 
+First we need to generate_weak supervsion for the desired test sets. We can do that with the scripts/generate_weak_supervision.py. In the paper we test for TREC-DL ('msmarco-passage/trec-dl-2019/judged') and ANTIQUE ('antique/train/split200-valid'), but any IR-datasets (https://ir-datasets.com/index.html) can be used here (as TASK). 
 
     python ${REPO_DIR}/examples/generate_weak_supervision.py 
         --task $TASK \
@@ -28,7 +27,7 @@ However, for reproducing the results we can directly use the annotated query set
 
 by using the annotated variations file directly here "\$OUT_DIR/\$VARIATIONS_FILE_TREC_DL". The same can be done to run rank fusion (RQ2) by replacing query_rewriting.py with rank_fusion.py.
 
-The scripts evalueate_weak_supervision.sh and evalueate_rank_fusion.sh run all models and datasets for both research questions.
+The scripts [evaluate_weak_supervision.sh](https://github.com/Guzpenha/query_variation_generators/blob/main/scripts/evalueate_weak_supervision.sh) and [evaluate_rank_fusion.sh](https://github.com/Guzpenha/query_variation_generators/blob/main/scripts/evalueate_rank_fusion.sh) run all models and datasets for both research questions . The first generates the main table of results, Table 4 in the paper, and the second generates the tables for the rank fusion experiments (only available in the Arxiv version of the paper).
 
 
 ## Modules and Folders
