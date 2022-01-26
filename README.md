@@ -1,6 +1,10 @@
 # Query Variation Generators
 This repository contains the code and annotation data for the ECIR'22 paper *"Evaluating the Robustness of Retrieval Pipelines with Query Variation Generators"*.
 
+Instead of following the next steps you can alternatively see the same thing running on [Colab](https://colab.research.google.com/drive/1fRuTlaQnPX83o8dQHgmqs8rpUtdDue8_?usp=sharing).
+
+One additional step is to train a T5 model using trec description data. The scripts to do this are get_trec_desc_to_q_data.py and fine_tune_summarization.py. You can also download the trained model before that [here](https://drive.google.com/file/d/1l_hzLizoZKwPAsFm3dOnezdX0SRv0LqN/view?usp=sharing).
+
 ## Setup
 Install the requirements using 
 
