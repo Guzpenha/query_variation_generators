@@ -3,7 +3,12 @@ from pyterrier_t5 import MonoT5ReRanker
 
 import pyterrier as pt
 if not pt.started():
-  pt.init("snapshop", boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+    pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+# <<<<<<< Updated upstream
+#   pt.init("snapshop", boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+# =======
+#   pt.init("snapshot")
+# >>>>>>> Stashed changes
 
 import re
 import pandas as pd
@@ -194,6 +199,21 @@ def main():
     logging.info("Running remaining experiments and calculating metrics.")
     metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']    
     
+# <<<<<<< Updated upstream
+# =======
+#     ## Geting number of unjudged docs
+#     unjudged = []
+#     for res, name in zip([retrieval_model.transform(query_variation[['qid', 'query']])] + res_per_variation,
+#                     [args.retrieval_model_name]+variation_methods):
+#         res = res[res["rank"]<10]
+#         joined = res.merge(dataset.get_qrels(), on=["qid", "docno"])
+#         unjudged.append([name, res.shape[0], joined.shape[0], joined.shape[0]/res.shape[0]*100])
+#     df_unjudged = pd.DataFrame(unjudged, columns = ["method", "shape_before", "shape_after", "percentage_judged"])    
+#     original_q_unjudged = df_unjudged[df_unjudged["method"]==args.retrieval_model_name].values[0][3]
+#     df_unjudged["percentage_delta_unjudged"] = df_unjudged.apply(lambda r,b=original_q_unjudged: r["percentage_judged"]-b ,axis=1)
+#     df_unjudged.to_csv("{}/unjudged_docs_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
+
+# >>>>>>> Stashed changes
     df = pt.Experiment(
             # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
             [retrieval_model] + res_per_variation,

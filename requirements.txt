@@ -1,4 +1,5 @@
 torch==1.7.1
+transformers==4.5.1
 IPython
 pandas
 ir_datasets

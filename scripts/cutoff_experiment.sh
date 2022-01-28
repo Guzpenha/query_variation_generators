@@ -9,6 +9,7 @@ VARIATIONS_FILE_TREC_DL=variations_trec2019_labeled.csv
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 for T in 10 100 1000 5000
 do
     python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
@@ -24,6 +25,8 @@ do
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 for T in 5000
 do
 #    python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
@@ -37,6 +40,9 @@ do
     #         --retrieval_model_name "BM25+RM3" \
     #         --cutoff_threshold $T
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -49,6 +55,7 @@ do
             --max_iter $MAX_ITER \
             --cutoff_threshold $T
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
@@ -80,6 +87,8 @@ done
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     # python ${REPO_DIR}/disentangled_information_needs/evaluation/query_rewriting.py --task 'irds:msmarco-passage/trec-dl-2019/judged' \
     #         --output_dir $OUT_DIR/ \
     #         --variations_file $OUT_DIR/$VARIATIONS_FILE_TREC_DL \
@@ -107,6 +116,9 @@ done
     #         --cutoff_threshold $T
 done
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

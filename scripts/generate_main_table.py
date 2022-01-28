@@ -8,7 +8,11 @@ import functools
 cat = {"OriginalQuery": "original_query",
     "QueriesFromWordSwapNeighboringCharacterSwap": "misspelling",
     "QueriesFromWordSwapRandomCharacterSubstitution": "misspelling",
+<<<<<<< Updated upstream
     "QueriesFromWordSwapQWERTY": "misspelling",
+=======
+    "QueriesFromWordSwapQWERTY":"misspelling",
+>>>>>>> Stashed changes
     "QueriesFromnaturality_by_removing_stop_words": "naturality",
     "QueriesFromsummarization_with_t5-base_from_description_to_title": "naturality",
     "QueriesFromsummarization_with_t5-large": "naturality",
@@ -21,6 +25,7 @@ cat = {"OriginalQuery": "original_query",
     "QueriesFromWordSwapWordNet": "paraphrase",
     }
 
+<<<<<<< Updated upstream
 model_cat = {
     'BM25' : 'Trad',
     'BM25+RM3' : 'Trad', 
@@ -30,6 +35,8 @@ model_cat = {
     'BM25+T5': 'TNN',
     'msmarco.epic.seed42.tar.gz': 'TNN'
 }
+=======
+>>>>>>> Stashed changes
 
 def main():
     logging_level = logging.INFO
@@ -52,14 +59,21 @@ def main():
     # parser.add_argument("--sample", default=None, type=int, required=False,
     #                     help="Number of queries to sample (if None all queries are used)")
     # args = parser.parse_args()
+<<<<<<< Updated upstream
     path = "/home/guzpenha/personal/disentangled_information_needs/data/results/"
     # task = "msmarco-passage-trec-dl"
     task='antique'
+=======
+    path = "/ssd/gustavo/disentangled_information_needs/data/"
+    task = "msmarco-passage-trec-dl"
+    # task='antique'
+>>>>>>> Stashed changes
     metric = 'ndcg_cut_10'
 
     _, _, filenames = next(walk(path))
     dfs = []
     for f in filenames:
+<<<<<<< Updated upstream
         if 'query_rewriting' in f and 'per_query' not in f and task in f:
            df = pd.read_csv(path+f)
            df["variation_method"] = df.apply(lambda r: r['name'].split("+")[-1] if 'Queries' in r['name'].split("+")[-1] else 'OriginalQuery', axis=1)
@@ -68,6 +82,16 @@ def main():
         #         round(r[metric], 4) if r['variation_method']=='OriginalQuery' else str(round(((r[metric]-v)/v) * 100, 2)) + "%", axis=1)
            df[metric] = df.apply(lambda r, metric=metric, v=baseline_v: round(r[metric], 4), axis=1)
            df[metric + " p-value"] = df.apply(lambda r, metric=metric: r[metric + " p-value"] < 0.05,axis=1)
+=======
+        if 'query_rewriting' in f and 'per_query' not in f and  task in f:
+           df = pd.read_csv(path+f)
+           df["variation_method"] = df.apply(lambda r: r['name'].split("+")[-1] if 'Queries' in r['name'].split("+")[-1] else 'OriginalQuery', axis=1)
+           baseline_v = df[df["variation_method"] == 'OriginalQuery'][metric].values[0]
+           df[metric] = df.apply(lambda r, metric=metric, v=baseline_v: 
+                round(r[metric], 4), axis=1)
+                # round(r[metric], 4) if r['variation_method']=='OriginalQuery' else str(round(((r[metric]-v)/v) * 100, 2)) + "%", axis=1)
+           df[metric + " p-value"] = df.apply(lambda r, metric=metric: r[metric + " p-value"] < 0.05/10,axis=1)
+>>>>>>> Stashed changes
            model_name = f.split("model_")[-1].split(".csv")[0]
            df = df.rename(columns = {metric : "{}_".format(metric) + model_name,
                                      metric + " p-value": "p_"+ model_name})
@@ -82,6 +106,7 @@ def main():
                 "{}_msmarco.epic.seed42.tar.gz".format(metric), "p_msmarco.epic.seed42.tar.gz",
                 "{}_BM25+BERT".format(metric), "p_BM25+BERT",
                  "{}_BM25+T5".format(metric), "p_BM25+T5"]]
+<<<<<<< Updated upstream
     df_all.reset_index().sort_values(["category", "variation_method"]).round(4).to_csv("{}main_table_{}.csv".format(path, task), sep='\t', index=False)
     
 
@@ -123,6 +148,10 @@ def main():
     df_all.merge(df_count, on='name_x').round(4).sort_values(["category", "name_x"]).\
         to_csv("{}main_table_{}_percentage_valid_queries.csv".format(path, task), sep='\t', index=False)
     # df_count.to_csv("{}main_table_{}_count.csv".format(path, task), sep='\t')    
+=======
+    df_all.round(4).to_csv("{}main_table_{}.csv".format(path, task), sep='\t')
+    # embed()
+>>>>>>> Stashed changes
 
 
 if __name__ == "__main__":
