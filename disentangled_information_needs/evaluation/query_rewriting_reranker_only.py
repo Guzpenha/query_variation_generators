@@ -3,7 +3,8 @@ from pyterrier_t5 import MonoT5ReRanker
 
 import pyterrier as pt
 if not pt.started():
-    pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+  pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+#   pt.init("snapshot")
 
 import re
 import pandas as pd
@@ -15,29 +16,6 @@ import functools
 import onir_pt
 import wget
 import zipfile
-
-
-# https://macavaney.us/pt_models/msmarco.bert.seed42.tar.gz
-# https://macavaney.us/pt_models/msmarco.bert.seed43.tar.gz
-# https://macavaney.us/pt_models/msmarco.bert.seed44.tar.gz
-# https://macavaney.us/pt_models/msmarco.bert.seed45.tar.gz
-# https://macavaney.us/pt_models/msmarco.bert.seed46.tar.gz
-# https://macavaney.us/pt_models/msmarco.convknrm.seed42.tar.gz
-# https://macavaney.us/pt_models/msmarco.convknrm.seed43.tar.gz
-# https://macavaney.us/pt_models/msmarco.convknrm.seed44.tar.gz
-# https://macavaney.us/pt_models/msmarco.convknrm.seed45.tar.gz
-# https://macavaney.us/pt_models/msmarco.convknrm.seed46.tar.gz
-# https://macavaney.us/pt_models/msmarco.epic.seed42.tar.gz
-# https://macavaney.us/pt_models/msmarco.epic.seed43.tar.gz
-# https://macavaney.us/pt_models/msmarco.epic.seed44.tar.gz
-# https://macavaney.us/pt_models/msmarco.epic.seed45.tar.gz
-# https://macavaney.us/pt_models/msmarco.epic.seed46.tar.gz
-# https://macavaney.us/pt_models/msmarco.knrm.seed42.tar.gz
-# https://macavaney.us/pt_models/msmarco.knrm.seed43.tar.gz
-# https://macavaney.us/pt_models/msmarco.knrm.seed44.tar.gz
-# https://macavaney.us/pt_models/msmarco.knrm.seed45.tar.gz
-# https://macavaney.us/pt_models/msmarco.knrm.seed46.tar.gz
-
 
 def pair_iter(dataset):
     ds = dataset.irds_ref()
@@ -84,7 +62,7 @@ def main():
     query_variations["query"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['original_query'].lower()), axis=1)
     query_variations["variation"] = query_variations.apply(lambda r, re=re: re.sub('[\W_]', ' ',  r['variation'].lower()), axis=1)
     query_variations["variation"] = query_variations.apply(lambda r: r['query'] if r['variation'].strip() == "" else r['variation'], axis=1)
-    query_variations['qid'] = query_variations['q_id'].astype(str)
+    query_variations['qid'] = query_variations['q_id']
 
     dataset = pt.datasets.get_dataset(args.task)
     index_path = '{}/{}-index'.format(args.output_dir, args.task.replace('/', '-'))
@@ -93,12 +71,12 @@ def main():
         indexref = indexer.index(dataset.get_corpus_iter(), fields=('doc_id', 'text'))
     index = pt.IndexFactory.of(index_path+"/data.properties")
 
-    if args.retrieval_model_name == "BM25":
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
-    elif args.retrieval_model_name == "BM25+RM3":
-        bm_25 = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
-        retrieval_model = bm_25 >> pt.rewrite.RM3(index) >> bm_25
-    elif args.retrieval_model_name == "BM25+BERT":
+    # if args.retrieval_model_name == "BM25":
+    #     retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+    # elif args.retrieval_model_name == "BM25+RM3":
+    #     bm_25 = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold 
+    #     retrieval_model = bm_25 >> pt.rewrite.RM3(index) >> bm_25
+    if args.retrieval_model_name == "BM25+BERT":
         train_ds = pt.get_dataset(args.train_dataset)
         model_path = '{}/{}_max_iter_{}_for_{}'.format(args.output_dir, args.retrieval_model_name.split("+")[1], args.max_iter, args.task.replace("/",'-'))
         if not os.path.isfile(model_path):
@@ -118,8 +96,8 @@ def main():
                     dataset.get_qrels())
             vbert.to_checkpoint(model_path)
         logging.info("Loading trained BERT.")
-        vbert = onir_pt.reranker.from_checkpoint(model_path)
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> vbert
+        reranker = onir_pt.reranker.from_checkpoint(model_path)
+        # retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
 
     elif args.retrieval_model_name == "BM25+KNRM":
         train_ds = pt.get_dataset(args.train_dataset)
@@ -140,12 +118,12 @@ def main():
                     dataset.get_qrels())
             knrm.to_checkpoint(model_path)
         logging.info("Loading trained KNRM.")
-        knrm = onir_pt.reranker.from_checkpoint(model_path)
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> knrm
+        reranker = onir_pt.reranker.from_checkpoint(model_path)
+        # retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
     elif args.retrieval_model_name == "BM25+T5":
         logging.info("Loading trained T5.")
-        monoT5 = MonoT5ReRanker()
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> monoT5
+        reranker = MonoT5ReRanker()
+        # retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
     elif args.retrieval_model_name == "BM25+docT5query":        
         index_path_docT5query = index_path+"-docT5query"
         if not os.path.isdir(index_path_docT5query):
@@ -166,67 +144,79 @@ def main():
             config = {'batch_size': 4}
         reranker = onir_pt.reranker.from_checkpoint(args.retrieval_model_name, config=config)
         args.retrieval_model_name = args.retrieval_model_name.split("/")[-1]
-        retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker    
+        # retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker    
     # kl_pipe =  bm_25 >> pt.rewrite.KLQueryExpansion(index) >> bm_25
 
     variation_methods = []
     res_per_variation = []
+
     for method in query_variations['method'].unique():
         logging.info("Running model for queries generated by method {}".format(method))
         query_variation = query_variations[query_variations['method'] == method]
-        query_variation['query'] = query_variation['variation']
+        q_to_var = query_variation.set_index("query").to_dict()['variation']
+        #pd.Series(query_variation.variation.values,index=query_variation.query).to_dict()
+        # retrieval_model = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.apply.query(
+        #     lambda q, q_to_var=q_to_var: q_to_var[q],
+        #     ) >> pt.text.get_text(dataset, 'text') >> reranker
+        retrieval_step = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold
+        reranker_step = pt.text.get_text(dataset, 'text') >> reranker
 
-        res_per_variation.append(retrieval_model.transform(query_variation[['qid', 'query']]))
+        # uses original query for first retrieval step
+        initial_ranking = retrieval_step.transform(query_variations[['query','qid']].drop_duplicates())
+        # changes queries to  variations for testing re-rankers.
+        initial_ranking["query"] = initial_ranking.apply(lambda r, d=q_to_var: d[r['query']] if r['query'] in d else r['query'], axis=1)
+        
+        final_res = reranker_step.transform(initial_ranking)
+        res_per_variation.append(final_res)
         variation_methods.append("{}+QueriesFrom{}".format(args.retrieval_model_name, method))    
 
-    logging.info("Calculating Kendall correlation.")
-    df_scores_original_q = retrieval_model.transform(query_variations[['query','qid']].drop_duplicates())[['qid', 'docno', 'score']]
-    df_scores_original_q.columns = [['qid', 'docno', 'score_original_query']]        
-    score_dfs = [df_scores_original_q]
-    for variation_name, df in zip(variation_methods, res_per_variation):
-        df_score_only = df[['qid', 'docno', 'score']]
-        df_score_only.columns = [['qid', 'docno', 'score_'+variation_name.replace("-","_").replace("/", "_").replace("+", "_")]]        
-        score_dfs.append(df_score_only)
+    # logging.info("Calculating Kendall correlation.")
+    # df_scores_original_q = retrieval_model.transform(query_variations[['query','qid']].drop_duplicates())[['qid', 'docno', 'score']]
+    # df_scores_original_q.columns = [['qid', 'docno', 'score_original_query']]        
+    # score_dfs = [df_scores_original_q]
+    # for variation_name, df in zip(variation_methods, res_per_variation):
+    #     df_score_only = df[['qid', 'docno', 'score']]
+    #     df_score_only.columns = [['qid', 'docno', 'score_'+variation_name.replace("-","_").replace("/", "_").replace("+", "_")]]        
+    #     score_dfs.append(df_score_only)
 
-    cor_df = functools.reduce(lambda df1, df2: df1.merge(df2), score_dfs).corr(method='kendall')
-    cor_df.to_csv("{}/query_corr_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name))
+    # cor_df = functools.reduce(lambda df1, df2: df1.merge(df2), score_dfs).corr(method='kendall')
+    # cor_df.to_csv("{}/query_corr_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name))
 
-    logging.info("Running remaining experiments and calculating metrics.")
+    # logging.info("Running remaining experiments and calculating metrics.")
     metrics = ['map', 'recip_rank', 'P_10', 'ndcg_cut_10']    
     
-#     ## Geting number of unjudged docs
-#     unjudged = []
-#     for res, name in zip([retrieval_model.transform(query_variation[['qid', 'query']])] + res_per_variation,
-#                     [args.retrieval_model_name]+variation_methods):
-#         res = res[res["rank"]<10]
-#         joined = res.merge(dataset.get_qrels(), on=["qid", "docno"])
-#         unjudged.append([name, res.shape[0], joined.shape[0], joined.shape[0]/res.shape[0]*100])
-#     df_unjudged = pd.DataFrame(unjudged, columns = ["method", "shape_before", "shape_after", "percentage_judged"])    
-#     original_q_unjudged = df_unjudged[df_unjudged["method"]==args.retrieval_model_name].values[0][3]
-#     df_unjudged["percentage_delta_unjudged"] = df_unjudged.apply(lambda r,b=original_q_unjudged: r["percentage_judged"]-b ,axis=1)
-#     df_unjudged.to_csv("{}/unjudged_docs_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
+    ## Geting number of unjudged docs
+    # unjudged = []
+    # for res, name in zip([retrieval_model.transform(query_variation[['qid', 'query']])] + res_per_variation,
+    #                 [args.retrieval_model_name]+variation_methods):
+    #     res = res[res["rank"]<10]
+    #     joined = res.merge(dataset.get_qrels(), on=["qid", "docno"])
+    #     unjudged.append([name, res.shape[0], joined.shape[0], joined.shape[0]/res.shape[0]*100])
+    # df_unjudged = pd.DataFrame(unjudged, columns = ["method", "shape_before", "shape_after", "percentage_judged"])    
+    # original_q_unjudged = df_unjudged[df_unjudged["method"]==args.retrieval_model_name].values[0][3]
+    # df_unjudged["percentage_delta_unjudged"] = df_unjudged.apply(lambda r,b=original_q_unjudged: r["percentage_judged"]-b ,axis=1)
+    # df_unjudged.to_csv("{}/unjudged_docs_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
 
+    pieline_original_query = pt.BatchRetrieve(index, wmodel="BM25") % args.cutoff_threshold >> pt.text.get_text(dataset, 'text') >> reranker
     df = pt.Experiment(
-            # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
-            [retrieval_model] + res_per_variation,
+            [pieline_original_query] + res_per_variation,
             query_variations[['query','qid']].drop_duplicates(),
             dataset.get_qrels(),
             metrics,
             baseline=0,
-            names = [args.retrieval_model_name]+variation_methods)
-    # df.to_csv("{}/query_rewriting_{}_model_{}_cutoff_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
-    df.to_csv("{}/query_rewriting_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
+            names = [args.retrieval_model_name]+variation_methods)    
+    df.to_csv("{}/rerank_only_{}_model_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name), index=False)
 
     df_per_q = pt.Experiment(
             # [bm_25, rm3_pipe, kl_pipe] + res_per_variation,
-            [retrieval_model] + res_per_variation,
+            [pieline_original_query] + res_per_variation,
             query_variations[['query','qid']].drop_duplicates(),
             dataset.get_qrels(),
             metrics,
             perquery = True,
             names = [args.retrieval_model_name]+variation_methods)
 
-    df_per_q.fillna(0.0).to_csv("{}/for_oracle_{}_model_{}_.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
+    # df_per_q.fillna(0.0).to_csv("{}/for_oracle_{}_model_{}_.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
     query_variations['name'] = query_variations.apply(lambda r, n=args.retrieval_model_name: n+"+QueriesFrom"+r['method'], axis=1)
     query_variations['qid'] = query_variations['q_id'].astype(str)    
     only_valid = df_per_q.merge(query_variations[query_variations['valid']][['qid', 'name', 'valid']], on=['qid', 'name'])
@@ -234,7 +224,7 @@ def main():
     only_valid_with_baseline["decrease"] = only_valid_with_baseline['value_x'] - only_valid_with_baseline['value_y']
     only_valid_with_baseline["decrease_percentage"] = only_valid_with_baseline['decrease']/only_valid_with_baseline['value_y']
     # only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query_cutoff_{}.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
-    only_valid_with_baseline.fillna(0.0).to_csv("{}/query_rewriting_{}_model_{}_per_query.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
+    only_valid_with_baseline.fillna(0.0).to_csv("{}/rerank_only_{}_model_{}_per_query.csv".format(args.output_dir, args.task.replace("/",'-'), args.retrieval_model_name, args.cutoff_threshold), index=False)
 
 if __name__ == "__main__":
     main()

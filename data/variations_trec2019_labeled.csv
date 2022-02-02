@@ -1,0 +1,430 @@
+dataset,q_id,method,transformation_type,original_query,variation,valid,follow_category
+msmarco,1037798,WordSwapNeighboringCharacterSwap,mispelling,who is robert gray,who is robret gray,True,True
+msmarco,104861,WordSwapNeighboringCharacterSwap,mispelling,cost of interior concrete flooring,cost of interior concrete floroing,True,True
+msmarco,1063750,WordSwapNeighboringCharacterSwap,mispelling,why did the us volunterilay enter ww1,why did the su volunterilay enter ww1,True,True
+msmarco,1103812,WordSwapNeighboringCharacterSwap,mispelling,who formed the commonwealth of independent states,who formed the commonweatlh of independent states,True,True
+msmarco,1106007,WordSwapNeighboringCharacterSwap,mispelling,define visceral,define vsiceral,True,True
+msmarco,1110199,WordSwapNeighboringCharacterSwap,mispelling,what is wifi vs bluetooth,what is wifi sv bluetooth,True,True
+msmarco,1112341,WordSwapNeighboringCharacterSwap,mispelling,what is the daily life of thai people,what is the daily life of thai poeple,True,True
+msmarco,1113437,WordSwapNeighboringCharacterSwap,mispelling,what is physical description of spruce,what is phsyical description of spruce,True,True
+msmarco,1114646,WordSwapNeighboringCharacterSwap,mispelling,what is famvir prescribed for,what is famvir rpescribed for,True,True
+msmarco,1114819,WordSwapNeighboringCharacterSwap,mispelling,what is durable medical equipment consist of,what is durable medical equipmetn consist of,True,True
+msmarco,1115776,WordSwapNeighboringCharacterSwap,mispelling,what is an aml surveillance analyst,what is an aml surviellance analyst,True,True
+msmarco,1117099,WordSwapNeighboringCharacterSwap,mispelling,what is a active margin,what is a acitve margin,True,True
+msmarco,1121402,WordSwapNeighboringCharacterSwap,mispelling,what can contour plowing reduce,what can contour lpowing reduce,True,True
+msmarco,1121709,WordSwapNeighboringCharacterSwap,mispelling,what are the three percenters,what are the three percenetrs,True,True
+msmarco,1124210,WordSwapNeighboringCharacterSwap,mispelling,tracheids are part of,tracheids are prat of,True,True
+msmarco,1129237,WordSwapNeighboringCharacterSwap,mispelling,hydrogen is a liquid below what temperature,hdyrogen is a liquid below what temperature,True,True
+msmarco,1133167,WordSwapNeighboringCharacterSwap,mispelling,how is the weather in jamaica,how is the weathre in jamaica,True,True
+msmarco,130510,WordSwapNeighboringCharacterSwap,mispelling,definition declaratory judgment,definition declartaory judgment,True,True
+msmarco,131843,WordSwapNeighboringCharacterSwap,mispelling,definition of a sigmet,definition of a sigmte,True,True
+msmarco,146187,WordSwapNeighboringCharacterSwap,mispelling,difference between a mcdouble and a double cheeseburger,difference between a mcdobule and a double cheeseburger,True,True
+msmarco,148538,WordSwapNeighboringCharacterSwap,mispelling,difference between rn and bsn,diffreence between rn and bsn,True,True
+msmarco,156493,WordSwapNeighboringCharacterSwap,mispelling,do goldfish grow,do ogldfish grow,True,True
+msmarco,168216,WordSwapNeighboringCharacterSwap,mispelling,does legionella pneumophila cause pneumonia,does legioenlla pneumophila cause pneumonia,True,True
+msmarco,182539,WordSwapNeighboringCharacterSwap,mispelling,example of monotonic function,example of monotonic functoin,True,True
+msmarco,183378,WordSwapNeighboringCharacterSwap,mispelling,exons definition biology,exons defniition biology,True,True
+msmarco,19335,WordSwapNeighboringCharacterSwap,mispelling,anthropological definition of environment,anthropological definitino of environment,True,True
+msmarco,207786,WordSwapNeighboringCharacterSwap,mispelling,how are some sharks warm blooded,how are some sharks warm bloodde,True,True
+msmarco,264014,WordSwapNeighboringCharacterSwap,mispelling,how long is life cycle of flea,how lnog is life cycle of flea,True,True
+msmarco,359349,WordSwapNeighboringCharacterSwap,mispelling,how to find the midsegment of a trapezoid,how to find the midesgment of a trapezoid,True,True
+msmarco,405717,WordSwapNeighboringCharacterSwap,mispelling,is cdg airport in main paris,is cdg airport in main parsi,True,True
+msmarco,443396,WordSwapNeighboringCharacterSwap,mispelling,lps laws definition,lps laws defiintion,True,True
+msmarco,451602,WordSwapNeighboringCharacterSwap,mispelling,medicare s definition of mechanical ventilation,medicare s definition of mechanical vetnilation,True,True
+msmarco,47923,WordSwapNeighboringCharacterSwap,mispelling,axon terminals or synaptic knob definition,axon terminlas or synaptic knob definition,True,True
+msmarco,489204,WordSwapNeighboringCharacterSwap,mispelling,right pelvic pain causes,right pelvic pani causes,True,True
+msmarco,490595,WordSwapNeighboringCharacterSwap,mispelling,rsa definition key,rsa dfeinition key,True,True
+msmarco,527433,WordSwapNeighboringCharacterSwap,mispelling,types of dysarthria from cerebral palsy,ytpes of dysarthria from cerebral palsy,True,True
+msmarco,573724,WordSwapNeighboringCharacterSwap,mispelling,what are the social determinants of health,what are the social determinants of heatlh,True,True
+msmarco,833860,WordSwapNeighboringCharacterSwap,mispelling,what is the most popular food in switzerland,what is the most popular fodo in switzerland,True,True
+msmarco,855410,WordSwapNeighboringCharacterSwap,mispelling,what is theraderm used for,what is theraderm uesd for,True,True
+msmarco,87181,WordSwapNeighboringCharacterSwap,mispelling,causes of left ventricular hypertrophy,causes of left ventricualr hypertrophy,True,True
+msmarco,87452,WordSwapNeighboringCharacterSwap,mispelling,causes of military suicide,cuases of military suicide,True,True
+msmarco,915593,WordSwapNeighboringCharacterSwap,mispelling,what types of food can you cook sous vide,what types of fodo can you cook sous vide,True,True
+msmarco,962179,WordSwapNeighboringCharacterSwap,mispelling,when was the salvation army founded,when was the salvaiton army founded,True,True
+msmarco,1037798,WordSwapQWERTY,mispelling,who is robert gray,who is robert ggay,True,True
+msmarco,104861,WordSwapQWERTY,mispelling,cost of interior concrete flooring,cost of interior concretf flooring,True,True
+msmarco,1063750,WordSwapQWERTY,mispelling,why did the us volunterilay enter ww1,why did the us volunterilay enter we1,True,True
+msmarco,1103812,WordSwapQWERTY,mispelling,who formed the commonwealth of independent states,who formed the commonwealth of independent ztates,True,True
+msmarco,1106007,WordSwapQWERTY,mispelling,define visceral,define visxeral,True,True
+msmarco,1110199,WordSwapQWERTY,mispelling,what is wifi vs bluetooth,what is wigi vs bluetooth,True,True
+msmarco,1112341,WordSwapQWERTY,mispelling,what is the daily life of thai people,what is the daily life of thai oeople,True,True
+msmarco,1113437,WordSwapQWERTY,mispelling,what is physical description of spruce,what is physical description of sptuce,True,True
+msmarco,1114646,WordSwapQWERTY,mispelling,what is famvir prescribed for,what is famfir prescribed for,True,True
+msmarco,1114819,WordSwapQWERTY,mispelling,what is durable medical equipment consist of,what is durable medical equipment xonsist of,True,True
+msmarco,1115776,WordSwapQWERTY,mispelling,what is an aml surveillance analyst,what is an sml surveillance analyst,True,True
+msmarco,1117099,WordSwapQWERTY,mispelling,what is a active margin,what is a active nargin,True,True
+msmarco,1121402,WordSwapQWERTY,mispelling,what can contour plowing reduce,what can contoue plowing reduce,True,True
+msmarco,1121709,WordSwapQWERTY,mispelling,what are the three percenters,what are the theee percenters,True,True
+msmarco,1124210,WordSwapQWERTY,mispelling,tracheids are part of,gracheids are part of,True,True
+msmarco,1129237,WordSwapQWERTY,mispelling,hydrogen is a liquid below what temperature,hydrogen is a liquid below what tfmperature,True,True
+msmarco,1133167,WordSwapQWERTY,mispelling,how is the weather in jamaica,how is the weafher in jamaica,True,True
+msmarco,130510,WordSwapQWERTY,mispelling,definition declaratory judgment,fefinition declaratory judgment,True,True
+msmarco,131843,WordSwapQWERTY,mispelling,definition of a sigmet,definitkon of a sigmet,True,True
+msmarco,146187,WordSwapQWERTY,mispelling,difference between a mcdouble and a double cheeseburger,difference between a mcdouble and a double cheeeeburger,True,True
+msmarco,148538,WordSwapQWERTY,mispelling,difference between rn and bsn,difference between rn and bsj,True,True
+msmarco,156493,WordSwapQWERTY,mispelling,do goldfish grow,do golffish grow,True,True
+msmarco,168216,WordSwapQWERTY,mispelling,does legionella pneumophila cause pneumonia,does legionella pneumophila cauqe pneumonia,True,True
+msmarco,182539,WordSwapQWERTY,mispelling,example of monotonic function,example of monotonic fynction,True,True
+msmarco,183378,WordSwapQWERTY,mispelling,exons definition biology,exons definitiob biology,True,True
+msmarco,19335,WordSwapQWERTY,mispelling,anthropological definition of environment,anthropological definiyion of environment,True,True
+msmarco,207786,WordSwapQWERTY,mispelling,how are some sharks warm blooded,how are some sharks warm glooded,True,True
+msmarco,264014,WordSwapQWERTY,mispelling,how long is life cycle of flea,how kong is life cycle of flea,True,True
+msmarco,359349,WordSwapQWERTY,mispelling,how to find the midsegment of a trapezoid,how to find the midsegment of a trapwzoid,True,True
+msmarco,405717,WordSwapQWERTY,mispelling,is cdg airport in main paris,is cdg airport in nain paris,True,True
+msmarco,443396,WordSwapQWERTY,mispelling,lps laws definition,lps laas definition,True,True
+msmarco,451602,WordSwapQWERTY,mispelling,medicare s definition of mechanical ventilation,medicare s definition of mechanical ventilation,False,False
+msmarco,47923,WordSwapQWERTY,mispelling,axon terminals or synaptic knob definition,axon terminals or synaptic knob eefinition,True,True
+msmarco,489204,WordSwapQWERTY,mispelling,right pelvic pain causes,right pslvic pain causes,True,True
+msmarco,490595,WordSwapQWERTY,mispelling,rsa definition key,rda definition key,True,True
+msmarco,527433,WordSwapQWERTY,mispelling,types of dysarthria from cerebral palsy,types of dysarthria from cerebral lalsy,True,True
+msmarco,573724,WordSwapQWERTY,mispelling,what are the social determinants of health,what are the social determinanys of health,True,True
+msmarco,833860,WordSwapQWERTY,mispelling,what is the most popular food in switzerland,what is the most popular tood in switzerland,True,True
+msmarco,855410,WordSwapQWERTY,mispelling,what is theraderm used for,what is thrraderm used for,True,True
+msmarco,87181,WordSwapQWERTY,mispelling,causes of left ventricular hypertrophy,causes of left ventriculaf hypertrophy,True,True
+msmarco,87452,WordSwapQWERTY,mispelling,causes of military suicide,causes of militzry suicide,True,True
+msmarco,915593,WordSwapQWERTY,mispelling,what types of food can you cook sous vide,what types of food can you cook sous fide,True,True
+msmarco,962179,WordSwapQWERTY,mispelling,when was the salvation army founded,when was the salgation army founded,True,True
+msmarco,1037798,WordSwapRandomCharacterSubstitution,mispelling,who is robert gray,who is robert gjay,True,True
+msmarco,104861,WordSwapRandomCharacterSubstitution,mispelling,cost of interior concrete flooring,cosd of interior concrete flooring,True,True
+msmarco,1063750,WordSwapRandomCharacterSubstitution,mispelling,why did the us volunterilay enter ww1,why did the us volunteritay enter ww1,True,True
+msmarco,1103812,WordSwapRandomCharacterSubstitution,mispelling,who formed the commonwealth of independent states,who focmed the commonwealth of independent states,True,True
+msmarco,1106007,WordSwapRandomCharacterSubstitution,mispelling,define visceral,define visceual,True,True
+msmarco,1110199,WordSwapRandomCharacterSubstitution,mispelling,what is wifi vs bluetooth,what is wifi vs bluetopth,True,True
+msmarco,1112341,WordSwapRandomCharacterSubstitution,mispelling,what is the daily life of thai people,what is the daily life of thai peoplj,True,True
+msmarco,1113437,WordSwapRandomCharacterSubstitution,mispelling,what is physical description of spruce,what is physical desyription of spruce,True,True
+msmarco,1114646,WordSwapRandomCharacterSubstitution,mispelling,what is famvir prescribed for,what is famvir presbribed for,True,True
+msmarco,1114819,WordSwapRandomCharacterSubstitution,mispelling,what is durable medical equipment consist of,what is durable medical equipment consvst of,True,True
+msmarco,1115776,WordSwapRandomCharacterSubstitution,mispelling,what is an aml surveillance analyst,what is an aml syrveillance analyst,True,True
+msmarco,1117099,WordSwapRandomCharacterSubstitution,mispelling,what is a active margin,what is a acttve margin,True,True
+msmarco,1121402,WordSwapRandomCharacterSubstitution,mispelling,what can contour plowing reduce,what can contour plowing reruce,True,True
+msmarco,1121709,WordSwapRandomCharacterSubstitution,mispelling,what are the three percenters,what are the three plrcenters,True,True
+msmarco,1124210,WordSwapRandomCharacterSubstitution,mispelling,tracheids are part of,trzcheids are part of,True,True
+msmarco,1129237,WordSwapRandomCharacterSubstitution,mispelling,hydrogen is a liquid below what temperature,hydrogen is a liquid below what temperature,False,False
+msmarco,1133167,WordSwapRandomCharacterSubstitution,mispelling,how is the weather in jamaica,how is the weather in jamaxca,True,True
+msmarco,130510,WordSwapRandomCharacterSubstitution,mispelling,definition declaratory judgment,definition declarahory judgment,True,True
+msmarco,131843,WordSwapRandomCharacterSubstitution,mispelling,definition of a sigmet,definition of a sizmet,True,True
+msmarco,146187,WordSwapRandomCharacterSubstitution,mispelling,difference between a mcdouble and a double cheeseburger,difference between a mcdouble and a docble cheeseburger,True,True
+msmarco,148538,WordSwapRandomCharacterSubstitution,mispelling,difference between rn and bsn,difference between rn and bdn,True,True
+msmarco,156493,WordSwapRandomCharacterSubstitution,mispelling,do goldfish grow,do gpldfish grow,True,True
+msmarco,168216,WordSwapRandomCharacterSubstitution,mispelling,does legionella pneumophila cause pneumonia,does legionella pneumophila cause pneuxonia,True,True
+msmarco,182539,WordSwapRandomCharacterSubstitution,mispelling,example of monotonic function,kxample of monotonic function,True,True
+msmarco,183378,WordSwapRandomCharacterSubstitution,mispelling,exons definition biology,ebons definition biology,True,True
+msmarco,19335,WordSwapRandomCharacterSubstitution,mispelling,anthropological definition of environment,axthropological definition of environment,True,True
+msmarco,207786,WordSwapRandomCharacterSubstitution,mispelling,how are some sharks warm blooded,how are some sharkk warm blooded,True,True
+msmarco,264014,WordSwapRandomCharacterSubstitution,mispelling,how long is life cycle of flea,how long is xife cycle of flea,True,True
+msmarco,359349,WordSwapRandomCharacterSubstitution,mispelling,how to find the midsegment of a trapezoid,how to find the midszgment of a trapezoid,True,True
+msmarco,405717,WordSwapRandomCharacterSubstitution,mispelling,is cdg airport in main paris,is cdg airporf in main paris,True,True
+msmarco,443396,WordSwapRandomCharacterSubstitution,mispelling,lps laws definition,lpx laws definition,True,True
+msmarco,451602,WordSwapRandomCharacterSubstitution,mispelling,medicare s definition of mechanical ventilation,medicare s defiqition of mechanical ventilation,True,True
+msmarco,47923,WordSwapRandomCharacterSubstitution,mispelling,axon terminals or synaptic knob definition,axon terminals or synantic knob definition,True,True
+msmarco,489204,WordSwapRandomCharacterSubstitution,mispelling,right pelvic pain causes,right pelvic pain causem,True,True
+msmarco,490595,WordSwapRandomCharacterSubstitution,mispelling,rsa definition key,rsk definition key,True,True
+msmarco,527433,WordSwapRandomCharacterSubstitution,mispelling,types of dysarthria from cerebral palsy,types of xysarthria from cerebral palsy,True,True
+msmarco,573724,WordSwapRandomCharacterSubstitution,mispelling,what are the social determinants of health,what are the social determinants of healty,True,True
+msmarco,833860,WordSwapRandomCharacterSubstitution,mispelling,what is the most popular food in switzerland,what is the most pogular food in switzerland,True,True
+msmarco,855410,WordSwapRandomCharacterSubstitution,mispelling,what is theraderm used for,what is thetaderm used for,True,True
+msmarco,87181,WordSwapRandomCharacterSubstitution,mispelling,causes of left ventricular hypertrophy,causes of left venxricular hypertrophy,True,True
+msmarco,87452,WordSwapRandomCharacterSubstitution,mispelling,causes of military suicide,causep of military suicide,True,True
+msmarco,915593,WordSwapRandomCharacterSubstitution,mispelling,what types of food can you cook sous vide,what tyhes of food can you cook sous vide,True,True
+msmarco,962179,WordSwapRandomCharacterSubstitution,mispelling,when was the salvation army founded,when was the salvatiod army founded,True,True
+msmarco,1037798,naturality_by_removing_stop_words,naturality,who is robert gray,robert gray,True,True
+msmarco,104861,naturality_by_removing_stop_words,naturality,cost of interior concrete flooring,cost interior concrete flooring,True,True
+msmarco,1063750,naturality_by_removing_stop_words,naturality,why did the us volunterilay enter ww1,us volunterilay enter ww1,True,True
+msmarco,1103812,naturality_by_removing_stop_words,naturality,who formed the commonwealth of independent states,formed commonwealth independent states,True,True
+msmarco,1106007,naturality_by_removing_stop_words,naturality,define visceral,define visceral,False,False
+msmarco,1110199,naturality_by_removing_stop_words,naturality,what is wifi vs bluetooth,wifi vs bluetooth,True,True
+msmarco,1112341,naturality_by_removing_stop_words,naturality,what is the daily life of thai people,daily life thai people,True,True
+msmarco,1113437,naturality_by_removing_stop_words,naturality,what is physical description of spruce,physical description spruce,True,True
+msmarco,1114646,naturality_by_removing_stop_words,naturality,what is famvir prescribed for,famvir prescribed,True,True
+msmarco,1114819,naturality_by_removing_stop_words,naturality,what is durable medical equipment consist of,durable medical equipment consist,True,True
+msmarco,1115776,naturality_by_removing_stop_words,naturality,what is an aml surveillance analyst,aml surveillance analyst,True,True
+msmarco,1117099,naturality_by_removing_stop_words,naturality,what is a active margin,active margin,True,True
+msmarco,1121402,naturality_by_removing_stop_words,naturality,what can contour plowing reduce,contour plowing reduce,True,True
+msmarco,1121709,naturality_by_removing_stop_words,naturality,what are the three percenters,three percenters,True,True
+msmarco,1124210,naturality_by_removing_stop_words,naturality,tracheids are part of,tracheids part,True,True
+msmarco,1129237,naturality_by_removing_stop_words,naturality,hydrogen is a liquid below what temperature,hydrogen liquid temperature,True,True
+msmarco,1133167,naturality_by_removing_stop_words,naturality,how is the weather in jamaica,weather jamaica,True,True
+msmarco,130510,naturality_by_removing_stop_words,naturality,definition declaratory judgment,definition declaratory judgment,False,False
+msmarco,131843,naturality_by_removing_stop_words,naturality,definition of a sigmet,definition sigmet,True,True
+msmarco,146187,naturality_by_removing_stop_words,naturality,difference between a mcdouble and a double cheeseburger,difference mcdouble double cheeseburger,True,True
+msmarco,148538,naturality_by_removing_stop_words,naturality,difference between rn and bsn,difference rn bsn,True,True
+msmarco,156493,naturality_by_removing_stop_words,naturality,do goldfish grow,goldfish grow,True,True
+msmarco,168216,naturality_by_removing_stop_words,naturality,does legionella pneumophila cause pneumonia,legionella pneumophila cause pneumonia,True,True
+msmarco,182539,naturality_by_removing_stop_words,naturality,example of monotonic function,example monotonic function,True,True
+msmarco,183378,naturality_by_removing_stop_words,naturality,exons definition biology,exons definition biology,False,False
+msmarco,19335,naturality_by_removing_stop_words,naturality,anthropological definition of environment,anthropological definition environment,True,True
+msmarco,207786,naturality_by_removing_stop_words,naturality,how are some sharks warm blooded,sharks warm blooded,True,True
+msmarco,264014,naturality_by_removing_stop_words,naturality,how long is life cycle of flea,long life cycle flea,True,True
+msmarco,359349,naturality_by_removing_stop_words,naturality,how to find the midsegment of a trapezoid,find midsegment trapezoid,True,True
+msmarco,405717,naturality_by_removing_stop_words,naturality,is cdg airport in main paris,cdg airport main paris,True,True
+msmarco,443396,naturality_by_removing_stop_words,naturality,lps laws definition,lps laws definition,False,False
+msmarco,451602,naturality_by_removing_stop_words,naturality,medicare s definition of mechanical ventilation,medicare s definition mechanical ventilation,True,True
+msmarco,47923,naturality_by_removing_stop_words,naturality,axon terminals or synaptic knob definition,axon terminals synaptic knob definition,True,True
+msmarco,489204,naturality_by_removing_stop_words,naturality,right pelvic pain causes,right pelvic pain causes,False,False
+msmarco,490595,naturality_by_removing_stop_words,naturality,rsa definition key,rsa definition key,False,False
+msmarco,527433,naturality_by_removing_stop_words,naturality,types of dysarthria from cerebral palsy,types dysarthria cerebral palsy,True,True
+msmarco,573724,naturality_by_removing_stop_words,naturality,what are the social determinants of health,social determinants health,True,True
+msmarco,833860,naturality_by_removing_stop_words,naturality,what is the most popular food in switzerland,popular food switzerland,True,True
+msmarco,855410,naturality_by_removing_stop_words,naturality,what is theraderm used for,theraderm used,True,True
+msmarco,87181,naturality_by_removing_stop_words,naturality,causes of left ventricular hypertrophy,causes left ventricular hypertrophy,True,True
+msmarco,87452,naturality_by_removing_stop_words,naturality,causes of military suicide,causes military suicide,True,True
+msmarco,915593,naturality_by_removing_stop_words,naturality,what types of food can you cook sous vide,types food cook sous vide,True,True
+msmarco,962179,naturality_by_removing_stop_words,naturality,when was the salvation army founded,salvation army founded,True,True
+msmarco,104861,summarization_with_t5-base_from_description_to_title,naturality,cost of interior concrete flooring,cost of interior concrete flooring,False,False
+msmarco,490595,summarization_with_t5-base_from_description_to_title,naturality,rsa definition key,rsa definition key,False,False
+msmarco,1037798,WordInnerSwapRandom,ordering,who is robert gray,gray is robert who,True,True
+msmarco,104861,WordInnerSwapRandom,ordering,cost of interior concrete flooring,cost of concrete interior flooring,True,True
+msmarco,1063750,WordInnerSwapRandom,ordering,why did the us volunterilay enter ww1,why volunterilay the us did enter ww1,True,True
+msmarco,1103812,WordInnerSwapRandom,ordering,who formed the commonwealth of independent states,who formed states commonwealth of independent the,True,True
+msmarco,1106007,WordInnerSwapRandom,ordering,define visceral,visceral define,True,True
+msmarco,1110199,WordInnerSwapRandom,ordering,what is wifi vs bluetooth,what wifi is vs bluetooth,True,True
+msmarco,1112341,WordInnerSwapRandom,ordering,what is the daily life of thai people,what of the daily life is thai people,True,True
+msmarco,1113437,WordInnerSwapRandom,ordering,what is physical description of spruce,of is physical description what spruce,True,True
+msmarco,1114646,WordInnerSwapRandom,ordering,what is famvir prescribed for,famvir is what prescribed for,True,True
+msmarco,1114819,WordInnerSwapRandom,ordering,what is durable medical equipment consist of,what is consist medical equipment durable of,True,True
+msmarco,1115776,WordInnerSwapRandom,ordering,what is an aml surveillance analyst,what is an aml analyst surveillance,True,True
+msmarco,1117099,WordInnerSwapRandom,ordering,what is a active margin,margin is a active what,True,True
+msmarco,1121402,WordInnerSwapRandom,ordering,what can contour plowing reduce,what plowing contour can reduce,True,True
+msmarco,1121709,WordInnerSwapRandom,ordering,what are the three percenters,what percenters the three are,True,True
+msmarco,1124210,WordInnerSwapRandom,ordering,tracheids are part of,part are tracheids of,True,True
+msmarco,1129237,WordInnerSwapRandom,ordering,hydrogen is a liquid below what temperature,liquid is a hydrogen below what temperature,True,True
+msmarco,1133167,WordInnerSwapRandom,ordering,how is the weather in jamaica,how weather the is in jamaica,True,True
+msmarco,130510,WordInnerSwapRandom,ordering,definition declaratory judgment,judgment declaratory definition,True,True
+msmarco,131843,WordInnerSwapRandom,ordering,definition of a sigmet,sigmet of a definition,True,True
+msmarco,146187,WordInnerSwapRandom,ordering,difference between a mcdouble and a double cheeseburger,between difference a mcdouble and a double cheeseburger,True,True
+msmarco,148538,WordInnerSwapRandom,ordering,difference between rn and bsn,between difference rn and bsn,True,True
+msmarco,156493,WordInnerSwapRandom,ordering,do goldfish grow,do grow goldfish,True,True
+msmarco,168216,WordInnerSwapRandom,ordering,does legionella pneumophila cause pneumonia,pneumonia legionella pneumophila cause does,True,True
+msmarco,182539,WordInnerSwapRandom,ordering,example of monotonic function,monotonic of example function,True,True
+msmarco,183378,WordInnerSwapRandom,ordering,exons definition biology,exons biology definition,True,True
+msmarco,19335,WordInnerSwapRandom,ordering,anthropological definition of environment,of definition anthropological environment,True,True
+msmarco,207786,WordInnerSwapRandom,ordering,how are some sharks warm blooded,how are some blooded warm sharks,True,True
+msmarco,264014,WordInnerSwapRandom,ordering,how long is life cycle of flea,flea long is life cycle of how,True,True
+msmarco,359349,WordInnerSwapRandom,ordering,how to find the midsegment of a trapezoid,how to find the trapezoid of a midsegment,True,True
+msmarco,405717,WordInnerSwapRandom,ordering,is cdg airport in main paris,is cdg airport paris main in,True,True
+msmarco,443396,WordInnerSwapRandom,ordering,lps laws definition,definition laws lps,True,True
+msmarco,451602,WordInnerSwapRandom,ordering,medicare s definition of mechanical ventilation,medicare s definition of ventilation mechanical,True,True
+msmarco,47923,WordInnerSwapRandom,ordering,axon terminals or synaptic knob definition,or terminals axon synaptic knob definition,True,True
+msmarco,489204,WordInnerSwapRandom,ordering,right pelvic pain causes,causes pelvic pain right,True,True
+msmarco,490595,WordInnerSwapRandom,ordering,rsa definition key,definition rsa key,True,True
+msmarco,527433,WordInnerSwapRandom,ordering,types of dysarthria from cerebral palsy,types from dysarthria of cerebral palsy,True,True
+msmarco,573724,WordInnerSwapRandom,ordering,what are the social determinants of health,what are of social determinants the health,True,True
+msmarco,833860,WordInnerSwapRandom,ordering,what is the most popular food in switzerland,what is food most popular the in switzerland,True,True
+msmarco,855410,WordInnerSwapRandom,ordering,what is theraderm used for,is what theraderm used for,True,True
+msmarco,87181,WordInnerSwapRandom,ordering,causes of left ventricular hypertrophy,causes of ventricular left hypertrophy,True,True
+msmarco,87452,WordInnerSwapRandom,ordering,causes of military suicide,causes of suicide military,True,True
+msmarco,915593,WordInnerSwapRandom,ordering,what types of food can you cook sous vide,what cook of food can you types sous vide,True,True
+msmarco,962179,WordInnerSwapRandom,ordering,when was the salvation army founded,when was the army salvation founded,True,True
+msmarco,1110199,back_translation_pivot_language_de,paraphrase,what is wifi vs bluetooth,what is wifi vs bluetooth,False,False
+msmarco,1114646,back_translation_pivot_language_de,paraphrase,what is famvir prescribed for,what is famvir prescribed for,False,False
+msmarco,1124210,back_translation_pivot_language_de,paraphrase,tracheids are part of,tracheids are part of,False,False
+msmarco,1133167,back_translation_pivot_language_de,paraphrase,how is the weather in jamaica,how is the weather in jamaica,False,False
+msmarco,131843,back_translation_pivot_language_de,paraphrase,definition of a sigmet,definition of a sigmet,False,False
+msmarco,146187,back_translation_pivot_language_de,paraphrase,difference between a mcdouble and a double cheeseburger,difference between a mcdouble and a double cheeseburger,False,False
+msmarco,148538,back_translation_pivot_language_de,paraphrase,difference between rn and bsn,difference between rn and bsn,False,False
+msmarco,490595,back_translation_pivot_language_de,paraphrase,rsa definition key,rsa definition key,False,False
+msmarco,833860,back_translation_pivot_language_de,paraphrase,what is the most popular food in switzerland,what is the most popular food in switzerland,False,False
+msmarco,87452,back_translation_pivot_language_de,paraphrase,causes of military suicide,causes of military suicide,False,False
+msmarco,1037798,ramsrigouthamg/t5_paraphraser,paraphrase,who is robert gray,who is robert gray,False,False
+msmarco,1103812,ramsrigouthamg/t5_paraphraser,paraphrase,who formed the commonwealth of independent states,who formed the commonwealth of independent states,False,False
+msmarco,1112341,ramsrigouthamg/t5_paraphraser,paraphrase,what is the daily life of thai people,what is the daily life of thai people,False,False
+msmarco,1114646,ramsrigouthamg/t5_paraphraser,paraphrase,what is famvir prescribed for,what is famvir prescribed for,False,False
+msmarco,1115776,ramsrigouthamg/t5_paraphraser,paraphrase,what is an aml surveillance analyst,what is an aml surveillance analyst,False,False
+msmarco,1121402,ramsrigouthamg/t5_paraphraser,paraphrase,what can contour plowing reduce,what can contour plowing reduce,False,False
+msmarco,1121709,ramsrigouthamg/t5_paraphraser,paraphrase,what are the three percenters,what are the three percenters,False,False
+msmarco,1133167,ramsrigouthamg/t5_paraphraser,paraphrase,how is the weather in jamaica,how is the weather in jamaica,False,False
+msmarco,168216,ramsrigouthamg/t5_paraphraser,paraphrase,does legionella pneumophila cause pneumonia,does legionella pneumophila cause pneumonia,False,False
+msmarco,405717,ramsrigouthamg/t5_paraphraser,paraphrase,is cdg airport in main paris,is cdg airport in main paris,False,False
+msmarco,833860,ramsrigouthamg/t5_paraphraser,paraphrase,what is the most popular food in switzerland,what is the most popular food in switzerland,False,False
+msmarco,855410,ramsrigouthamg/t5_paraphraser,paraphrase,what is theraderm used for,what is theraderm used for,False,False
+msmarco,915593,ramsrigouthamg/t5_paraphraser,paraphrase,what types of food can you cook sous vide,what types of food can you cook sous vide,False,False
+msmarco,962179,ramsrigouthamg/t5_paraphraser,paraphrase,when was the salvation army founded,when was the salvation army founded,False,False
+msmarco,131843,WordSwapWordNet,synonym,definition of a sigmet,definition of a sigmet,False,False
+msmarco,1037798,summarization_with_t5-base_from_description_to_title,naturality,who is robert gray,robert gray,True,True
+msmarco,1063750,summarization_with_t5-base_from_description_to_title,naturality,why did the us volunterilay enter ww1,volunterilay ww,False,False
+msmarco,1103812,summarization_with_t5-base_from_description_to_title,naturality,who formed the commonwealth of independent states,commonwealth of independent states,True,True
+msmarco,1106007,summarization_with_t5-base_from_description_to_title,naturality,define visceral,visceral,True,True
+msmarco,1110199,summarization_with_t5-base_from_description_to_title,naturality,what is wifi vs bluetooth,wifi vs bluetooth,True,True
+msmarco,1112341,summarization_with_t5-base_from_description_to_title,naturality,what is the daily life of thai people,thai life,True,True
+msmarco,1113437,summarization_with_t5-base_from_description_to_title,naturality,what is physical description of spruce,spruce physical description,True,True
+msmarco,1114646,summarization_with_t5-base_from_description_to_title,naturality,what is famvir prescribed for,famvir,True,True
+msmarco,1114819,summarization_with_t5-base_from_description_to_title,naturality,what is durable medical equipment consist of,durable medical equipment,True,True
+msmarco,1115776,summarization_with_t5-base_from_description_to_title,naturality,what is an aml surveillance analyst,aml surveillance analyst,True,True
+msmarco,1117099,summarization_with_t5-base_from_description_to_title,naturality,what is a active margin,active margin,True,True
+msmarco,1121402,summarization_with_t5-base_from_description_to_title,naturality,what can contour plowing reduce,contour plowing,True,True
+msmarco,1121709,summarization_with_t5-base_from_description_to_title,naturality,what are the three percenters,three percenters,True,True
+msmarco,1124210,summarization_with_t5-base_from_description_to_title,naturality,tracheids are part of,tracheoids,True,True
+msmarco,1129237,summarization_with_t5-base_from_description_to_title,naturality,hydrogen is a liquid below what temperature,hydrogen liquid below what temperature,True,True
+msmarco,1133167,summarization_with_t5-base_from_description_to_title,naturality,how is the weather in jamaica,jamaica weather,True,True
+msmarco,130510,summarization_with_t5-base_from_description_to_title,naturality,definition declaratory judgment,declaratory judgment,True,True
+msmarco,131843,summarization_with_t5-base_from_description_to_title,naturality,definition of a sigmet,sigmet,True,True
+msmarco,146187,summarization_with_t5-base_from_description_to_title,naturality,difference between a mcdouble and a double cheeseburger,mcdouble cheeseburger,True,True
+msmarco,148538,summarization_with_t5-base_from_description_to_title,naturality,difference between rn and bsn,difference between rn and,False,False
+msmarco,156493,summarization_with_t5-base_from_description_to_title,naturality,do goldfish grow,goldfish,True,True
+msmarco,168216,summarization_with_t5-base_from_description_to_title,naturality,does legionella pneumophila cause pneumonia,legionella pneumophila,False,False
+msmarco,182539,summarization_with_t5-base_from_description_to_title,naturality,example of monotonic function,monotonic function,True,True
+msmarco,183378,summarization_with_t5-base_from_description_to_title,naturality,exons definition biology,exons biology,True,True
+msmarco,19335,summarization_with_t5-base_from_description_to_title,naturality,anthropological definition of environment,environment anthropology,True,True
+msmarco,207786,summarization_with_t5-base_from_description_to_title,naturality,how are some sharks warm blooded,sharks warm blooded,True,True
+msmarco,264014,summarization_with_t5-base_from_description_to_title,naturality,how long is life cycle of flea,flea life cycle,True,True
+msmarco,359349,summarization_with_t5-base_from_description_to_title,naturality,how to find the midsegment of a trapezoid,trapezoidal midseg,True,True
+msmarco,405717,summarization_with_t5-base_from_description_to_title,naturality,is cdg airport in main paris,paris cdg airport,True,True
+msmarco,443396,summarization_with_t5-base_from_description_to_title,naturality,lps laws definition,lps laws,True,True
+msmarco,451602,summarization_with_t5-base_from_description_to_title,naturality,medicare s definition of mechanical ventilation,medicare mechanical ventilation,True,True
+msmarco,47923,summarization_with_t5-base_from_description_to_title,naturality,axon terminals or synaptic knob definition,axon terminals or,False,False
+msmarco,489204,summarization_with_t5-base_from_description_to_title,naturality,right pelvic pain causes,pelvic pain,False,False
+msmarco,527433,summarization_with_t5-base_from_description_to_title,naturality,types of dysarthria from cerebral palsy,cerebral palsy dysarthr,True,True
+msmarco,573724,summarization_with_t5-base_from_description_to_title,naturality,what are the social determinants of health,social determinants of health,True,True
+msmarco,833860,summarization_with_t5-base_from_description_to_title,naturality,what is the most popular food in switzerland,food in switzerland,True,True
+msmarco,855410,summarization_with_t5-base_from_description_to_title,naturality,what is theraderm used for,theraderm,True,True
+msmarco,87181,summarization_with_t5-base_from_description_to_title,naturality,causes of left ventricular hypertrophy,left ventricular hypertrophy,False,False
+msmarco,87452,summarization_with_t5-base_from_description_to_title,naturality,causes of military suicide,military suicide,True,True
+msmarco,915593,summarization_with_t5-base_from_description_to_title,naturality,what types of food can you cook sous vide,sous vide food,True,True
+msmarco,962179,summarization_with_t5-base_from_description_to_title,naturality,when was the salvation army founded,salvation army,True,True
+msmarco,1037798,back_translation_pivot_language_de,paraphrase,who is robert gray,who is robert grey,False,False
+msmarco,104861,back_translation_pivot_language_de,paraphrase,cost of interior concrete flooring,cost of internal concrete,False,False
+msmarco,1063750,back_translation_pivot_language_de,paraphrase,why did the us volunterilay enter ww1,why the u s  volunterilay entered ww1,True,True
+msmarco,1103812,back_translation_pivot_language_de,paraphrase,who formed the commonwealth of independent states,the common wealth of independent states,False,False
+msmarco,1106007,back_translation_pivot_language_de,paraphrase,define visceral,do you define visceral,True,True
+msmarco,1112341,back_translation_pivot_language_de,paraphrase,what is the daily life of thai people,what is the daily life of the thai people,True,True
+msmarco,1113437,back_translation_pivot_language_de,paraphrase,what is physical description of spruce,what is the physical description of spruce,True,True
+msmarco,1114819,back_translation_pivot_language_de,paraphrase,what is durable medical equipment consist of,what is sustainable medical equipment,True,True
+msmarco,1115776,back_translation_pivot_language_de,paraphrase,what is an aml surveillance analyst,what is an aml monitoring analyst,True,True
+msmarco,1117099,back_translation_pivot_language_de,paraphrase,what is a active margin,what is an active margin,True,True
+msmarco,1121402,back_translation_pivot_language_de,paraphrase,what can contour plowing reduce,what can reduce contour plowing,False,False
+msmarco,1121709,back_translation_pivot_language_de,paraphrase,what are the three percenters,what are the three percent,True,True
+msmarco,1129237,back_translation_pivot_language_de,paraphrase,hydrogen is a liquid below what temperature,hydrogen is a fluid under which temperature,True,True
+msmarco,130510,back_translation_pivot_language_de,paraphrase,definition declaratory judgment,definition of declaring judgment,False,False
+msmarco,156493,back_translation_pivot_language_de,paraphrase,do goldfish grow,gold fish grows,True,True
+msmarco,168216,back_translation_pivot_language_de,paraphrase,does legionella pneumophila cause pneumonia,legionella pneumophila causes pneumonia,True,True
+msmarco,182539,back_translation_pivot_language_de,paraphrase,example of monotonic function,examples of monotonous function,False,False
+msmarco,183378,back_translation_pivot_language_de,paraphrase,exons definition biology,exon definition biology,True,True
+msmarco,19335,back_translation_pivot_language_de,paraphrase,anthropological definition of environment,anthropological definition of the environment,True,True
+msmarco,207786,back_translation_pivot_language_de,paraphrase,how are some sharks warm blooded,how are some sharks hot blood,True,True
+msmarco,264014,back_translation_pivot_language_de,paraphrase,how long is life cycle of flea,how long is the life cycle of the flies,True,True
+msmarco,359349,back_translation_pivot_language_de,paraphrase,how to find the midsegment of a trapezoid,how to find the middle segment of a trapezoid,True,True
+msmarco,405717,back_translation_pivot_language_de,paraphrase,is cdg airport in main paris,is cdg airport in the headquarters of paris,True,True
+msmarco,443396,back_translation_pivot_language_de,paraphrase,lps laws definition,lps law definition,True,True
+msmarco,451602,back_translation_pivot_language_de,paraphrase,medicare s definition of mechanical ventilation,doctors define mechanical ventilation,True,True
+msmarco,47923,back_translation_pivot_language_de,paraphrase,axon terminals or synaptic knob definition,axon terminals or synaptic nod definition,False,False
+msmarco,489204,back_translation_pivot_language_de,paraphrase,right pelvic pain causes,causes right pain,False,False
+msmarco,527433,back_translation_pivot_language_de,paraphrase,types of dysarthria from cerebral palsy,types of dysarthria from brain palsy,True,True
+msmarco,573724,back_translation_pivot_language_de,paraphrase,what are the social determinants of health,what are the social factors of health,True,True
+msmarco,855410,back_translation_pivot_language_de,paraphrase,what is theraderm used for,what is theraderm used,True,False
+msmarco,87181,back_translation_pivot_language_de,paraphrase,causes of left ventricular hypertrophy,causes of ventricular hypertrophy,False,False
+msmarco,915593,back_translation_pivot_language_de,paraphrase,what types of food can you cook sous vide,what types of food you can cook under vide,False,False
+msmarco,962179,back_translation_pivot_language_de,paraphrase,when was the salvation army founded,when the rescue army was established,True,True
+msmarco,104861,ramsrigouthamg/t5_paraphraser,paraphrase,cost of interior concrete flooring,what is the cost of interior concrete flooring,True,False
+msmarco,1063750,ramsrigouthamg/t5_paraphraser,paraphrase,why did the us volunterilay enter ww1,why did the us enter ww1,True,True
+msmarco,1106007,ramsrigouthamg/t5_paraphraser,paraphrase,define visceral,what is visceral,True,True
+msmarco,1110199,ramsrigouthamg/t5_paraphraser,paraphrase,what is wifi vs bluetooth,what is the difference between wifi and bluetooth,True,True
+msmarco,1113437,ramsrigouthamg/t5_paraphraser,paraphrase,what is physical description of spruce,what is the physical description of spruce,True,True
+msmarco,1114819,ramsrigouthamg/t5_paraphraser,paraphrase,what is durable medical equipment consist of,what is durable medical equipment,True,True
+msmarco,1117099,ramsrigouthamg/t5_paraphraser,paraphrase,what is a active margin,what is active margin,True,False
+msmarco,1124210,ramsrigouthamg/t5_paraphraser,paraphrase,tracheids are part of,are tracheids a part of,True,False
+msmarco,1129237,ramsrigouthamg/t5_paraphraser,paraphrase,hydrogen is a liquid below what temperature,is hydrogen a liquid below what temperature,True,False
+msmarco,130510,ramsrigouthamg/t5_paraphraser,paraphrase,definition declaratory judgment,what is declaratory judgment,True,True
+msmarco,131843,ramsrigouthamg/t5_paraphraser,paraphrase,definition of a sigmet,what is a sigmet,True,True
+msmarco,146187,ramsrigouthamg/t5_paraphraser,paraphrase,difference between a mcdouble and a double cheeseburger,what is the difference between a double cheeseburger and a mcdouble,True,False
+msmarco,148538,ramsrigouthamg/t5_paraphraser,paraphrase,difference between rn and bsn,what is the difference between rn and bsn,True,False
+msmarco,156493,ramsrigouthamg/t5_paraphraser,paraphrase,do goldfish grow,how do goldfish grow,True,True
+msmarco,182539,ramsrigouthamg/t5_paraphraser,paraphrase,example of monotonic function,what is a monotonic function,False,False
+msmarco,183378,ramsrigouthamg/t5_paraphraser,paraphrase,exons definition biology,what is the exons definition of biology,True,True
+msmarco,19335,ramsrigouthamg/t5_paraphraser,paraphrase,anthropological definition of environment,what is the anthropological definition of environment,True,True
+msmarco,207786,ramsrigouthamg/t5_paraphraser,paraphrase,how are some sharks warm blooded,how do sharks get warm blooded,True,True
+msmarco,264014,ramsrigouthamg/t5_paraphraser,paraphrase,how long is life cycle of flea,how long is the life cycle of fleas,True,True
+msmarco,359349,ramsrigouthamg/t5_paraphraser,paraphrase,how to find the midsegment of a trapezoid,how do you find the midsegment of a trapezoid,True,True
+msmarco,443396,ramsrigouthamg/t5_paraphraser,paraphrase,lps laws definition,what is the definition of lps law,True,True
+msmarco,451602,ramsrigouthamg/t5_paraphraser,paraphrase,medicare s definition of mechanical ventilation,what is the medicare definition of mechanical ventilation,True,True
+msmarco,47923,ramsrigouthamg/t5_paraphraser,paraphrase,axon terminals or synaptic knob definition,what is the difference between axon terminals and synaptic knobs,False,False
+msmarco,489204,ramsrigouthamg/t5_paraphraser,paraphrase,right pelvic pain causes,what causes pelvic pain,True,True
+msmarco,490595,ramsrigouthamg/t5_paraphraser,paraphrase,rsa definition key,what is rsa definition key,True,True
+msmarco,527433,ramsrigouthamg/t5_paraphraser,paraphrase,types of dysarthria from cerebral palsy,what are the types of dysarthria from cerebral palsy,True,True
+msmarco,573724,ramsrigouthamg/t5_paraphraser,paraphrase,what are the social determinants of health,what are social determinants of health,False,False
+msmarco,87181,ramsrigouthamg/t5_paraphraser,paraphrase,causes of left ventricular hypertrophy,what causes left ventricular hypertrophy,True,True
+msmarco,87452,ramsrigouthamg/t5_paraphraser,paraphrase,causes of military suicide,what are the causes of military suicide,True,True
+msmarco,1037798,WordSwapEmbedding,synonym,who is robert gray,who is roberto gray,False,False
+msmarco,104861,WordSwapEmbedding,synonym,cost of interior concrete flooring,expenses of interior concrete flooring,True,True
+msmarco,1063750,WordSwapEmbedding,synonym,why did the us volunterilay enter ww1,why did the us volunterilay penetrate ww1,True,True
+msmarco,1103812,WordSwapEmbedding,synonym,who formed the commonwealth of independent states,who formed the commonwealth of independence states,False,False
+msmarco,1106007,WordSwapEmbedding,synonym,define visceral,determining visceral,True,True
+msmarco,1110199,WordSwapEmbedding,synonym,what is wifi vs bluetooth,what is wifi versus bluetooth,True,True
+msmarco,1112341,WordSwapEmbedding,synonym,what is the daily life of thai people,what is the daily lives of thai people,True,True
+msmarco,1113437,WordSwapEmbedding,synonym,what is physical description of spruce,what is physique description of spruce,True,True
+msmarco,1114646,WordSwapEmbedding,synonym,what is famvir prescribed for,what is famvir prescribing for,True,True
+msmarco,1114819,WordSwapEmbedding,synonym,what is durable medical equipment consist of,what is durable medicinal equipment consist of,True,True
+msmarco,1115776,WordSwapEmbedding,synonym,what is an aml surveillance analyst,what is an aml oversight analyst,False,False
+msmarco,1117099,WordSwapEmbedding,synonym,what is a active margin,what is a active marge,False,False
+msmarco,1121402,WordSwapEmbedding,synonym,what can contour plowing reduce,what can contour plowing lowered,True,True
+msmarco,1121709,WordSwapEmbedding,synonym,what are the three percenters,what are the tres percenters,False,False
+msmarco,1124210,WordSwapEmbedding,synonym,tracheids are part of,tracheids are parties of,False,False
+msmarco,1129237,WordSwapEmbedding,synonym,hydrogen is a liquid below what temperature,hydrogen is a liquids below what temperature,True,True
+msmarco,1133167,WordSwapEmbedding,synonym,how is the weather in jamaica,how is the weatherman in jamaica,False,False
+msmarco,130510,WordSwapEmbedding,synonym,definition declaratory judgment,definition declaratory judgments,True,True
+msmarco,131843,WordSwapEmbedding,synonym,definition of a sigmet,define of a sigmet,True,True
+msmarco,146187,WordSwapEmbedding,synonym,difference between a mcdouble and a double cheeseburger,difference between a mcdouble and a dual cheeseburger,False,False
+msmarco,148538,WordSwapEmbedding,synonym,difference between rn and bsn,disparity between rn and bsn,True,True
+msmarco,156493,WordSwapEmbedding,synonym,do goldfish grow,do goldfish augmentation,True,True
+msmarco,168216,WordSwapEmbedding,synonym,does legionella pneumophila cause pneumonia,does legionella pneumophila reason pneumonia,False,False
+msmarco,182539,WordSwapEmbedding,synonym,example of monotonic function,case of monotonic function,True,True
+msmarco,183378,WordSwapEmbedding,synonym,exons definition biology,exons define biology,True,True
+msmarco,19335,WordSwapEmbedding,synonym,anthropological definition of environment,anthropologist definition of environment,True,True
+msmarco,207786,WordSwapEmbedding,synonym,how are some sharks warm blooded,how are some sharks hearty blooded,False,False
+msmarco,264014,WordSwapEmbedding,synonym,how long is life cycle of flea,how long is life cycle of microchip,False,False
+msmarco,359349,WordSwapEmbedding,synonym,how to find the midsegment of a trapezoid,how to finds the midsegment of a trapezoid,True,True
+msmarco,405717,WordSwapEmbedding,synonym,is cdg airport in main paris,is cdg airport in principal paris,True,True
+msmarco,443396,WordSwapEmbedding,synonym,lps laws definition,lps lois definition,False,False
+msmarco,451602,WordSwapEmbedding,synonym,medicare s definition of mechanical ventilation,medicare s define of mechanical ventilation,True,True
+msmarco,47923,WordSwapEmbedding,synonym,axon terminals or synaptic knob definition,axon terminus or synaptic knob definition,True,True
+msmarco,489204,WordSwapEmbedding,synonym,right pelvic pain causes,right pelvic heartbreak causes,False,False
+msmarco,490595,WordSwapEmbedding,synonym,rsa definition key,rsa definition keys,True,False
+msmarco,527433,WordSwapEmbedding,synonym,types of dysarthria from cerebral palsy,sorts of dysarthria from cerebral palsy,True,True
+msmarco,573724,WordSwapEmbedding,synonym,what are the social determinants of health,what are the social determinants of sanitary,False,False
+msmarco,833860,WordSwapEmbedding,synonym,what is the most popular food in switzerland,what is the most popular catering in switzerland,True,True
+msmarco,855410,WordSwapEmbedding,synonym,what is theraderm used for,what is theraderm use for,True,True
+msmarco,87181,WordSwapEmbedding,synonym,causes of left ventricular hypertrophy,causes of exited ventricular hypertrophy,False,False
+msmarco,87452,WordSwapEmbedding,synonym,causes of military suicide,causes of military suicidal,True,True
+msmarco,915593,WordSwapEmbedding,synonym,what types of food can you cook sous vide,what types of foods can you cook sous vide,True,True
+msmarco,962179,WordSwapEmbedding,synonym,when was the salvation army founded,when was the salut army founded,False,False
+msmarco,1037798,WordSwapWordNet,synonym,who is robert gray,who is robert grey,False,False
+msmarco,104861,WordSwapWordNet,synonym,cost of interior concrete flooring,cost of inner concrete flooring,True,True
+msmarco,1063750,WordSwapWordNet,synonym,why did the us volunterilay enter ww1,why did the us volunterilay enroll ww1,True,True
+msmarco,1103812,WordSwapWordNet,synonym,who formed the commonwealth of independent states,who formed the commonwealth of independent state,True,True
+msmarco,1106007,WordSwapWordNet,synonym,define visceral,delimitate visceral,True,True
+msmarco,1112341,WordSwapWordNet,synonym,what is the daily life of thai people,what is the day after day life of thai people,True,True
+msmarco,1113437,WordSwapWordNet,synonym,what is physical description of spruce,what is forcible description of spruce,False,False
+msmarco,1114646,WordSwapWordNet,synonym,what is famvir prescribed for,what is famvir ordained for,True,True
+msmarco,1114819,WordSwapWordNet,synonym,what is durable medical equipment consist of,what is long lasting medical equipment consist of,True,True
+msmarco,1115776,WordSwapWordNet,synonym,what is an aml surveillance analyst,what is an aml surveillance psychoanalyst,False,False
+msmarco,1117099,WordSwapWordNet,synonym,what is a active margin,what is a active border,False,False
+msmarco,1121402,WordSwapWordNet,synonym,what can contour plowing reduce,what can contour plowing abbreviate,True,True
+msmarco,1121709,WordSwapWordNet,synonym,what are the three percenters,what are the deuce ace percenters,False,False
+msmarco,1124210,WordSwapWordNet,synonym,tracheids are part of,tracheid are part of,True,True
+msmarco,1129237,WordSwapWordNet,synonym,hydrogen is a liquid below what temperature,hydrogen is a liquidity below what temperature,False,False
+msmarco,1133167,WordSwapWordNet,synonym,how is the weather in jamaica,how is the brave in jamaica,False,False
+msmarco,130510,WordSwapWordNet,synonym,definition declaratory judgment,definition declaratory judgement,False,False
+msmarco,146187,WordSwapWordNet,synonym,difference between a mcdouble and a double cheeseburger,conflict between a mcdouble and a double cheeseburger,True,True
+msmarco,148538,WordSwapWordNet,synonym,difference between rn and bsn,remainder between rn and bsn,False,False
+msmarco,156493,WordSwapWordNet,synonym,do goldfish grow,do goldfish acquire,False,False
+msmarco,168216,WordSwapWordNet,synonym,does legionella pneumophila cause pneumonia,does legionella pneumophila do pneumonia,False,False
+msmarco,182539,WordSwapWordNet,synonym,example of monotonic function,example of monotonic routine,False,False
+msmarco,183378,WordSwapWordNet,synonym,exons definition biology,exon definition biology,True,True
+msmarco,19335,WordSwapWordNet,synonym,anthropological definition of environment,anthropological definition of environs,True,True
+msmarco,207786,WordSwapWordNet,synonym,how are some sharks warm blooded,how are some sharks warm full blood,False,False
+msmarco,264014,WordSwapWordNet,synonym,how long is life cycle of flea,how long is life wheel of flea,False,False
+msmarco,359349,WordSwapWordNet,synonym,how to find the midsegment of a trapezoid,how to determine the midsegment of a trapezoid,True,True
+msmarco,405717,WordSwapWordNet,synonym,is cdg airport in main paris,is cdg airport in briny paris,False,False
+msmarco,443396,WordSwapWordNet,synonym,lps laws definition,l p laws definition,False,False
+msmarco,451602,WordSwapWordNet,synonym,medicare s definition of mechanical ventilation,medicare s definition of mechanical airing,True,True
+msmarco,47923,WordSwapWordNet,synonym,axon terminals or synaptic knob definition,axon terminals or synaptic boss definition,False,False
+msmarco,489204,WordSwapWordNet,synonym,right pelvic pain causes,rightfulness pelvic pain causes,False,False
+msmarco,490595,WordSwapWordNet,synonym,rsa definition key,rsa definition winder,False,False
+msmarco,527433,WordSwapWordNet,synonym,types of dysarthria from cerebral palsy,types of dysarthria from intellectual palsy,False,False
+msmarco,573724,WordSwapWordNet,synonym,what are the social determinants of health,what are the sociable determinants of health,True,True
+msmarco,833860,WordSwapWordNet,synonym,what is the most popular food in switzerland,what is the most democratic food in switzerland,False,False
+msmarco,855410,WordSwapWordNet,synonym,what is theraderm used for,what is theraderm ill used for,True,True
+msmarco,87181,WordSwapWordNet,synonym,causes of left ventricular hypertrophy,causes of provide ventricular hypertrophy,False,False
+msmarco,87452,WordSwapWordNet,synonym,causes of military suicide,get of military suicide,False,False
+msmarco,915593,WordSwapWordNet,synonym,what types of food can you cook sous vide,what case of food can you cook sous vide,False,False
+msmarco,962179,WordSwapWordNet,synonym,when was the salvation army founded,when was the salvation army plant,False,False

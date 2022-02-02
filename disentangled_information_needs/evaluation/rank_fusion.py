@@ -95,11 +95,7 @@ def fuse_by_sd(trec_runs):
     sds = df_c.groupby(["system", 'qid'])['score'].std().reset_index()
     min_sds = sds.groupby(['qid'])['score'].min().reset_index()
     min_only = sds.merge(min_sds, on = ['qid', 'score']).drop_duplicates('qid')
-<<<<<<< Updated upstream
-
-=======
     
->>>>>>> Stashed changes
     trec_run_by_min_sd = df_c.merge(min_only[['system', 'qid']], on=['system', 'qid'])
     trec_run_by_min_sd['system'] = 'minSD'
     return trec_run_by_min_sd
